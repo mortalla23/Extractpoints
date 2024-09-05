@@ -1,0 +1,433 @@
+[
+  {
+    "description": "0x10 Breath configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "1000010001003C01025800",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Breath configuration",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "dailyFrameActivated": true,
+          "numberOfHistorizationBeforeSending": 1,
+          "historyPeriod": {
+            "unit": "s",
+            "value": 60
+          },
+          "alarmRepeatActivated": true,
+          "alarmRepeatPeriod": {
+            "unit": "s",
+            "value": 600
+          },
+          "redundantSamples": 0
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x1f digital input configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "1F20410001520002",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x1f digital input configuration",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "digitalInput1": {
+            "type": "highEdge",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 100
+            },
+            "threshold": 1
+          },
+          "digitalInput2": {
+            "type": "lowEdge",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 200
+            },
+            "threshold": 2
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x20 Configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "20A02101",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x20 Configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "loraAdr": true,
+          "loraProvisioningMode": "OTAA",
+          "loraDutycyle": "deactivated",
+          "loraClassMode": "CLASS C"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Daily frame",
+    "type": "uplink",
+    "input": {
+      "bytes": "3080000804D30066000500010020000400010001001900030002000100140002",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Daily frame",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "tvoc": {
+            "min": {
+              "unit": "µg/m3",
+              "value": 8
+            },
+            "max": {
+              "unit": "µg/m3",
+              "value": 1235
+            },
+            "average": {
+              "unit": "µg/m3",
+              "value": 102
+            },
+            "duration": {
+              "unit": "min",
+              "value": 5
+            }
+          },
+          "pm10": {
+            "min": {
+              "unit": "µg/m3",
+              "value": 1
+            },
+            "max": {
+              "unit": "µg/m3",
+              "value": 32
+            },
+            "average": {
+              "unit": "µg/m3",
+              "value": 4
+            },
+            "duration": {
+              "unit": "min",
+              "value": 1
+            }
+          },
+          "pm25": {
+            "min": {
+              "unit": "µg/m3",
+              "value": 1
+            },
+            "max": {
+              "unit": "µg/m3",
+              "value": 25
+            },
+            "average": {
+              "unit": "µg/m3",
+              "value": 3
+            },
+            "duration": {
+              "unit": "min",
+              "value": 2
+            }
+          },
+          "pm1": {
+            "min": {
+              "unit": "µg/m3",
+              "value": 1
+            },
+            "max": {
+              "unit": "µg/m3",
+              "value": 20
+            },
+            "average": {
+              "unit": "µg/m3",
+              "value": 2
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x33 Set register status",
+    "type": "uplink",
+    "input": {
+      "bytes": "3380040140",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x33 Set register status",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "requestStatus": "errorInvalidRegister",
+          "registerId": 320
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x37 Software version",
+    "type": "uplink",
+    "input": {
+      "bytes": "3720020100020001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x37 Software version",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "appVersion": "2.1.0",
+          "rtuVersion": "2.0.1"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x51 digital input 1 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "5196010000017E000114ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x51 digital input 1 alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "state": {
+            "previousFrame": false,
+            "current": true
+          },
+          "counter": {
+            "global": 382,
+            "instantaneous": 1
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x52 digital input 2 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "52960200000100000314ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x52 digital input 2 alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "state": {
+            "previousFrame": true,
+            "current": false
+          },
+          "counter": {
+            "global": 256,
+            "instantaneous": 3
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x6d Breath periodic data",
+    "type": "uplink",
+    "input": {
+      "bytes": "6D8001B3003E001E001401B3003E001E0014",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x6d Breath periodic data",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+          "tvoc": {
+            "unit": "µg/m3",
+            "values": [
+              435,
+              435
+            ]
+          },
+          "pm10": {
+            "unit": "µg/m3",
+            "values": [
+              62,
+              62
+            ]
+          },
+          "pm25": {
+            "unit": "µg/m3",
+            "values": [
+              30,
+              30
+            ]
+          },
+          "pm1": {
+            "unit": "µg/m3",
+            "values": [
+              20,
+              20
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x6e Breath alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "6E800502DB000C00070003",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x6e Breath alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "sensorError": false
+          },
+          "tvoc": {
+            "alarmStatus": "active",
+            "unit": "µg/m3",
+            "value": 731
+          },
+          "pm10": {
+            "alarmStatus": "inactive",
+            "unit": "µg/m3",
+            "value": 12
+          },
+          "pm25": {
+            "alarmStatus": "active",
+            "unit": "µg/m3",
+            "value": 7
+          },
+          "pm1": {
+            "alarmStatus": "inactive",
+            "unit": "µg/m3",
+            "value": 3
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

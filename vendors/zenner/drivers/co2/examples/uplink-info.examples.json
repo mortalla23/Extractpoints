@@ -1,0 +1,27 @@
+[
+  {
+    "description": "uplink containing info",
+    "type": "uplink",
+    "bytes": "9240600400030001ffff03ffffffff0000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "info": {
+        "fw": {
+          "majorVersion": 0,
+          "minorVersion": 4,
+          "revision": 6,
+          "identityCode": 1024,
+          "identity": "CO2 sensor"
+        },
+        "lw": {
+          "major": 1,
+          "minor": 0,
+          "revision": 3
+        },
+        "loraCommandVersion": 65535,
+        "minolDeviceType": 3
+      }
+    }
+  }
+]

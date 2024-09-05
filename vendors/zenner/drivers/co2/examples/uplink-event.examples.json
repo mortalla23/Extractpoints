@@ -1,0 +1,58 @@
+[
+  {
+    "description": "uplink upper threshold reached",
+    "type": "uplink",
+    "bytes": "a020c10400",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "event": {
+        "code": 32,
+        "message": "Upper threshold reached",
+        "data": 1217
+      }
+    }
+  },
+  {
+    "description": "uplink lower threshold reached",
+    "type": "uplink",
+    "bytes": "A021900100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "event": {
+        "code": 33,
+        "message": "Lower threshold reached",
+        "data": 400
+      }
+    }
+  },
+  {
+    "description": "uplink battery alert",
+    "type": "uplink",
+    "bytes": "A005000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "event": {
+        "code": 5,
+        "message": "Battery critical low",
+        "data": 0
+      }
+    }
+  },
+  {
+    "description": "uplink hardware failure",
+    "type": "uplink",
+    "bytes": "A022000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "event": {
+        "code": 34,
+        "message": "Hardware failure detected",
+        "data": 0
+      }
+    }
+  }
+]

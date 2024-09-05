@@ -1,0 +1,32 @@
+[
+  {
+    "description": "uplink containing data - 1",
+    "type": "uplink",
+    "bytes": "d100ffa60200008f0200006e0200006e02",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "data": {
+        "firstQuarter": 678,
+        "secondQuarter": 655,
+        "thirdQuarter": 622,
+        "currentValue": 622
+      }
+    }
+  },
+  {
+    "description": "uplink containing data - 2",
+    "type": "uplink",
+    "bytes": "d100ffffff0000ffff0000ffff00002c02",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "data": {
+        "firstQuarter": "unknown",
+        "secondQuarter": "unknown",
+        "thirdQuarter": "unknown",
+        "currentValue": 556
+      }
+    }
+  }
+]

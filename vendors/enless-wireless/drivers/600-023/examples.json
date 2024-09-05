@@ -1,0 +1,61 @@
+[
+    {
+        "type": "uplink",
+        "description": "Example: 600-023",
+        "input": {
+            "bytes": "0029790606097fffffff0006ffff00000000",
+            "fPort": 1,
+            "recvTime": "2023-09-11T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alarm_status": {
+                "co2": {
+                  "high": false,
+                  "low": false
+                },
+                "humidity": {
+                  "high": false,
+                  "low": false
+                },
+                "temperature": {
+                  "high": false,
+                  "low": false
+                },
+                "voc": {
+                  "high": false,
+                  "low": false
+                }
+              },
+              "fw_version": 9,
+              "id": 10617,
+              "seq_counter": 6,
+              "states": {
+                "battery": "100%",
+                "msg_type": "normal"
+              },
+              "type": "6 - TX CO2/VOC/T&H AMB",
+              "values": {
+                "co2": {
+                  "unit": "ppm",
+                  "value": 65535
+                },
+                "humidity": {
+                  "unit": "%",
+                  "value": 6553.5
+                },
+                "temperature": {
+                  "unit": "°C",
+                  "value": 3276.7
+                },
+                "voc": {
+                  "unit": "ppb",
+                  "value": 6
+                }
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "type": "uplink",
+        "description": "Light status changed",
+        "bytes": "12fb360c6200",
+        "fPort": 104,
+        "data": {
+            "data": {
+                "battery": 3.6,
+                "darker": 0,
+                "lighter": 1,
+                "temperatureBoard": 22,
+                "statusChange": 1,
+                "lux": 251,
+                "keepAlive": 0
+            }
+        }
+    }
+]

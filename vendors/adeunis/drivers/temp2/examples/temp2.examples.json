@@ -1,0 +1,215 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration 1",
+    "type": "uplink",
+    "bytes": "10a24800d003800201020a",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "PRODUCT_CONFIGURATION_1",
+      "register": {
+        "globalOperation": "PRODUCTION_MODE",
+        "transmissionPeriodOfTheKeepAliveFrame": 43200,
+        "transmissionPeriodOfDataSensors": 0,
+        "acquisitionPeriod": 600,
+        "identifierOfTheProbe1": {
+          "identifier": 13
+        },
+        "configuringTheEventBehaviorOfTheProbe1": "LOW_AND_HIGH",
+        "identifierOfTheProbe2": {
+          "identifier": 8
+        },
+        "configuringTheEventBehaviorOfTheProbe2": "HIGH_ONLY",
+        "activationAndDeactivationOfTheProbes": "BOTH_PROBES_ARE_ACTIVATED"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on product configuration 2",
+    "type": "uplink",
+    "bytes": "11a2012c0a003205060000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "PRODUCT_CONFIGURATION_2",
+      "register": {
+        "highThresholdValueOfTheProbe1": 30,
+        "valueOfTheHighThresholdHysteresisOfTheProbe1": 1,
+        "lowThresholdValueOfTheProbe1": 5,
+        "valueOfTheLowThresholdHysteresisOfTheProbe1": 0.5,
+        "superSamplingFactor": 6
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on product configuration 3",
+    "type": "uplink",
+    "bytes": "12a2019014fed405000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "PRODUCT_CONFIGURATION_3",
+      "register": {
+        "highThresholdValueOfTheProbe2": 40,
+        "valueOfTheHighThresholdHysteresisOfTheProbe2": 2,
+        "lowThresholdValueOfTheProbe2": -30,
+        "valueOfTheLowThresholdHysteresisOfTheProbe2": 0.5
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20a2010100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "NETWORK_CONFIGURATION",
+      "register": {
+        "adr": true,
+        "mode": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "30a2d1015e81ff06000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "KEEP_ALIVE",
+      "register": {
+        "identifierOfTheProbe1": {
+          "status": true,
+          "identifier": 13
+        },
+        "valueReadOnTheProbe1": 35,
+        "identifierOfTheProbe2": {
+          "status": true,
+          "identifier": 8
+        },
+        "valueReadOnTheProbe2": -25
+      }
+    }
+  },
+  {
+    "description": "uplink containing the data frame",
+    "type": "uplink",
+    "bytes": "43a2d1015e81ff06000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "alarmActivatedOnProbe1": false,
+      "alarmActivatedOnProbe2": false,
+      "type": "DATA",
+      "register": {
+        "identifierOfTheProbe1": {
+          "status": true,
+          "identifier": 13
+        },
+        "valueReadOnTheProbe1": 35,
+        "identifierOfTheProbe2": {
+          "status": true,
+          "identifier": 8
+        },
+        "valueReadOnTheProbe2": -25
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "0100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "0200000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing specific register value request frame",
+    "type": "downlink",
+    "bytes": "400001030615",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "Temp2SpecificRegisterValueRequestFrame",
+        "message": [
+          "TRANSMISSION_PERIOD_OF_THE_KEEP_ALIVE_FRAME",
+          "TRANSMISSION_PERIOD_OF_DATA_SENSORS",
+          "CONFIRMED_MODE_ACTIVATION",
+          "GLOBAL_OPERATION",
+          "CONFIGURING_THE_EVENT_BEHAVIOR_OF_THE_PROBE1"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the frame for updating the value of a specific register",
+    "type": "downlink",
+    "bytes": "4100900106030106031503180000001e",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "Temp2FrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "transmissionPeriodOfTheKeepAliveFrame": 144,
+          "transmissionPeriodOfDataSensors": 6,
+          "confirmedModeActivation": true,
+          "globalOperation": "REPLI_MODE",
+          "configuringTheEventBehaviorOfTheProbe1": "LOW_AND_HIGH",
+          "highThresholdValueOfTheProbe1": 3
+        }
+      }
+    }
+  }
+]

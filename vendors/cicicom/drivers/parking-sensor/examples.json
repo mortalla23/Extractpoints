@@ -1,0 +1,136 @@
+[
+    {
+        "description": "Payload after reset (Boot payload) 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "5230332e36362b33302e3056312e342e30",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "batteryVoltage": "3.66V",
+                "carStatus": "Free",
+                "firmwareVersion": "V1.4.0",
+                "messageType": "Reset",
+                "temperature": "+30.0°C"
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Payload after reset (Boot payload) 2",
+        "type": "uplink",
+        "input": {
+            "bytes": "5231332e36362b33302e3056312e342e30",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "batteryVoltage": "3.66V",
+                "carStatus": "Occupied",
+                "firmwareVersion": "V1.4.0",
+                "messageType": "Reset",
+                "temperature": "+30.0°C"
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Occupation Status Change 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "4330",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "carStatus": "Free",
+                "messageType": "Status Change",
+                "uidtag": ""
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Occupation Status Change 2",
+        "type": "uplink",
+        "input": {
+            "bytes": "4331",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "carStatus": "Occupied",
+                "messageType": "Status Change",
+                "uidtag": ""
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Status Report(Keep-Alive) 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "4B30332E35352B32322E30",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "batteryVoltage": "3.55V",
+                "carStatus": "Free",
+                "messageType": "Keep Alive",
+                "temperature": "+22.0°C",
+                "uidtag": ""
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Status Report(Keep-Alive) 2",
+        "type": "uplink",
+        "input": {
+            "bytes": "4B31332E35352B32322E30",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "batteryVoltage": "3.55V",
+                "carStatus": "Occupied",
+                "messageType": "Keep Alive",
+                "temperature": "+22.0°C",
+                "uidtag": ""
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Device Malfunction Payload",
+        "type": "uplink",
+        "input": {
+            "bytes": "45332E3535",
+            "fPort": 1,
+            "recvTime": "2024-04-04T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "batteryVoltage": "3.55V",
+                "messageType": "Malfunction",
+                "statusReport": ""
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]  

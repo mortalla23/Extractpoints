@@ -1,0 +1,428 @@
+[
+  {
+    "description": "uplink containing sensor information using first version LoRaWAN",
+    "type": "uplink",
+    "bytes": "818D4E5007060000B45F00005538E2FF000014001E001500F4FF67012E00180006000000150020001700E6FF8E0226001A00040000001B0026001B000000000000000000000060091B0001000047D7895CF0",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "IsFirstSegment": true,
+      "SequenceNumber": 141,
+      "TotalLength": 78,
+      "SourceAddress": null,
+      "TempHumi": {
+        "Range": 0,
+        "Event": 0,
+        "SenVal": 24500
+      },
+      "Accelerometer": {
+        "X-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 20,
+          "Peakmg": 30,
+          "RMSmg": 21,
+          "Kurtosis": -12,
+          "CrestFactor": 359,
+          "Skewness": 46,
+          "Deviation": 24,
+          "Peak-to-Peak Displacement": 6,
+          "PeakToPeak Displacement": 6
+        },
+        "Y-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 21,
+          "Peakmg": 32,
+          "RMSmg": 23,
+          "Kurtosis": -26,
+          "CrestFactor": 654,
+          "Skewness": 38,
+          "Deviation": 26,
+          "Peak-to-Peak Displacement": 4,
+          "PeakToPeak Displacement": 4
+        },
+        "Z-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 27,
+          "Peakmg": 38,
+          "RMSmg": 27,
+          "Kurtosis": 0,
+          "CrestFactor": 0,
+          "Skewness": 0,
+          "Deviation": 0,
+          "Peak-to-Peak Displacement": 0,
+          "PeakToPeak Displacement": 0
+        },
+        "LogIndex": 0
+      },
+      "Device": {
+        "Events": 0,
+        "PowerSrc": 1,
+        "BatteryVolt": 0,
+        "Time": 1552537415
+      }
+    }
+  },
+  {
+    "description": "uplink containing sensor information using second version LoRaWAN",
+    "type": "uplink",
+    "bytes": "81004150070600006F600000542BE2C700001E0023001900020000000000170021001700000005000000210029001D0000000000010600000060091B00010000C3D1895CDB",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "IsFirstSegment": true,
+      "SequenceNumber": 0,
+      "TotalLength": 65,
+      "SourceAddress": null,
+      "TempHumi": {
+        "Range": 0,
+        "Event": 0,
+        "SenVal": 24687
+      },
+      "Accelerometer": {
+        "X-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 30,
+          "Peakmg": 35,
+          "RMSmg": 25,
+          "Deviation": 2,
+          "Peak-to-Peak Displacement": 0,
+          "PeakToPeak Displacement": 0
+        },
+        "Y-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 23,
+          "Peakmg": 33,
+          "RMSmg": 23,
+          "Deviation": 0,
+          "Peak-to-Peak Displacement": 5,
+          "PeakToPeak Displacement": 5
+        },
+        "Z-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 33,
+          "Peakmg": 41,
+          "RMSmg": 29,
+          "Deviation": 0,
+          "Peak-to-Peak Displacement": 0,
+          "PeakToPeak Displacement": 0
+        },
+        "LogIndex": 6
+      },
+      "Device": {
+        "Events": 0,
+        "PowerSrc": 1,
+        "BatteryVolt": 0,
+        "Time": 1552536003
+      }
+    }
+  },
+  {
+    "description": "uplink containing location information",
+    "type": "uplink",
+    "bytes": "80013450060000E661000054E2070000270015000F000000250015000F0000001F0015000F00603B0002140ECFD1895C01D26B49B29211F2",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "IsFirstSegment": true,
+      "SequenceNumber": 1,
+      "TotalLength": 52,
+      "SourceAddress": null,
+      "TempHumi": {
+        "Range": 0,
+        "Event": 0,
+        "SenVal": 25062
+      },
+      "Accelerometer": {
+        "X-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 39,
+          "Peakmg": 21,
+          "RMSmg": 15
+        },
+        "Y-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 37,
+          "Peakmg": 21,
+          "RMSmg": 15
+        },
+        "Z-Axis": {
+          "SenEvent": 0,
+          "OAVelocity": 31,
+          "Peakmg": 21,
+          "RMSmg": 15
+        },
+        "LogIndex": 0
+      },
+      "Device": {
+        "Events": 0,
+        "PowerSrc": 2,
+        "BatteryVolt": 3604,
+        "Time": 1552536015,
+        "GNSS": {
+          "Latitude": "48.11730 N",
+          "Longitude": "11.51666 W"
+        }
+      }
+    }
+  },
+  {
+    "description": "uplink containing di information",
+    "type": "uplink",
+    "bytes": "801B32000302000000000023020000000000430200000000006302000000000083020000000000A302000000006016023193C0275EAD",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "IsFirstSegment": true,
+      "SequenceNumber": 27,
+      "TotalLength": 50,
+      "SourceAddress": null,
+      "DI0": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI1": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI2": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI3": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI4": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI5": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "Device": {
+        "PowerSrc": 2,
+        "BatteryLevel": 49,
+        "Time": 1579663507
+      }
+    }
+  },
+  {
+    "description": "uplink containing rs-485 information",
+    "type": "uplink",
+    "bytes": "808261000302000000000023020000000000430200000000006302000000000083020000000000A302000000007302110083001100007380000173810001838000FFFF838100FFFF838200FFFF838300FFFF838400FFFF838500FFFF601603649879325E50",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "IsFirstSegment": true,
+      "SequenceNumber": 130,
+      "TotalLength": 97,
+      "SourceAddress": null,
+      "DI0": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI1": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI2": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI3": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI4": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "DI5": {
+        "status": {
+          "Signal Logic": 0,
+          "Start Counter": 1,
+          "Get/Clean Counter Overflow": 0,
+          "Get/Clean L2H Latch": 0,
+          "Get/Clean H2L Latch": 0,
+          "DI Change": 0
+        },
+        "mode": 0,
+        "value": 0
+      },
+      "RtuCoil0-2": {
+        "Status": 17,
+        "Data": 0
+      },
+      "RtuCoil02": {
+        "Status": 17,
+        "Data": 0
+      },
+      "RtuRegister0-0": {
+        "Status": 17,
+        "Data": 0
+      },
+      "RtuRegister00": {
+        "Status": 17,
+        "Data": 0
+      },
+      "RtuCoil1-0": {
+        "Status": 0,
+        "Data": 1
+      },
+      "RtuCoil10": {
+        "Status": 0,
+        "Data": 1
+      },
+      "RtuCoil1-1": {
+        "Status": 0,
+        "Data": 1
+      },
+      "RtuCoil11": {
+        "Status": 0,
+        "Data": 1
+      },
+      "RtuRegister1-0": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister10": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister1-1": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister11": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister1-2": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister12": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister1-3": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister13": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister1-4": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister14": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister1-5": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "RtuRegister15": {
+        "Status": 0,
+        "Data": 65535
+      },
+      "Device": {
+        "PowerSrc": 3,
+        "BatteryLevel": 100,
+        "Time": 1580366232
+      }
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "description": "downlink timeShift positive (sample from doc)",
+    "type": "downlink",
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "timeShift": 5400
+    },
+    "fPort": 1,
+    "bytes": "8e1815a654"
+  },
+  {
+    "description": "uplink timeShift answer",
+    "type": "uplink",
+    "bytes": "FE8E",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "timeShiftAck"
+    }
+  },
+  {
+    "description": "downlink timeShift negative (sample from doc)",
+    "type": "downlink",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "timeShift": -5400
+    },
+    "bytes": "8e1895a5d7"
+  }
+]

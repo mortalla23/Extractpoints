@@ -1,0 +1,283 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration",
+    "type": "uplink",
+    "bytes": "10a301003c39012c57003c27107530000a0000000300050103060a0d",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PRODUCT_CONFIGURATION_DATA_FRAME",
+      "register": {
+        "globalOperation": "PRODUCTION_MODE",
+        "sendingFrequencyOfTheDataSensors": 60,
+        "channelsConfiguration": {
+          "channelA": {
+            "channelActivation": "ACTIVATED",
+            "channelTamperInput": "ACTIVATED",
+            "gasMeterType": "METER_OTHER_THAN_GAS"
+          },
+          "channelB": {
+            "channelActivation": "ACTIVATED",
+            "channelTamperInput": "DEACTIVATED",
+            "gasMeterType": "GAS_METER"
+          }
+        },
+        "historyPeriod": 600,
+        "antiBounceFilterPeriod": {
+          "antiBounceFilterPeriodChannelA": "FIVE_HUNDREDS_MS",
+          "antiBounceFilterPeriodChannelB": "ONE_HUNDRED_MS"
+        },
+        "flowCalculationPeriod": 60,
+        "flowThresholdChannelA": 10000,
+        "flowThresholdChannelB": 30000,
+        "leakThresholdChannelA": 10,
+        "leakThresholdChannelB": 0,
+        "numberOfDailyPeriodsUnderTheLeakThresholdChannelA": 3,
+        "numberOfDailyPeriodsUnderTheLeakThresholdChannelB": 5,
+        "scanPeriodForChannelA": 1,
+        "tamperDetectionThresholdChannelA": 3,
+        "scanPeriodForChannelB": 6,
+        "tamperDetectionThresholdChannelB": 10,
+        "numberOfRedundantSamplesPerFrame": 13
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20a30501",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "FRAMES_OF_INFORMATION_ON_THE_NETWORK_CONFIGURATION",
+      "register": {
+        "loraWanOption": {
+          "adaptiveDataRate": true,
+          "dutyCycle": true
+        },
+        "modeOfActivation": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "30a319310a12c400100000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "KEEP_ALIVE_FRAME",
+      "register": {
+        "exceedingFlowOnChannelA": true,
+        "exceedingFlowOnChannelB": false,
+        "tamperDetectedOnChannelA": false,
+        "tamperDetectedOnChannelB": true,
+        "leakDetectedOnChannelA": true,
+        "leakDetectedOnChannelB": false,
+        "maxFlowChannelA": 12554,
+        "maxFlowChannelB": 4804,
+        "minFlowChannelA": 16,
+        "minFlowChannelB": 0
+      }
+    }
+  },
+  {
+    "description": "uplink containing the data frame",
+    "type": "uplink",
+    "bytes": "46a300015c4f0000f74a",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "DATA_FRAME",
+      "register": {
+        "counterChannelA": 89167,
+        "counterChannelB": 63306
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame",
+    "type": "uplink",
+    "bytes": "47a32904206c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "ALARM_FRAME",
+      "register": {
+        "measuredFlowChannelA": 10500,
+        "measuredFlowChannelB": 8300
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with history for channel A",
+    "type": "uplink",
+    "bytes": "5aa300000064000a00030005",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PERIODIC_FRAME_WITH_HISTORISATION",
+      "register": {
+        "pulseCounters": [
+          {
+            "offset": 0,
+            "value": 100
+          },
+          {
+            "offset": -1,
+            "value": 90
+          },
+          {
+            "offset": -2,
+            "value": 87
+          },
+          {
+            "offset": -3,
+            "value": 82
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with history for channel B",
+    "type": "uplink",
+    "bytes": "5ba300000064000a00030005",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PERIODIC_FRAME_WITH_HISTORISATION",
+      "register": {
+        "pulseCounters": [
+          {
+            "offset": 0,
+            "value": 100
+          },
+          {
+            "offset": -1,
+            "value": 90
+          },
+          {
+            "offset": -2,
+            "value": 87
+          },
+          {
+            "offset": -3,
+            "value": 82
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "0100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "0200000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the frame of adding an offset",
+    "type": "downlink",
+    "bytes": "030000000500000050",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_ADDING_OFFSET_TO_PULSE_COUNTERS",
+      "payload": {
+        "type": "Pulse3FrameForAddingOffsetToPulseCounters",
+        "register": {
+          "offsetChannelA": 5,
+          "offsetChannelB": 80
+        }
+      }
+    }
+  },
+  {
+    "description": "downlink message containing specific register value request frame",
+    "type": "downlink",
+    "bytes": "40010616",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "Pulse3SpecificRegisterValueRequestFrame",
+        "message": [
+          "SENDING_FREQUENCY_OF_THE_DATA_SENSORS",
+          "GLOBAL_OPERATION",
+          "ANTI_BOUNCE_FILTER_PERIOD"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the frame for updating the value of a specific register",
+    "type": "downlink",
+    "bytes": "410105a0060116ba",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "Pulse3FrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "sendingFrequencyOfTheDataSensors": 1440,
+          "globalOperation": "PRODUCTION_MODE",
+          "antiBounceFilterPeriod": {
+            "antiBounceFilterPeriodChannelA": "FIVE_S",
+            "antiBounceFilterPeriodChannelB": "TEN_S"
+          }
+        }
+      }
+    }
+  }
+]

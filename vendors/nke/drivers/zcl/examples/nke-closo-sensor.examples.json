@@ -1,0 +1,39 @@
+[
+    {
+        "description": "Closo Sensor close",
+        "type": "uplink",
+        "bytes": "310a000f00551001",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 1,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "BinaryInput",
+            "AttributeID": "PresentValue",
+            "AttributeType": "Boolean",
+            "Data": {
+                "BinaryValue": true
+            }
+        }
+    },
+    {
+        "description": "Closo Sensor open",
+        "type": "uplink",
+        "bytes": "310a000f00551000",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 1,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "BinaryInput",
+            "AttributeID": "PresentValue",
+            "AttributeType": "Boolean",
+            "Data": {
+                "BinaryValue": false
+            }
+        }
+    }
+
+]

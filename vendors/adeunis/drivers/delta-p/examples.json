@@ -1,0 +1,430 @@
+[
+  {
+    "description": "0x10 Delta P configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "100021C000030002012C",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Delta P configuration",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "transmissionPeriodKeepAlive": {
+            "unit": "s",
+            "value": 86400
+          },
+          "numberOfHistorizationBeforeSending": 3,
+          "numberOfSamplingBeforeHistorization": 2,
+          "samplingPeriod": {
+            "unit": "s",
+            "value": 600
+          },
+          "calculatedPeriodRecording": {
+            "unit": "s",
+            "value": 1200
+          },
+          "calculatedSendingPeriod": {
+            "unit": "s",
+            "value": 3600
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x11 Delta P 0-10V configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "11400003012C0002",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x11 Delta P 0-10V configuration",
+          "status": {
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "numberOfHistorizationBeforeSending": 2,
+          "numberOfSamplingBeforeHistorization": 3,
+          "samplingPeriod": {
+            "unit": "s",
+            "value": 600
+          },
+          "calculatedPeriodRecording": {
+            "unit": "s",
+            "value": 1800
+          },
+          "calculatedSendingPeriod": {
+            "unit": "s",
+            "value": 3600
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x1f digital input configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "1F20630010000001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x1f digital input configuration",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "digitalInput1": {
+            "type": "bothEdges",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 500
+            },
+            "threshold": 16
+          },
+          "digitalInput2": {
+            "type": "deactivated",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 0
+            },
+            "threshold": 1
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x20 Configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "20A00100",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x20 Configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "loraAdr": true,
+          "loraProvisioningMode": "ABP",
+          "loraDutycyle": "deactivated",
+          "loraClassMode": "CLASS A"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x2f Delta P Downlink ack",
+    "type": "uplink",
+    "input": {
+      "bytes": "2F2001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x2f Delta P Downlink ack",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "requestStatus": "success"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Keep alive",
+    "type": "uplink",
+    "input": {
+      "bytes": "30C600010100000500020A14ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Keep alive",
+          "status": {
+            "frameCounter": 6,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x33 Set register status",
+    "type": "uplink",
+    "input": {
+      "bytes": "3380040140",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x33 Set register status",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "requestStatus": "errorInvalidRegister",
+          "registerId": 320
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x51 digital input 1 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "5196010000017E000114ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x51 digital input 1 alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "state": {
+            "previousFrame": false,
+            "current": true
+          },
+          "counter": {
+            "global": 382,
+            "instantaneous": 1
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x52 digital input 2 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "52960200000100000314ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x52 digital input 2 alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "state": {
+            "previousFrame": true,
+            "current": false
+          },
+          "counter": {
+            "global": 256,
+            "instantaneous": 3
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x53 Delta P periodic data",
+    "type": "uplink",
+    "input": {
+      "bytes": "5320FE0CFF06000000FA01F4",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x53 Delta P periodic data",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+          "deltaPressure": {
+            "unit": "pa",
+            "values": [
+              -500,
+              -250,
+              0,
+              250,
+              500
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x54 Delta P alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "54420101F4",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x54 Delta P alarm",
+          "status": {
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "alarmStatus": "active",
+          "deltaPressure": {
+            "unit": "pa",
+            "value": 500
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x55 Delta P - periodic 0-10 V",
+    "type": "uplink",
+    "input": {
+      "bytes": "55A0000013882710",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x55 Delta P - periodic 0-10 V",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+          "voltage": {
+            "unit": "mV",
+            "values": [
+              0,
+              5000,
+              10000
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x56 Delta P - alarm 0-10 V",
+    "type": "uplink",
+    "input": {
+      "bytes": "56C00101F4",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x56 Delta P - alarm 0-10 V",
+          "status": {
+            "frameCounter": 6,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "alarmStatus": "active",
+          "voltage": {
+            "unit": "mV",
+            "value": 500
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

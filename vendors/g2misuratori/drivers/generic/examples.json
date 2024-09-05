@@ -1,0 +1,77 @@
+[
+  {
+    "description": "I'm Alive Frame",
+    "type": "uplink",
+    "input": {
+      "bytes": "3050",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "cyclicTransmissionsCounter": 5,
+        "frameType": "I'm alive"
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Instant reading frame",
+    "type": "uplink",
+    "input": {
+      "bytes": "503217E20000",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "cyclicTransmissionsCounter": 3,
+        "frameType": "Instant reading",
+        "instantMeasurementReading_liters": 475,
+        "status": {
+          "batteryAlarm": "Ok",
+          "flowDirection": "Opposite Direction",
+          "fraudAlarm": "Ok",
+          "genericAlarm": "Ok",
+          "leakageAlarm": "Ok"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Historical reading frame",
+    "type": "uplink",
+    "input": {
+      "bytes": "70205BC4317E7F05000014001600200022003000450055006600230198010002",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "firstInstantReading_liters": 1407,
+        "frameType": "Historical reading",
+        "readings": [ 1429, 1439, 1441, 1455, 1476, 1492, 1509, 1698, 1815, 1919 ],
+        "status": {
+          "batteryAlarm": "Ok",
+          "flowDirection": "Right Direction",
+          "fraudAlarm": "Ok",
+          "genericAlarm": "Ok",
+          "leakageAlarm": "Ok"
+        },
+        "timestamp": {
+          "day": 6,
+          "hours": 5,
+          "minutes": 62,
+          "month": 4,
+          "year": 1456
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]
+

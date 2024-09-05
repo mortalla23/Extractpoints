@@ -1,0 +1,51 @@
+[
+  {
+    "description": "downlink setSystemTime (sample from doc)",
+    "type": "downlink",
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "setSystemTime": {
+        "year": 2021,
+        "month": 7,
+        "day": 6,
+        "hour": 11,
+        "min": 54,
+        "sec": 0,
+        "tz": 2
+      }
+    },
+    "fPort": 1,
+    "bytes": "871507060b3600020093"
+  },
+  {
+    "description": "uplink setSystemTime answer - 1",
+    "type": "uplink",
+    "bytes": "FE87",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "setSystemTimeAck"
+    }
+  },
+  {
+    "description": "downlink getSystemTime",
+    "type": "downlink",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "getSystemTime": 1
+    },
+    "bytes": "8710fe"
+  },
+  {
+    "description": "uplink getSystemTime answer - 2",
+    "type": "uplink",
+    "bytes": "871507060b360002",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "getSystemTime",
+      "time": "2021-07-06 11:54:00 UTC 0:30"
+    }
+  }
+]

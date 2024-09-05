@@ -1,0 +1,20 @@
+[
+    {
+        "description": "Skydome Inclin'O examples 1",
+        "type": "uplink",
+        "bytes": "118a000c00553942fe23d798d0",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributesAlarm",
+            "ClusterID": "AnalogInput",
+            "AttributeID": "PresentValue",
+            "AttributeType": "SinglePrecision",
+            "Data": {
+                "SinglePrecisionValue": 127.06999969482422
+            }
+        }
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "type": "uplink",
+        "description": "Example: 600-038",
+        "input": {
+            "bytes": "0000AA0A0D0100000000000000000000000A00000060",
+            "fPort": 1,
+            "recvTime": "2023-09-11T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alarm_status": {
+                "pulse_ch1_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_ch1_leak": false,
+                "pulse_ch2_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_ch2_leak": false,
+                "pulse_oc_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_oc_leak": false
+              },
+              "fw_version": 1,
+              "id": 170,
+              "seq_counter": 13,
+              "states": {
+                "battery": "100%",
+                "msg_type": "normal",
+                "pulse_ch1": "open",
+                "pulse_ch2": "closed",
+                "pulse_oc": "closed"
+              },
+              "type": "10 - TX PULSE LED",
+              "values": {
+                "pulse_ch1": {
+                  "unit": "count",
+                  "value": 0
+                },
+                "pulse_ch2": {
+                  "unit": "count",
+                  "value": 0
+                },
+                "pulse_oc": {
+                  "unit": "count",
+                  "value": 10
+                }
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]

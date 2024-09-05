@@ -1,0 +1,42 @@
+[
+  {
+    "description": "fail decode uplink when the frame type is unknown",
+    "type": "uplink",
+    "bytes": "0001611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: unknown frame type"
+  },
+  {
+    "description": "fail decode uplink when the frame size is less than two bytes",
+    "type": "uplink",
+    "bytes": "00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on product configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "10a048000201000500",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on network configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "20a0010100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the keep alive frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "30a000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  }
+]

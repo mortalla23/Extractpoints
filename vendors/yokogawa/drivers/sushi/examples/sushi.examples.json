@@ -1,0 +1,56 @@
+[
+  {
+    "description": "Sushi Sensor vibration (Z-axis)",
+    "type": "uplink",
+    "bytes": "1000003b603f904d2c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "Z_ACCELERATION": 0.921875,
+      "Z_VELOCITY": 1.890625,
+      "TEMPERATURE": 20.6875,
+      "Z_STATUS": 0,
+      "ACTION": "Sushi Sensor vibration (Z-axis)"
+    }
+  },
+  {
+    "description": "Sushi Sensor vibration (XYZ composite axes)",
+    "type": "uplink",
+    "bytes": "1100003b9f41b94d2c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "XYZ_ACCELERATION": 0.95263671875,
+      "XYZ_VELOCITY": 2.861328125,
+      "TEMPERATURE": 20.6875,
+      "XYZ_STATUS": 0,
+      "ACTION": "Sushi Sensor vibration (XYZ composite axes)"
+    }
+  },
+  {
+    "description": "Sushi Sensor vibration (X-axis)",
+    "type": "uplink",
+    "bytes": "1200002eb63dd3",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "X_ACCELERATION": 0.1048583984375,
+      "X_VELOCITY": 1.4560546875,
+      "X_STATUS": 0,
+      "ACTION": "Sushi Sensor vibration (X-axis)"
+    }
+  },
+  {
+    "description": "Sushi Sensor vibration (Y-axis)",
+    "type": "uplink",
+    "bytes": "130000343f3e50",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "Y_ACCELERATION": 0.265380859375,
+      "Y_VELOCITY": 1.578125,
+      "Y_STATUS": 0,
+      "ACTION": "Sushi Sensor vibration (Y-axis)"
+    }
+  }
+]

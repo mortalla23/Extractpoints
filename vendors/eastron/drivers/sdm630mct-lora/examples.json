@@ -1,0 +1,45 @@
+[
+  {
+    "description": "Example 1",
+    "type": "uplink",
+    "input": {
+      "bytes": "015995aa021444e41c64434ee69644b86282455b2ddd44b213be346e",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {  
+        "serialNumber": 22648234,  
+        "activePowerL1": 1824.89,  
+        "activePowerL2": 206.9,  
+        "activePowerL3": 1475.08,  
+        "activePowerTotal": 3506.87,  
+        "kWhTotal": 1424.62
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Example 2",
+    "type": "uplink",
+    "input": {
+      "bytes": "015995aa0114417fe4333f7f52cc3f7a1b903f7f399e3f800000862e",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "serialNumber": 22648234,  
+        "currentTotal": 15.99,  
+        "powerFactorL1": 1,  
+        "powerFactorL2": 0.98,  
+        "powerFactorL3": 1,  
+        "powerFactorTotal": 1
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]
+

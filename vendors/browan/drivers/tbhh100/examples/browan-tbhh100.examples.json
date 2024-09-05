@@ -1,0 +1,16 @@
+[
+    {
+        "type": "uplink",
+        "description": "Temperature & Humidity",
+        "bytes": "08ab3522ffffffff",
+        "fPort": 103,
+        "data": {
+            "data": {
+                "status": 1,
+                "temperature": 21,
+                "humidity": 34,
+                "battery": 3.6
+            }
+        }
+    }
+]

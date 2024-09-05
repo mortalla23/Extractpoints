@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "device_status": {
+      "type": "integer"
+    },
+    "battery_voltage": {
+      "type": "number"
+    },
+    "counter_a": {
+      "type": "integer"
+    },
+    "counter_b": {
+      "type": "integer"
+    },
+    "sensor_status": {
+      "type": "integer"
+    },
+    "total_counter_a": {
+      "type": "integer"
+    },
+    "total_counter_b": {
+      "type": "integer"
+    },
+    "payload_counter": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}

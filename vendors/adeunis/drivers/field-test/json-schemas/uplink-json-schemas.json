@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "triggeredByAccelerometer": {
+      "type": "boolean"
+    },
+    "triggeredByPushbutton": {
+      "type": "boolean"
+    },
+    "temperature": {
+      "type": "integer"
+    },
+    "gps": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "object",
+          "properties": {
+            "degrees": {
+              "type": "integer"
+            },
+            "hemisphere": {
+              "type": "string"
+            },
+            "minutes": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "degrees",
+            "hemisphere",
+            "minutes"
+          ]
+        },
+        "longitude": {
+          "type": "object",
+          "properties": {
+            "degrees": {
+              "type": "integer"
+            },
+            "hemisphere": {
+              "type": "string"
+            },
+            "minutes": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "degrees",
+            "hemisphere",
+            "minutes"
+          ]
+        },
+        "quality": {
+          "type": "string"
+        },
+        "satellites": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    },
+    "uplinkFrameCounter": {
+      "type": "integer"
+    },
+    "downlinkFrameCounter": {
+      "type": "integer"
+    },
+    "batteryVoltage": {
+      "type": "number"
+    },
+    "rssi": {
+      "type": "integer"
+    },
+    "snr": {
+      "type": "integer"
+    }
+  }
+}

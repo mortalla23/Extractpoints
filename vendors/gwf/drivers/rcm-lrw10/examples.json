@@ -1,0 +1,67 @@
+[
+  {
+    "description": "Example 1: Generic payload",
+    "type": "uplink",
+    "input": {
+      "bytes": "02E61E785634120700C80113F803000000E80883",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "actualityDuration_minutes": 456,
+        "additionalFunctions": [
+          "No Continuous Flow",
+          "No Broken Pipes"
+        ],
+        "batteryLifeTime_semesters": 29,
+        "checksum": 8585216,
+        "meterID": "12345678",
+        "meterManufacturerID": "1EE6",
+        "meterMedium": "Water",
+        "protocolType": 2,
+        "stateMBus": [
+          "Power Not Low",
+          "No Permanent Error",
+          "No Temporary Error"
+        ],
+        "volume_metersCubed": 1.016
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Example 2: No ACK received from Concentrator",
+    "type": "uplink",
+    "input": {
+      "bytes": "02e61e221152160700050013b42c000000b44c2e",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "actualityDuration_minutes": 5,
+        "additionalFunctions": [
+          "No Continuous Flow",
+          "No Broken Pipes"
+        ],
+        "batteryLifeTime_semesters": 22,
+        "checksum": 48234496,
+        "meterID": "16521122",
+        "meterManufacturerID": "1EE6",
+        "meterMedium": "Water",
+        "protocolType": 2,
+        "stateMBus": [
+          "Power Not Low",
+          "No Permanent Error",
+          "No Temporary Error"
+        ],
+        "volume_metersCubed": 11.444
+      },
+      "errors": ["No ACK received from Concentrator"],
+      "warnings": []
+    }
+  }
+]
+

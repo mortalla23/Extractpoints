@@ -1,0 +1,5 @@
+name: browan tbhh100 driver
+producerId: os1
+description: The Browan Temperature & Humidity Sensor integrates temperature and humidity sensors for measuring indoor environments. It utilizes LoRaWAN® connectivity to transmit data and is suitable for use with consumer or facility management applications.
+protocolId: os1-brow:tbhh100:1
+signature: actility

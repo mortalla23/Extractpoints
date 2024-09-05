@@ -1,0 +1,387 @@
+[
+    {
+      "type": "uplink",
+      "description": "uplink containing Comfort CO2 configuration 0x10",
+      "input": {
+        "bytes": [
+            16,16,0,1,0,1,0,1,7,8,0,1,12
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+              "type": "0x10 Comfort CO2 configuration",
+              "status": {
+                "frameCounter": 0,
+                "hardwareError": false,
+                "lowBattery": false,
+                "configurationDone": false,
+                "configurationInconsistency": false,
+                "timestamp": false
+              },
+              "dailyFrameActivated": true,
+              "numberOfHistorizationBeforeSending": 1,
+              "numberOfSamplingBeforeHistorization": 1,
+              "samplingPeriod": { "unit": "s", "value": 3600 },
+              "redundantSamples": 0,
+              "calculatedPeriodRecording": { "unit": "s", "value": 3600 },
+              "calculatedSendingPeriod": { "unit": "s", "value": 3600 },
+              "blackOutDuration": { "unit": "h", "value": 1 },
+              "blackOutStartTime": { "unit": "h", "value": 12 }
+            }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing digital input configuration 0x1f",
+      "input": {
+        "bytes": [
+            31,32,65,0,1,82,0,2
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+              "type": "0x1f digital input configuration",
+              "status": {
+                "frameCounter": 1,
+                "hardwareError": false,
+                "lowBattery": false,
+                "configurationDone": false,
+                "configurationInconsistency": false,     
+                "timestamp": false
+              },
+              "digitalInput1": {
+                "type": "highEdge",
+                "debouncingPeriod": { "unit": "ms", "value": 100 },
+                "threshold": 1
+              },
+              "digitalInput2": {
+                "type": "lowEdge",
+                "debouncingPeriod": { "unit": "ms", "value": 200 },
+                "threshold": 2
+              }
+            }
+          },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing configuration 0x20",
+      "input": {
+        "bytes": [
+            32,160,33,1
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+            "type": "0x20 Configuration",
+            "status": {
+              "frameCounter": 5,
+              "hardwareError": false,
+              "lowBattery": false,
+              "configurationDone": false,
+              "configurationInconsistency": false,
+              "timestamp": false
+            },
+            "loraAdr": true,
+            "loraProvisioningMode": "OTAA",
+            "loraDutycyle": "deactivated",
+            "loraClassMode": "CLASS C"
+          }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing daily frame data 0x30",
+      "input": {
+        "bytes": [
+          48, 132, 3, 144,  1, 244,   3,
+          232,  70, 0, 100,  0,  10,  10,
+          0, 197, 2,  88, 50,  20, 171,
+          163, 233
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+              "type": "0x30 Comfort CO2 Daily frame",
+              "status": {
+                "frameCounter": 4,
+                "hardwareError": false,
+                "lowBattery": false,
+                "configurationDone": false,
+                "configurationInconsistency": false,
+                "timestamp": true
+              },
+              "timestamp": "2023-12-28T19:22:17.000",
+              "icone": 3,
+              "qaiRedDuration": { "unit": "min", "value": 1440 },
+              "temperatureMax": { "unit": "°C", "value": 50 },
+              "co2Max": { "unit": "ppm", "value": 1000 },
+              "humidityMax": { "unit": "%", "value": 70 },
+              "temperatureMin": { "unit": "°C", "value": 10 },
+              "co2Min": { "unit": "ppm", "value": 10 },
+              "humidityMin": { "unit": "%", "value": 10 },
+              "temperatureAverage": { "unit": "°C", "value": 19.7 },
+              "co2Average": { "unit": "ppm", "value": 600 },
+              "humidityAverage": { "unit": "%", "value": 50 }
+            }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing register status configuration 0x33",
+      "input": {
+        "bytes": [
+            51,128,4,1,64
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+              "type": "0x33 Set register status",
+              "status": {
+                "frameCounter": 4,
+                "hardwareError": false,
+                "lowBattery": false,
+                "configurationDone": false,
+                "configurationInconsistency": false,
+                "timestamp": false
+              },
+              "requestStatus": "errorInvalidRegister",
+              "registerId": 320
+            }
+          },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing software version data 0x37",
+      "input": {
+        "bytes": [
+            55,32,2,1,0,2,0,1
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+            "type": "0x37 Software version",
+            "status": {
+              "frameCounter": 1,
+              "hardwareError": false,
+              "lowBattery": false,
+              "configurationDone": false,
+              "configurationInconsistency": false,
+              "timestamp": false
+            },
+            "appVersion": "2.1.0",
+            "rtuVersion": "2.0.1"
+          }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing digital input 1 alarm 0x51",
+      "input": {
+        "bytes": [
+            81,150,1,0,0,1,126,0,1,20,171,163,233
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+                "type": "0x51 digital input 1 alarm",
+                "status": {
+                    "frameCounter": 4,
+                    "hardwareError": false,
+                    "lowBattery": true,
+                    "configurationDone": false,
+                    "configurationInconsistency": false,
+                    "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "state": {
+                    "previousFrame": false,
+                    "current": true
+                },
+                "counter": {
+                    "global": 382,
+                    "instantaneous": 1
+                }
+            }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing digital input 2 alarm 0x52",
+      "input": {
+        "bytes": [
+            82,150,2,0,0,1,0,0,3,20,171,163,233
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+                "type": "0x52 digital input 2 alarm",
+                "status": {
+                  "frameCounter": 4,
+                  "hardwareError": false,
+                  "lowBattery": true,
+                  "configurationDone": false,
+                  "configurationInconsistency": false,
+                  "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "state": {
+                  "previousFrame": true,
+                  "current": false
+                },
+                "counter": {
+                  "global": 256,
+                  "instantaneous": 3
+                }
+            }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing Comfort CO2 data 0x6a",
+      "input": {
+        "bytes": [
+            106,132,1,179,62,1,164,1,180,63,1,166,20,171,163,233
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+                "type": "0x6a Comfort CO2 data",
+                "status": {
+                  "frameCounter": 4,
+                  "hardwareError": false,
+                  "lowBattery": false,
+                  "configurationDone": false,
+                  "configurationInconsistency": false,
+                  "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+                "temperature": {
+                  "unit": "°C",
+                  "values": [
+                    43.5,
+                    43.6
+                  ]
+                },
+                "humidity": {
+                  "unit": "%",
+                  "values": [
+                    62,
+                    63
+                  ]
+                },
+                "co2": {
+                  "unit": "ppm",
+                  "values": [
+                    420,
+                    422
+                  ]
+                }
+            }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "uplink",
+      "description": "uplink containing comfort CO2 alarm 0x6b",
+      "input": {
+        "bytes": [
+            107,132,49,2,70,50,1,164,20,171,163,233
+        ],
+        "fPort": 1,
+        "recvTime": "2023-12-28T19:22:17.000"
+      },
+      "output": {
+        "data": {
+            "bytes": {
+                "type": "0x6b Comfort CO2 alarm",
+                "status": {
+                  "frameCounter": 4,
+                  "hardwareError": false,
+                  "lowBattery": false,
+                  "configurationDone": false,
+                  "configurationInconsistency": false,
+                  "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "alarmTemperature": {
+                  "alarmStatus": "active",
+                  "temperature": {
+                    "unit": "°C",
+                    "value": 58.2
+                  }
+                },
+                "alarmHumidity": {
+                  "alarmStatus": "active",
+                  "humidity": {
+                    "unit": "%",
+                    "value": 50
+                  }
+                },
+                "alarmCo2": {
+                  "alarmStatus": "active",
+                  "co2": {
+                    "unit": "ppm",
+                    "value": 420
+                  }
+                }
+              }
+        },
+        "errors": [],
+        "warnings": []
+      }
+    }
+]

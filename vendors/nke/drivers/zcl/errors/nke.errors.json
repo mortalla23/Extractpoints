@@ -1,0 +1,433 @@
+[
+  {
+    "description": "fail decode when fPort is not 6 or 125",
+    "type": "uplink",
+    "bytes": "7ef700f345",
+    "fPort": 7,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "only fPort 6 or 125 are supported"
+  },
+  {
+    "description": "fail decode read attribute request with size is not correct with fPort 6",
+    "type": "uplink",
+    "bytes": "7ef700f345",
+    "fPort": 6,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "payload for fPort 6 is too short"
+  },
+  {
+    "description": "fail decode batch report",
+    "type": "uplink",
+    "bytes": "100000000002",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "batch commands are not supported"
+  },
+  {
+    "description": "fail decode when size is lower than 4",
+    "type": "uplink",
+    "bytes": "1199",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size cannot be lower than 4, received: 1199"
+  },
+  {
+    "description": "fail decode when unknown command",
+    "type": "uplink",
+    "bytes": "119900000002",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown command id with byte: 99"
+  },
+  {
+    "description": "fail decode when unknown cluster id",
+    "type": "uplink",
+    "bytes": "110099000002",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown cluster id with bytes: 9900"
+  },
+  {
+    "description": "fail decode uplink when command is a downlink",
+    "type": "uplink",
+    "bytes": "110000000002",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unable to decode uplink because command ReadAttribute is not an uplink"
+  },
+  {
+    "description": "fail decode downlink when command is an uplink",
+    "type": "downlink",
+    "bytes": "110100000002000d010203040506",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unable to decode downlink because command ReadAttributeResponse is not a downlink"
+  },
+  {
+    "description": "fail decode read attribute request when size is not correct",
+    "type": "downlink",
+    "bytes": "1100005200",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ReadAttribute"
+  },
+  {
+    "description": "fail decode when unknown attribute",
+    "type": "downlink",
+    "bytes": "110000529900",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown attribute id for cluster: SimpleMetering and attribute id bytes: 9900"
+  },
+  {
+    "description": "fail decode read attribute response when size is not correct",
+    "type": "uplink",
+    "bytes": "11010052000008",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ReadAttributeResponse"
+  },
+  {
+    "description": "fail decode when unknown status",
+    "type": "uplink",
+    "bytes": "1101005200005050",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown status id with byte: 50"
+  },
+  {
+    "description": "fail decode when unknown attribute type",
+    "type": "uplink",
+    "bytes": "1101005200000099",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown attribute type with byte: 99"
+  },
+  {
+    "description": "fail decode configure reporting when size is not correct",
+    "type": "downlink",
+    "bytes": "1106005200000008010000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ConfigureReporting"
+  },
+  {
+    "description": "fail decode read reporting configuration response when size is not correct",
+    "type": "uplink",
+    "bytes": "1109005200000008010000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ReadReportingConfigurationResponse"
+  },
+  {
+    "description": "fail decode report attribute when size is not correct",
+    "type": "uplink",
+    "bytes": "110A00520000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ReportAttributes"
+  },
+  {
+    "description": "fail decode configure reporting response when size is not correct",
+    "type": "uplink",
+    "bytes": "11070052000000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ConfigureReportingResponse"
+  },
+  {
+    "description": "fail decode read reporting configuration when size is not correct",
+    "type": "uplink",
+    "bytes": "110800520000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for ReadReportingConfiguration"
+  },
+  {
+    "description": "fail write attribute no response when size is not correct",
+    "type": "downlink",
+    "bytes": "110500520000",
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "command size is not correct for WriteAttributeNoResponse"
+  },
+  {
+    "description": "fail encode when EndPoint is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "AttributeID": "KernelVersion",
+      "ClusterID": "Basic",
+      "CommandID": "ReadAttribute"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field EndPoint is missing"
+  },
+  {
+    "description": "fail encode when ClusterID is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "AttributeID": "KernelVersion",
+      "CommandID": "ReadAttribute"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field ClusterID is missing"
+  },
+  {
+    "description": "fail encode when CommandID is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "AttributeID": "KernelVersion",
+      "ClusterID": "Basic"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field CommandID is missing"
+  },
+  {
+    "description": "fail encode when ClusterID is unknown",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "AttributeID": "KernelVersion",
+      "ClusterID": "unknown",
+      "CommandID": "ReadAttribute"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown cluster id: unknown"
+  },
+  {
+    "description": "fail encode when CommandID is unknown",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "AttributeID": "KernelVersion",
+      "ClusterID": "Basic",
+      "CommandID": "unknown"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown command id: unknown"
+  },
+  {
+    "description": "fail encode when Report type is unknown",
+    "type": "downlink",
+    "data": {
+      "Report": "Batch",
+      "EndPoint": 0,
+      "AttributeID": "KernelVersion",
+      "ClusterID": "Basic",
+      "CommandID": "unknown"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "unknown report type: Batch"
+  },
+  {
+    "description": "fail encode when EndPoint is not an integer",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": "aString",
+      "AttributeID": "KernelVersion",
+      "ClusterID": "Basic",
+      "CommandID": "ReadAttribute"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "EndPoint must be an integer, found: aString"
+  },
+  {
+    "description": "fail encode ReadAttribute when AttributeID is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "ClusterID": "Basic",
+      "CommandID": "ReadAttribute"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field AttributeID is missing"
+  },
+  {
+    "description": "fail encode WriteAttributeNoResponse when AttributeID is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "ClusterID": "Basic",
+      "CommandID": "WriteAttributeNoResponse"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field AttributeID is missing"
+  },
+  {
+    "description": "fail encode WriteAttributeNoResponse when Data is missing",
+    "type": "downlink",
+    "data": {
+      "Report": "Standard",
+      "EndPoint": 0,
+      "ClusterID": "Basic",
+      "CommandID": "WriteAttributeNoResponse",
+      "AttributeID": "KernelVersion",
+      "AttributeType": "CharString"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field Data is missing"
+  },
+  {
+    "description": "fail encode configure reporting when AttributeID is missing",
+    "type": "downlink",
+    "data": {
+      "AttributeType": "ByteString",
+      "ClusterID": "SimpleMetering",
+      "CommandID": "ConfigureReporting",
+      "Data": {
+        "ActiveEnergy": 1,
+        "ActivePower": 3,
+        "NbMinutes": 1,
+        "ReactiveEnergy": 2,
+        "ReactivePower": 4
+      },
+      "EndPoint": 0,
+      "MaxReport": {
+        "Unit": "Seconds",
+        "Value": 514
+      },
+      "MinReport": {
+        "Unit": "Seconds",
+        "Value": 257
+      },
+      "Report": "Standard"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field AttributeID is missing"
+  },
+  {
+    "description": "fail encode configure reporting when AttributeType is missing",
+    "type": "downlink",
+    "data": {
+      "AttributeID": "CurrentMetering",
+      "ClusterID": "SimpleMetering",
+      "CommandID": "ConfigureReporting",
+      "Data": {
+        "ActiveEnergy": 1,
+        "ActivePower": 3,
+        "NbMinutes": 1,
+        "ReactiveEnergy": 2,
+        "ReactivePower": 4
+      },
+      "EndPoint": 0,
+      "MaxReport": {
+        "Unit": "Seconds",
+        "Value": 514
+      },
+      "MinReport": {
+        "Unit": "Seconds",
+        "Value": 257
+      },
+      "Report": "Standard"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field AttributeType is missing"
+  },
+  {
+    "description": "fail encode configure reporting when MinReport is missing",
+    "type": "downlink",
+    "data": {
+      "AttributeID": "CurrentMetering",
+      "AttributeType": "ByteString",
+      "ClusterID": "SimpleMetering",
+      "CommandID": "ConfigureReporting",
+      "Data": {
+        "ActiveEnergy": 1,
+        "ActivePower": 3,
+        "NbMinutes": 1,
+        "ReactiveEnergy": 2,
+        "ReactivePower": 4
+      },
+      "EndPoint": 0,
+      "MaxReport": {
+        "Unit": "Seconds",
+        "Value": 514
+      },
+      "Report": "Standard"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field MinReport is missing"
+  },
+  {
+    "description": "fail encode configure reporting when MaxReport is missing",
+    "type": "downlink",
+    "data": {
+      "AttributeID": "CurrentMetering",
+      "AttributeType": "ByteString",
+      "ClusterID": "SimpleMetering",
+      "CommandID": "ConfigureReporting",
+      "Data": {
+        "ActiveEnergy": 1,
+        "ActivePower": 3,
+        "NbMinutes": 1,
+        "ReactiveEnergy": 2,
+        "ReactivePower": 4
+      },
+      "EndPoint": 0,
+      "MinReport": 257,
+      "Report": "Standard"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field MaxReport is missing"
+  },
+  {
+    "description": "fail encode configure reporting when Data is missing",
+    "type": "downlink",
+    "data": {
+      "AttributeID": "CurrentMetering",
+      "AttributeType": "ByteString",
+      "ClusterID": "SimpleMetering",
+      "CommandID": "ConfigureReporting",
+      "EndPoint": 0,
+      "MaxReport": {
+        "Unit": "Seconds",
+        "Value": 514
+      },
+      "MinReport": {
+        "Unit": "Seconds",
+        "Value": 257
+      },
+      "Report": "Standard"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field Data is missing"
+  },
+  {
+    "description": "fail encode read reporting configuration when AttributeID is missing",
+    "type": "downlink",
+    "data": {
+      "EndPoint": 0,
+      "ClusterID": "SimpleMetering",
+      "Report": "Standard",
+      "CommandID": "ReadReportingConfiguration"
+    },
+    "fPort": 125,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "field AttributeID is missing"
+  }
+]

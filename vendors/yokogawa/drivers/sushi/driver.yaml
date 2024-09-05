@@ -1,0 +1,16 @@
+# Formal driver name
+name: Sushi driver sensor by Yokogawa
+# Simple description of the driver functionalities
+description: Sushi Sensor is an Industrial IoT intended for the trend monitoring of production equipment and instruments.
+# Mandatory - id of the company that developed the driver
+# This id will be used to construct the id of the driver (Should be in lowercase, no special characters, maximum 8 characters)
+producerId: yokogawa
+# Email of the developer
+developerEmail: tpx-iot-flow@actility.com
+# In case of a driver per model: `<vendorId>:<modelId>:<modelVersion>`
+# In case of a driver for multiples model: `<vendorId>:generic:<genericVersion>`
+# Needed for linking the model with a specific driver -> must be the same one used in model.yaml in the corresponding model
+protocolId: yokogawa:sushi:1
+# This is to specify the type of functions signature used in this driver. Possible values: actility, lora-alliance, ttn, chirpstack.
+# Keep it empty if you followed the lora-alliance payload codec api
+signature: actility

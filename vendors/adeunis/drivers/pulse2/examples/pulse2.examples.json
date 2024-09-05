@@ -1,0 +1,423 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration - 1",
+    "type": "uplink",
+    "bytes": "10a301003c390257003c27107530000a000000030005",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "PRODUCT_CONFIGURATION_DATA_FRAME",
+      "register": {
+        "globalOperation": "PRODUCTION_MODE",
+        "transmissionPeriodOfDataSensors": 3600,
+        "flowCalculationPeriod": 3600,
+        "channelsConfiguration": {
+          "channelA": {
+            "channelActivation": "ACTIVATED",
+            "channelTamperInput": "ACTIVATED",
+            "gasMeterType": "METER_OTHER_THAN_GAS"
+          },
+          "channelB": {
+            "channelActivation": "ACTIVATED",
+            "channelTamperInput": "DEACTIVATED",
+            "gasMeterType": "GAS_METER"
+          }
+        },
+        "historyConfiguration": "HISTORY_PERIOD_SET_TO_1HOUR_TRANSMIT_PERIOD_SET_TO_24HOUR",
+        "antiBounceFilterPeriod": {
+          "antiBounceFilterPeriodChannelA": "FIVE_HUNDREDS_MS",
+          "antiBounceFilterPeriodChannelB": "ONE_HUNDRED_MS"
+        },
+        "flowThresholdChannelA": 10000,
+        "flowThresholdChannelB": 30000,
+        "leakThresholdChannelA": 10,
+        "leakThresholdChannelB": 0,
+        "numberOfDailyPeriodsUnderTheLeakThresholdChannelA": 3,
+        "numberOfDailyPeriodsUnderTheLeakThresholdChannelB": 5
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on product configuration - 2",
+    "type": "uplink",
+    "bytes": "20a30501",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "FRAMES_OF_INFORMATION_ON_THE_NETWORK_CONFIGURATION",
+      "register": {
+        "loraWanOption": {
+          "adaptiveDataRate": true,
+          "dutyCycle": true
+        },
+        "modeOfActivation": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "30a319310a12c400100000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "KEEP_ALIVE_FRAME",
+      "register": {
+        "exceedingFlowOnChannelA": true,
+        "exceedingFlowOnChannelB": false,
+        "tamperDetectedOnChannelA": false,
+        "tamperDetectedOnChannelB": true,
+        "leakDetectedOnChannelA": true,
+        "leakDetectedOnChannelB": false,
+        "maxFlowChannelA": 12554,
+        "maxFlowChannelB": 4804,
+        "minFlowChannelA": 16,
+        "minFlowChannelB": 0
+      }
+    }
+  },
+  {
+    "description": "uplink containing the data frame",
+    "type": "uplink",
+    "bytes": "46a300015c4f0000f74a",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "DATA_FRAME",
+      "register": {
+        "counterChannelA": 89167,
+        "counterChannelB": 63306
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame",
+    "type": "uplink",
+    "bytes": "47a32904206c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "ALARM_FRAME",
+      "register": {
+        "measuredFlowChannelA": 10500,
+        "measuredFlowChannelB": 8300
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "48a30000015c4f0000f74a0012002000070010010000f000000015074a003b",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "PERIODIC_FRAME_WITH_1_HOUR_HISTORY",
+      "register": {
+        "counterChannelA": 89167,
+        "counterChannelB": 63306,
+        "frameIndex": 0,
+        "periodicFrames": [
+          {
+            "deltaA": 18,
+            "deltaB": 32,
+            "offset": 20
+          },
+          {
+            "deltaA": 7,
+            "deltaB": 16,
+            "offset": 30
+          },
+          {
+            "deltaA": 256,
+            "deltaB": 240,
+            "offset": 40
+          },
+          {
+            "deltaA": 0,
+            "deltaB": 21,
+            "offset": 50
+          },
+          {
+            "deltaA": 1866,
+            "deltaB": 59,
+            "offset": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with 24 hours history and frame index 0",
+    "type": "uplink",
+    "bytes": "48a30000015c4f0000f74a0012002000070010010000f000000015074a003b001000210100000f000000f100a50000000500b5",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "PERIODIC_FRAME_WITH_24_HOURS_HISTORY",
+      "register": {
+        "counterChannelA": 89167,
+        "counterChannelB": 63306,
+        "frameIndex": 0,
+        "periodicFrames": [
+          {
+            "deltaA": 18,
+            "deltaB": 32,
+            "offset": 120
+          },
+          {
+            "deltaA": 7,
+            "deltaB": 16,
+            "offset": 180
+          },
+          {
+            "deltaA": 256,
+            "deltaB": 240,
+            "offset": 240
+          },
+          {
+            "deltaA": 0,
+            "deltaB": 21,
+            "offset": 300
+          },
+          {
+            "deltaA": 1866,
+            "deltaB": 59,
+            "offset": 360
+          },
+          {
+            "deltaA": 16,
+            "deltaB": 33,
+            "offset": 420
+          },
+          {
+            "deltaA": 256,
+            "deltaB": 15,
+            "offset": 480
+          },
+          {
+            "deltaA": 0,
+            "deltaB": 241,
+            "offset": 540
+          },
+          {
+            "deltaA": 165,
+            "deltaB": 0,
+            "offset": 600
+          },
+          {
+            "deltaA": 5,
+            "deltaB": 181,
+            "offset": 660
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with 24 hours history and frame index 1",
+    "type": "uplink",
+    "bytes": "48a3010012002000070010010000f000000015074a003b001000210100000f000000f100a50000000500b500c300f1000500b5",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "PERIODIC_FRAME_WITH_24_HOURS_HISTORY",
+      "register": {
+        "frameIndex": 1,
+        "periodicFrames": [
+          {
+            "deltaA": 18,
+            "deltaB": 32,
+            "offset": 720
+          },
+          {
+            "deltaA": 7,
+            "deltaB": 16,
+            "offset": 780
+          },
+          {
+            "deltaA": 256,
+            "deltaB": 240,
+            "offset": 840
+          },
+          {
+            "deltaA": 0,
+            "deltaB": 21,
+            "offset": 900
+          },
+          {
+            "deltaA": 1866,
+            "deltaB": 59,
+            "offset": 960
+          },
+          {
+            "deltaA": 16,
+            "deltaB": 33,
+            "offset": 1020
+          },
+          {
+            "deltaA": 256,
+            "deltaB": 15,
+            "offset": 1080
+          },
+          {
+            "deltaA": 0,
+            "deltaB": 241,
+            "offset": 1140
+          },
+          {
+            "deltaA": 165,
+            "deltaB": 0,
+            "offset": 1200
+          },
+          {
+            "deltaA": 5,
+            "deltaB": 181,
+            "offset": 1260
+          },
+          {
+            "deltaA": 195,
+            "deltaB": 241,
+            "offset": 1320
+          },
+          {
+            "deltaA": 5,
+            "deltaB": 181,
+            "offset": 1380
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic frame with 24 hours history and frame index 2",
+    "type": "uplink",
+    "bytes": "48a30200120020",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "type": "PERIODIC_FRAME_WITH_24_HOURS_HISTORY",
+      "register": {
+        "frameIndex": 2,
+        "periodicFrames": [
+          {
+            "deltaA": 18,
+            "deltaB": 32,
+            "offset": 1440
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "0100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "0200000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the frame of adding an offset",
+    "type": "downlink",
+    "bytes": "030000000500000050",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_ADDING_OFFSET_TO_PULSE_COUNTERS",
+      "payload": {
+        "type": "Pulse2FrameForAddingOffsetToPulseCounters",
+        "register": {
+          "offsetChannelA": 5,
+          "offsetChannelB": 80
+        }
+      }
+    }
+  },
+  {
+    "description": "downlink message containing specific register value request frame",
+    "type": "downlink",
+    "bytes": "40010616",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "Pulse2SpecificRegisterValueRequestFrame",
+        "message": [
+          "TRANSMISSION_PERIOD_OF_DATA_SENSORS",
+          "GLOBAL_OPERATION",
+          "ANTI_BOUNCE_FILTER_PERIOD"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the frame for updating the value of a specific register",
+    "type": "downlink",
+    "bytes": "410105a0060316ba",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "Pulse2FrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "transmissionPeriodOfDataSensors": 1440,
+          "globalOperation": "REPLI_MODE",
+          "antiBounceFilterPeriod": {
+            "antiBounceFilterPeriodChannelA": "FIVE_S",
+            "antiBounceFilterPeriodChannelB": "TEN_S"
+          }
+        }
+      }
+    }
+  }
+]

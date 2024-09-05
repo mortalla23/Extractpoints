@@ -1,0 +1,62 @@
+[
+  {
+    "description": "Payload containing battery voltage in IDLE mode and during emissions (Tx) for Smilio Action",
+    "type": "uplink",
+    "input": {
+      "bytes": "010c800c80",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "dataFrame": "Keep alive",
+        "batteryVoltageIDLE": 3200,
+        "batteryVoltageTx": 3200
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Payload containing all incremental counters for a normal data frame with Smilio Action",
+    "type": "uplink",
+    "input": {
+      "bytes": "020001001000a000230010",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "dataFrame": "Normal",
+        "counter1": 1,
+        "counter2": 16,
+        "counter3": 160,
+        "counter4": 35,
+        "counter5": 16
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Payload containing all incremental counters for a Hall effect sensor activation data frame with Smilio Action",
+    "type": "uplink",
+    "input": {
+      "bytes": "030001001000a000230010",
+      "fPort": 1,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": {
+        "dataFrame": "SKIPLY magnetic badge",
+        "counter1": 1,
+        "counter2": 16,
+        "counter3": 160,
+        "counter4": 35,
+        "counter5": 16
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

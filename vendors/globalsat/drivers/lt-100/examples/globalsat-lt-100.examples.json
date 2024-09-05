@@ -1,0 +1,320 @@
+[
+  {
+    "description": "uplink with full message contains positive longitude and latitude, 3D fixed status and period mode report",
+    "type": "uplink",
+    "bytes": "00825b017d6b19073dc188",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 2,
+      "gpsFixStatusTxt": "3D fixed",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "batteryCapacity": 91,
+      "latitude": 24.996633,
+      "latitudeTxt": "24.996633",
+      "longitude": 121.487752,
+      "longitudeTxt": "121.487752",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains negative longitude, 2D fixed status and period mode report",
+    "type": "uplink",
+    "bytes": "00425b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 1,
+      "gpsFixStatusTxt": "2D fixed",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and periodic mode report",
+    "type": "uplink",
+    "bytes": "00025b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, unknown status and periodic mode report",
+    "type": "uplink",
+    "bytes": "00c25b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 3,
+      "gpsFixStatusTxt": "unknown status",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and motion static mode report",
+    "type": "uplink",
+    "bytes": "00045b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 4,
+      "reportTypeTxt": "Motion mode static report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and motion moving mode report",
+    "type": "uplink",
+    "bytes": "00055b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 5,
+      "reportTypeTxt": "Motion mode moving report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and motion static to moving mode report",
+    "type": "uplink",
+    "bytes": "00065b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 6,
+      "reportTypeTxt": "Motion mode static to moving report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and motion moving to static mode report",
+    "type": "uplink",
+    "bytes": "00075b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 7,
+      "reportTypeTxt": "Motion mode moving to static report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and help report",
+    "type": "uplink",
+    "bytes": "000e5b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 14,
+      "reportTypeTxt": "Help report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and low battery alarm report",
+    "type": "uplink",
+    "bytes": "000f5b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 15,
+      "reportTypeTxt": "Low battery alarm report",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and power on (temperature) report",
+    "type": "uplink",
+    "bytes": "00115b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 17,
+      "reportTypeTxt": "Power on (temperature)",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and power off (low battery) report",
+    "type": "uplink",
+    "bytes": "00135b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 19,
+      "reportTypeTxt": "Power off (low battery)",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and power off (temperature) report",
+    "type": "uplink",
+    "bytes": "00145b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 20,
+      "reportTypeTxt": "Power off (temperature)",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message contains gps information, not fixed status and unknown status report",
+    "type": "uplink",
+    "bytes": "00155b02d8de00ffccfe79",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 0,
+      "deviceTypeTxt": "LS100",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "reportType": 21,
+      "reportTypeTxt": "unknown report type",
+      "batteryCapacity": 91,
+      "latitude": 47.767039999999994,
+      "latitudeTxt": "47.767039999999994",
+      "longitude": -3.342727,
+      "longitudeTxt": "-3.342727",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink when the length of payload is wrong then decoder is not available",
+    "type": "uplink",
+    "bytes": "0409611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "type": "uplink",
+        "description": "Door closed",
+        "bytes": "00cb3500008a3a00",
+        "fPort": 100,
+        "data": {
+            "data": {
+                "battery": 3.6,
+                "count": 14986,
+                "status": 0,
+                "temperatureBoard": 21,
+                "time": 0
+            }
+        }
+    }
+]

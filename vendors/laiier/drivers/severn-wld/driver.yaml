@@ -1,0 +1,5 @@
+name: Laiier Severn WLD driver
+producerId: actility
+description: "The Severn Board, combined with Severn Sensors, forms LAIIER’s Severn WLD solution: a water leak detecting sensor. This solution is able to detect small amounts of liquid, wirelessly transmitting this data to the LAIIER Cloud™ via LoRaWAN."
+protocolId: laiier:severn-wld:1
+signature:

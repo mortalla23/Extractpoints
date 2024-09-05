@@ -1,0 +1,696 @@
+[
+  {
+    "description": "uplink containing the software and hardware version for all devices",
+    "type": "uplink",
+    "bytes": "01130024ff39265b000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 19,
+      "sensorName": "R718AB",
+      "reportType": 0,
+      "softwareVersion": 3.6,
+      "hardwareVersion": 25.5,
+      "dateCode": "39265b00"
+    }
+  },
+  {
+    "description": "uplink containing battery level temperature and humidity from R718AB device",
+    "type": "uplink",
+    "bytes": "01130124ff39265b000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 19,
+      "sensorName": "R718AB",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": -1.99,
+      "humidity": 98.19
+    }
+  },
+  {
+    "description": "uplink containing battery level and temperature and humidity from R711 device",
+    "type": "uplink",
+    "bytes": "01010124ff39265b000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 1,
+      "sensorName": "R711",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": -1.99,
+      "humidity": 98.19
+    }
+  },
+  {
+    "description": "uplink containing battery level and contact state from R311A device",
+    "type": "uplink",
+    "bytes": "0102012401000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 2,
+      "sensorName": "R311A",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "contactState": 1,
+      "contactStateString": "On"
+    }
+  },
+  {
+    "description": "uplink containing battery level and contact state from R718F device",
+    "type": "uplink",
+    "bytes": "011d012401000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 29,
+      "sensorName": "R718F",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "contactState": 1,
+      "contactStateString": "On"
+    }
+  },
+  {
+    "description": "uplink containing battery level, temperature, illuminance, and occupacity from RB11E device",
+    "type": "uplink",
+    "bytes": "01030124ff390100010000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 3,
+      "sensorName": "RB11E",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": -1.99,
+      "illuminance": 256,
+      "occupacity": 1,
+      "occupacityString": "Occupy"
+    }
+  },
+  {
+    "description": "uplink containing battery level, temperature and illuminance from R311G device",
+    "type": "uplink",
+    "bytes": "0104012439000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 4,
+      "sensorName": "R311G",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "illuminance": 14592
+    }
+  },
+  {
+    "description": "uplink containing battery level, PM1.0, PM2.5, PM10 from RA07/R726/R727 device with report type 0x01/0x02",
+    "type": "uplink",
+    "bytes": "0105012439120000240200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "pm1": 14610,
+      "pm25": 0,
+      "pm10": 9218
+    }
+  },
+  {
+    "description": "uplink containing battery level, 0.3um PM, 0.5um PM, 1.0um PM from RA07/R726/R727 device with report type 0x03",
+    "type": "uplink",
+    "bytes": "0105032439120000240200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 3,
+      "batteryVoltage": 3.6,
+      "pm03p": 14610,
+      "pm05p": 0,
+      "pm010p": 9218
+    }
+  },
+  {
+    "description": "uplink containing battery level, PM2.5, PM5, and PM10 from RA07/R726/R727 device with report type 0x04",
+    "type": "uplink",
+    "bytes": "0105042439120000240200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 4,
+      "batteryVoltage": 3.6,
+      "pm25p": 14610,
+      "pm5p": 0,
+      "pm10p": 9218
+    }
+  },
+  {
+    "description": "uplink containing battery level, O3, CO, and NO from RA07/R726/R727 device with report type 0x05",
+    "type": "uplink",
+    "bytes": "0105052439120000240200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 5,
+      "batteryVoltage": 3.6,
+      "O3": 1461,
+      "CO": 0,
+      "NO": 921.8000000000001
+    }
+  },
+  {
+    "description": "uplink containing battery level, NO2, SO2, and H2S from RA07/R726/R727 device with report type 0x06",
+    "type": "uplink",
+    "bytes": "0105062439120000240200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 6,
+      "batteryVoltage": 3.6,
+      "NO2": 1461,
+      "SO2": 0,
+      "H2S": 921.8000000000001
+    }
+  },
+  {
+    "description": "uplink containing battery level, CO2, NH3, and Noise from RA07/R726/R727 device with report type 0x07",
+    "type": "uplink",
+    "bytes": "0105072439120010140200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 7,
+      "batteryVoltage": 3.6,
+      "CO2": 1461,
+      "NH3": 1.6,
+      "noise": 512.2
+    }
+  },
+  {
+    "description": "uplink containing battery level, PH, temperature with PH, and ORP from RA07/R726/R727 device with report type 0x08",
+    "type": "uplink",
+    "bytes": "0105082439120010140200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 8,
+      "batteryVoltage": 3.6,
+      "PH": 146.1,
+      "temperatureWithPH": 0.16,
+      "orp": 5122
+    }
+  },
+  {
+    "description": "uplink containing battery level, NTU, temperature with NTU, and 5EC Soild Humidtiy from RA07/R726/R727 device with report type 0x09",
+    "type": "uplink",
+    "bytes": "0105092439120010140200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 9,
+      "batteryVoltage": 3.6,
+      "NTU": 146.1,
+      "temperatureWithNTU": 0.16,
+      "EC5SoildHumidity": 51.22
+    }
+  },
+  {
+    "description": "uplink containing battery level, 5TE Soild Humidity, 5TE Soild temperature, and water level from RA07/R726/R727 device with report type 0x0A",
+    "type": "uplink",
+    "bytes": "01050a2439120010140200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 10,
+      "batteryVoltage": 3.6,
+      "TE5SoildHumidity": 146.1,
+      "TE5SoildTemp": 0.16,
+      "waterLevel": 5122
+    }
+  },
+  {
+    "description": "uplink containing battery level, 5TE Soild Humidity, 5TE Soild temperature, and water level from RA07/R726/R727 device with report type 0x0B",
+    "type": "uplink",
+    "bytes": "01050b2439120010140200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 11,
+      "batteryVoltage": 3.6,
+      "temperatureWithLDO": 146.1,
+      "ldoDo": 0.16,
+      "ldoSat": 512.2
+    }
+  },
+  {
+    "description": "uplink containing battery level, 5TE Soild Humidity, 5TE Soild temperature, and water level from RA07/R726/R727 device with report type 0x0C",
+    "type": "uplink",
+    "bytes": "01050c2439121010010100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 12,
+      "batteryVoltage": 3.6,
+      "temperature": 146.1,
+      "humidity": 41.12,
+      "windSpeed": 25.700000000000003
+    }
+  },
+  {
+    "description": "uplink containing battery level, 5TE Soild Humidity, 5TE Soild temperature, and water level from RA07/R726/R727 device with report type 0x0D",
+    "type": "uplink",
+    "bytes": "01050d2439120010000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 5,
+      "sensorName": "RA07",
+      "reportType": 13,
+      "batteryVoltage": 3.6,
+      "windDirection": 146.1,
+      "atmosphere": 10485.76
+    }
+  },
+  {
+    "description": "uplink containing battery level, water leak 1 and 2 from R311W device",
+    "type": "uplink",
+    "bytes": "0106012401000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 6,
+      "sensorName": "R311W",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "waterLeak1": 1,
+      "waterLeak1String": "leak",
+      "waterLeak2": 0,
+      "waterLeak2String": "noleak"
+    }
+  },
+  {
+    "description": "uplink containing battery level, temperature 1 and 2 from R801A device",
+    "type": "uplink",
+    "bytes": "01080124390b0122000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 8,
+      "sensorName": "R801A",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": 146.03,
+      "temperature2": 2.9
+    }
+  },
+  {
+    "description": "uplink containing battery level, fire alarm, and high temperature alarm from RA02A device",
+    "type": "uplink",
+    "bytes": "010a012401000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 10,
+      "sensorName": "RA02A",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "fireAlarm": 1,
+      "fireAlarmString": "alarm",
+      "highTempAlarm": 0,
+      "highTempAlarmString": "noalarm"
+    }
+  },
+  {
+    "description": "uplink containing battery level, water leak location with normal leakage status from RA07W device",
+    "type": "uplink",
+    "bytes": "010c012400000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 12,
+      "sensorName": "RA07W",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "waterLeakLocation": 0,
+      "waterLeakStatus": "Normal"
+    }
+  },
+  {
+    "description": "uplink containing battery level, water leak location with sensor not connected from RA07W device",
+    "type": "uplink",
+    "bytes": "010c0124ffff0000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 12,
+      "sensorName": "RA07W",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "waterLeakLocation": 655350,
+      "waterLeakStatus": "SensorNotConnected"
+    }
+  },
+  {
+    "description": "uplink containing battery level, contact state and energy from R809A device with report type 0x01",
+    "type": "uplink",
+    "bytes": "010e010100010000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 14,
+      "sensorName": "R809A",
+      "reportType": 1,
+      "contactState": 1,
+      "contactStateString": "On",
+      "energy": 65536
+    }
+  },
+  {
+    "description": "uplink containing battery level, contact state and energy from R809A device with report type 0x02",
+    "type": "uplink",
+    "bytes": "010e020100210100000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 14,
+      "sensorName": "R809A",
+      "reportType": 2,
+      "batteryVoltage": 1,
+      "current": 33,
+      "power": 256
+    }
+  },
+  {
+    "description": "uplink containing battery level, and alarm from RB02I/R718T device",
+    "type": "uplink",
+    "bytes": "0110012400000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 16,
+      "sensorName": "RB02I",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "alarm": 0,
+      "alarmString": "noalarm"
+    }
+  },
+  {
+    "description": "uplink containing battery level, CO alarm, and high temperature alarm from RA02C device",
+    "type": "uplink",
+    "bytes": "0111012400000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 17,
+      "sensorName": "RA02C",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "coAlarm": 0,
+      "coAlarmString": "noalarm",
+      "highTempAlarm": 0,
+      "highTempAlarmString": "noalarm"
+    }
+  },
+  {
+    "description": "uplink containing battery level, and water leak from R718WB/R718WA device",
+    "type": "uplink",
+    "bytes": "0132012400000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 50,
+      "sensorName": "R718WA",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "waterLeak1": 0,
+      "waterLeak1String": "noleak"
+    }
+  },
+  {
+    "description": "uplink containing battery level, tank raw data and tank level from R718WD device",
+    "type": "uplink",
+    "bytes": "0133012410000100000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 51,
+      "sensorName": "R718WD",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "tankRawData": 4096,
+      "tankLevel": 1
+    }
+  },
+  {
+    "description": "uplink containing battery level, and temperature from R718B device",
+    "type": "uplink",
+    "bytes": "0114012410000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 20,
+      "sensorName": "R718B",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": 40.96
+    }
+  },
+  {
+    "description": "uplink containing battery level, temperature, and temperature 2 from R718CJ/R718CK/R718CT/R718CR/R718CE device",
+    "type": "uplink",
+    "bytes": "0117012410000100000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 23,
+      "sensorName": "R718CT",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "temperature": 40.96,
+      "temperature2": 2.56
+    }
+  },
+  {
+    "description": "uplink containing battery level, and contact state from R718DA/R718DB/R718J/R718LB device",
+    "type": "uplink",
+    "bytes": "011b012401000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 27,
+      "sensorName": "R718DB",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "contactState": 1,
+      "contactStateString": "On"
+    }
+  },
+  {
+    "description": "uplink containing battery level, and illuminance from R718G device",
+    "type": "uplink",
+    "bytes": "011e012400001000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 30,
+      "sensorName": "R718G",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "illuminance": 4096
+    }
+  },
+  {
+    "description": "uplink containing battery level, and acceleration in X,Y,Z from R718E device",
+    "type": "uplink",
+    "bytes": "011c012400110100000e00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 28,
+      "sensorName": "R718E",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "dataX": 17,
+      "dataY": 256,
+      "dataZ": 14
+    }
+  },
+  {
+    "description": "uplink containing battery level, and ADC raw value from R718IA device",
+    "type": "uplink",
+    "bytes": "0120012400110100000e00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 32,
+      "sensorName": "R718I",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "adcRawValue": 17
+    }
+  },
+  {
+    "description": "uplink containing battery level, and current from R718KA device",
+    "type": "uplink",
+    "bytes": "012201242a000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 34,
+      "sensorName": "R718KA",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "current": 42
+    }
+  },
+  {
+    "description": "uplink containing battery level, and resistive from R718KB device",
+    "type": "uplink",
+    "bytes": "0123012400000033000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "protocolVersion": 1,
+      "sensorID": 35,
+      "sensorName": "R718KB",
+      "reportType": 1,
+      "batteryVoltage": 3.6,
+      "resistive": 51
+    }
+  },
+  {
+    "description": "uplink with unknown sensor ID",
+    "type": "uplink",
+    "bytes": "01aa012400000033000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false,
+      "protocolVersion": 1,
+      "sensorID": 170,
+      "sensorName": "????",
+      "reportType": 1
+    }
+  },
+  {
+    "description": "uplink with payload exceeds 11 bytes",
+    "type": "uplink",
+    "bytes": "01130124ff39265b00000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false
+    }
+  },
+  {
+    "description": "uplink with payload less than 2 bytes",
+    "type": "uplink",
+    "bytes": "01",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false
+    }
+  }
+]

@@ -1,0 +1,1238 @@
+[
+    {
+        "description": "Example Température",
+        "type": "uplink",
+        "input": {
+            "bytes": "a0080908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Humidité",
+        "type": "uplink",
+        "input": {
+            "bytes": "a0090504",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 12.84 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example COV",
+        "type": "uplink",
+        "input": {
+            "bytes": "a00c0102",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "COV": {
+                "value": [ 258 ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2",
+        "type": "uplink",
+        "input": {
+            "bytes": "a00d0f08",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 3848 ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2, COV, Humidité, Température",
+        "type": "uplink",
+        "input": {
+            "bytes": "a00809080905040c01020d0f08",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 3848 ]
+              },
+              "COV": {
+                "value": [ 258 ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 12.84 ],
+                "voie": "0"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Horodatage, Période, Température",
+        "type": "uplink",
+        "input": {
+            "bytes": "e963e3a2bf003c080908090809080908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Horodatage": {
+                "value": "08/02/2023 14:25:19"
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "periode": {
+                "value": 60
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12, 23.12, 23.12, 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Humidités 0 & 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "a0090908190706",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 23.12 ],
+                "voie": "0"
+              },
+              "humidity1": {
+                "unit": "%",
+                "value": [ 17.98 ],
+                "voie": "1"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Entrées 1, 2, 3 & 4",
+        "type": "uplink",
+        "input": {
+            "bytes": "a0010A",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ 0 ],
+                  [ 1 ],
+                  [ 0 ],
+                  [ 1 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Entrées 1, 2, 3, 4 & Période",
+        "type": "uplink",
+        "input": {
+            "bytes": "aa001e01010f0a040802",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ 1, 1, 0, 0, 0, 0 ],
+                  [ 0, 1, 1, 0, 0, 1 ],
+                  [ 0, 1, 0, 1, 0, 0 ],
+                  [ 0, 1, 1, 0, 1, 0 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "periode": {
+                "value": 30
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Entrées 1, 2, 3 & 4 - état bas",
+        "type": "uplink",
+        "input": {
+            "bytes": "a001f0",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ "mise à l'état bas" ],
+                  [ "mise à l'état bas" ],
+                  [ "mise à l'état bas" ],
+                  [ "mise à l'état bas" ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Compte 0 & 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "a004010203041401020304",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compte0": {
+                "value": [ 16909060 ],
+                "voie": 0
+              },
+              "compte1": {
+                "value": [ 16909060 ],
+                "voie": 1
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Horodatage & Distance",
+        "type": "uplink",
+        "input": {
+            "bytes": "e064622EF7070809",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Horodatage": {
+                "value": "15/05/2023 15:09:11"
+              },
+              "distance": {
+                "unit": "mm",
+                "value": [ 2057 ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Température test",
+        "type": "uplink",
+        "input": {
+            "bytes": "85080908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de test"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Humidité test",
+        "type": "uplink",
+        "input": {
+            "bytes": "85090504",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de test"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 12.84 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example COV test",
+        "type": "uplink",
+        "input": {
+            "bytes": "850c0102",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "COV": {
+                "value": [ 258 ]
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2 test",
+        "type": "uplink",
+        "input": {
+            "bytes": "850d0f08",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 3848 ]
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2, COV, Température & Humidité test",
+        "type": "uplink",
+        "input": {
+            "bytes": "850809080905040c01020d0f08",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 3848 ]
+              },
+              "COV": {
+                "value": [ 258 ]
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 12.84 ],
+                "voie": "0"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Pression Différentielle test",
+        "type": "uplink",
+        "input": {
+            "bytes": "85060007",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de test"
+              },
+              "pression_differentielle": {
+                "unit": "Pa",
+                "value": [ 7 ]
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Compte 0 test",
+        "type": "uplink",
+        "input": {
+            "bytes": "850407080907",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compte0": {
+                "value": [ 117967111 ],
+                "voie": 0
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2, COV, Horodatage, Humidité & Température test",
+        "type": "uplink",
+        "input": {
+            "bytes": "c5646239dc0809080905040c01020d0f08",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 3848 ]
+              },
+              "COV": {
+                "value": [ 258 ]
+              },
+              "Horodatage": {
+                "value": "15/05/2023 15:55:40"
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              },
+              "humidity0": {
+                "unit": "%",
+                "value": [ 12.84 ],
+                "voie": "0"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Température erreur",
+        "type": "uplink",
+        "input": {
+            "bytes": "a0088000",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "temperature0": {
+                "unit": "°C",
+                "value": [ "erreur" ],
+                "voie": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Wirecut coupé",
+        "type": "uplink",
+        "input": {
+            "bytes": "8F1C20",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame spécifique"
+              },
+              "wrs": 28
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Température alerte",
+        "type": "uplink",
+        "input": {
+            "bytes": "8d180908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alerte": {
+                "value": "Retour entre les seuils sur la température voie 1"
+              },
+              "frame_type": {
+                "type": "Trame d'alerte"
+              },
+              "temperature1": {
+                "unit": "°C",
+                "value": [ 23.12 ],
+                "voie": "1"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example CO2 alerte",
+        "type": "uplink",
+        "input": {
+            "bytes": "8d4d0908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "CO2": {
+                "unit": "ppm",
+                "value": [ 2312 ]
+              },
+              "alerte": {
+                "value": "Dépassement du seuil haut sur le CO2"
+              },
+              "frame_type": {
+                "type": "Trame d'alerte"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Horodatage & Distance alerte",
+        "type": "uplink",
+        "input": {
+            "bytes": "cd6462413a470908",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Horodatage": {
+                "value": "15/05/2023 16:27:06"
+              },
+              "alerte": {
+                "value": "Dépassement du seuil haut sur la distance"
+              },
+              "distance": {
+                "unit": "mm",
+                "value": [ 2312 ]
+              },
+              "frame_type": {
+                "type": "Trame d'alerte"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Trame de vie",
+        "type": "uplink",
+        "input": {
+            "bytes": "810d240c68",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de vie"
+              },
+              "tensionc": {
+                "unit": "V",
+                "value": 3.176
+              },
+              "tensionv": {
+                "unit": "V",
+                "value": 3.364
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example EEPROM erreur",
+        "type": "uplink",
+        "input": {
+            "bytes": "8e018b",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Erreur": {
+                "value": [
+                  "EEPROM est corrompue"
+                ]
+              },
+              "frame_type": {
+                "type": "Trame d'erreur"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Boitier ouvert erreur",
+        "type": "uplink",
+        "input": {
+            "bytes": "8e019c",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Erreur": {
+                "value": [
+                  "Ouverture du boitier"
+                ]
+              },
+              "frame_type": {
+                "type": "Trame d'erreur"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example Capteur erreur",
+        "type": "uplink",
+        "input": {
+            "bytes": "8e019b",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Erreur": {
+                "value": [
+                  "Le capteur a cessé de fonctionner"
+                ]
+              },
+              "frame_type": {
+                "type": "Trame d'erreur"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure sur 4 voie",
+        "type": "uplink",
+        "input": {
+            "bytes": "A00400000002140000000224000000023400000002",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compte0": {
+                  "value": [ 2 ],
+                  "voie": 0
+                },
+                "compte1": {
+                  "value": [ 2 ],
+                  "voie": 1
+                },
+                "compte2": {
+                  "value": [ 2 ],
+                  "voie": 2
+                },
+                "compte3": {
+                  "value": [ 2 ],
+                  "voie": 3
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure sur 1 voie",
+        "type": "uplink",
+        "input": {
+            "bytes": "A00401020304",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compte0": {
+                "value": [ 16909060 ],
+                "voie": 0
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure de l'état des entrées",
+        "type": "uplink",
+        "input": {
+            "bytes": "A00101",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ 1 ],
+                  [ 0 ],
+                  [ 0 ],
+                  [ 0 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure avec détection de changement d'état",
+        "type": "uplink",
+        "input": {
+            "bytes": "a00112",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ "mise à l'état bas" ],
+                  [ "pas de mouvement" ],
+                  [ "pas de mouvement" ],
+                  [ "pas de mouvement" ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure de l'état des entrées avec horodatage",
+        "type": "uplink",
+        "input": {
+            "bytes": "e063e3a2bf0101",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Horodatage": {
+                "value": "08/02/2023 14:25:19"
+              },
+              "entree": {
+                "value": [
+                  [ 1 ],
+                  [ 0 ],
+                  [ 0 ],
+                  [ 0 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de vie",
+        "type": "uplink",
+        "input": {
+            "bytes": "810C9B09A5",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de vie"
+              },
+              "tensionc": {
+                "unit": "V",
+                "value": 2.469
+              },
+              "tensionv": {
+                "unit": "V",
+                "value": 3.227
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de test avec mesure de l'état des entrées",
+        "type": "uplink",
+        "input": {
+            "bytes": "850101",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ 1 ],
+                  [ 0 ],
+                  [ 0 ],
+                  [ 0 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de test"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR4 trame de mesure avec échantillonnage + historisation",
+        "type": "uplink",
+        "input": {
+            "bytes": "AA003c01010102010301",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "entree": {
+                "value": [
+                  [ 1, 1, 0, 1, 1, 1 ],
+                  [ 0, 0, 1, 0, 1, 0 ],
+                  [ 0, 0, 0, 0, 0, 0 ],
+                  [ 0, 0, 0, 0, 0, 0 ]
+                ]
+              },
+              "frame_type": {
+                "type": "Trame de mesure"
+              },
+              "periode": {
+                "value": 60
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame de vie",
+        "type": "uplink",
+        "input": {
+            "bytes": "010809080954",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de vie"
+              },
+              "tensionc": {
+                "unit": "V",
+                "value": 2.057
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame de compteur standard",
+        "type": "uplink",
+        "input": {
+            "bytes": "14001020508010807090",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compteur1": {
+                "value": 270553216
+              },
+              "compteur2": {
+                "value": 276852880
+              },
+              "frame_type": {
+                "type": "Trame de compteur standard"
+              },
+              "wirecut": {
+                "value": 0
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame alerte état câble coupé",
+        "type": "uplink",
+        "input": {
+            "bytes": "3701",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame alerte état câble coupé"
+              },
+              "wirecut": {
+                "value": 1
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame de détection de changement d'état (TOR)",
+        "type": "uplink",
+        "input": {
+            "bytes": "090002",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "frame_type": {
+                "type": "Trame de détection de changement d'état (TOR)"
+              },
+              "logic_level1": {
+                "value": "0"
+              },
+              "logic_level2": {
+                "value": "1"
+              },
+              "wirecut": {
+                "value": "0"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame Compteur mode ECO (Compteur 1 22 bits et 5 deltas 32 bits LoraWan )",
+        "type": "uplink",
+        "input": {
+            "bytes": "30040508090203040504050809020304050405080902030405",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compteur0": {
+                "temps": "Tref",
+                "value": 33752069
+              },
+              "compteur1": {
+                "temps": "Tref-10",
+                "value": 67438601
+              },
+              "compteur2": {
+                "temps": "Tref-20",
+                "value": 33752069
+              },
+              "compteur3": {
+                "temps": "Tref-30",
+                "value": 67438601
+              },
+              "compteur4": {
+                "temps": "Tref-40",
+                "value": 33752069
+              },
+              "compteur5": {
+                "temps": "Tref-50",
+                "value": 67438601
+              },
+              "frame_type": {
+                "type": "Trame Compteur mode ECO (Compteur 1 22 bits et 5 deltas 32 bits LoraWan )"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame Test LoraWan",
+        "type": "uplink",
+        "input": {
+            "bytes": "3100000005",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "compteur1": {
+                "value": 5
+              },
+              "frame_type": {
+                "type": "Trame Test LoraWan"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX) 1",
+        "type": "uplink",
+        "input": {
+            "bytes": "3908090807080908070809",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Delta1": {
+                "temps": "Tref-10min",
+                "value": 2055
+              },
+              "Delta2": {
+                "temps": "Tref-20min",
+                "value": 128
+              },
+              "Delta3": {
+                "temps": "Tref-30min",
+                "value": 2312
+              },
+              "Delta4": {
+                "temps": "Tref-40min",
+                "value": 112
+              },
+              "Delta5": {
+                "temps": "Tref-50min",
+                "value": 2057
+              },
+              "counter_init": {
+                "value": 32912
+              },
+              "frame_type": {
+                "type": "Trame 39 Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX)"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX) 2",
+        "type": "uplink",
+        "input": {
+            "bytes": "3a08090807080908070809",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Delta1": {
+                "temps": "Tref-30min",
+                "value": 2055
+              },
+              "Delta2": {
+                "temps": "Tref-60min",
+                "value": 128
+              },
+              "Delta3": {
+                "temps": "Tref-90min",
+                "value": 2312
+              },
+              "Delta4": {
+                "temps": "Tref-120min",
+                "value": 112
+              },
+              "Delta5": {
+                "temps": "Tref-150min",
+                "value": 2057
+              },
+              "counter_init": {
+                "value": 32912
+              },
+              "frame_type": {
+                "type": "Trame 3A Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX)"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "Example MR2 Trame Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX) 3",
+        "type": "uplink",
+        "input": {
+            "bytes": "3b08090807080908070809",
+            "fPort": 1,
+            "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "Delta1": {
+                "temps": "Tref-60min",
+                "value": 2055
+              },
+              "Delta2": {
+                "temps": "Tref-120min",
+                "value": 128
+              },
+              "Delta3": {
+                "temps": "Tref-180min",
+                "value": 2312
+              },
+              "Delta4": {
+                "temps": "Tref-240min",
+                "value": 112
+              },
+              "Delta5": {
+                "temps": "Tref-300min",
+                "value": 2057
+              },
+              "counter_init": {
+                "value": 32912
+              },
+              "frame_type": {
+                "type": "Trame 3B Compteur mode ECO (Compteur 1 20 bits et 5 deltas 12 bits concaténés SIGFOX)"
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]  

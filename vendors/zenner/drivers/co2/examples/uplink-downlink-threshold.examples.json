@@ -1,0 +1,71 @@
+[
+  {
+    "description": "downlink setAlarmThreshold, only lower (sample from doc)",
+    "type": "downlink",
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "setAlarmThreshold": {
+        "lower": 900
+      }
+    },
+    "fPort": 1,
+    "bytes": "360240008403ffffffffffffffff2281"
+  },
+  {
+    "description": "downlink setAlarmThreshold, only upper",
+    "type": "downlink",
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "setAlarmThreshold": {
+        "upper": 900
+      }
+    },
+    "fPort": 1,
+    "bytes": "36024000ffff8403ffffffffffff5c4d"
+  },
+  {
+    "description": "downlink setAlarmThreshold, lower and upper",
+    "type": "downlink",
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "setAlarmThreshold": {
+        "upper": 900,
+        "lower": 400
+      }
+    },
+    "fPort": 1,
+    "bytes": "3602400090018403ffffffffffff2bce"
+  },
+  {
+    "description": "uplink setAlarmThreshold answer",
+    "type": "uplink",
+    "bytes": "fe3602",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "setAlarmThresholdAck"
+    }
+  },
+  {
+    "description": "downlink getAlarmThreshold",
+    "type": "downlink",
+    "bytes": "360202b4",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "getAlarmThreshold": 1
+    }
+  },
+  {
+    "description": "uplink getAlarmThreshold answer",
+    "type": "uplink",
+    "bytes": "360240006e025e09000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "getAlarmThreshold",
+      "lower": 622,
+      "upper": 2398
+    }
+  }
+]

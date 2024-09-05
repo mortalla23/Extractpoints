@@ -1,0 +1,133 @@
+[
+  {
+    "description": "uplink with only temperature and battery level when it is not triggered",
+    "type": "uplink",
+    "bytes": "821b01c1",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "triggeredByAccelerometer": false,
+      "triggeredByPushbutton": false,
+      "temperature": 27,
+      "batteryVoltage": 449
+    }
+  },
+  {
+    "description": "uplink with full message when BTN1 is triggered",
+    "type": "uplink",
+    "bytes": "bff4451596900055345027202001c95207",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "triggeredByAccelerometer": false,
+      "triggeredByPushbutton": true,
+      "temperature": -243,
+      "gps": {
+        "latitude": {
+          "degrees": 45,
+          "hemisphere": "NORTH",
+          "minutes": 15.969000000000001
+        },
+        "longitude": {
+          "degrees": 5,
+          "hemisphere": "EAST",
+          "minutes": 53.449999999999996
+        },
+        "quality": "AVERAGE",
+        "satellites": 7
+      },
+      "uplinkFrameCounter": 32,
+      "downlinkFrameCounter": 32,
+      "batteryVoltage": 457,
+      "rssi": -82,
+      "snr": 7
+    }
+  },
+  {
+    "description": "uplink with full message when accelerometer is triggered",
+    "type": "uplink",
+    "bytes": "dff4451596900055345027202001c95207",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "triggeredByAccelerometer": true,
+      "triggeredByPushbutton": false,
+      "temperature": -243,
+      "gps": {
+        "latitude": {
+          "degrees": 45,
+          "hemisphere": "NORTH",
+          "minutes": 15.969000000000001
+        },
+        "longitude": {
+          "degrees": 5,
+          "hemisphere": "EAST",
+          "minutes": 53.449999999999996
+        },
+        "quality": "AVERAGE",
+        "satellites": 7
+      },
+      "uplinkFrameCounter": 32,
+      "downlinkFrameCounter": 32,
+      "batteryVoltage": 457,
+      "rssi": -82,
+      "snr": 7
+    }
+  },
+  {
+    "description": "uplink with full message in legacy mode where no gps quality information (scale and number of satellites)",
+    "type": "uplink",
+    "bytes": "bff44515969000553450202001c95207",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "triggeredByAccelerometer": false,
+      "triggeredByPushbutton": true,
+      "temperature": -243,
+      "gps": {
+        "latitude": {
+          "degrees": 45,
+          "hemisphere": "NORTH",
+          "minutes": 15.969000000000001
+        },
+        "longitude": {
+          "degrees": 5,
+          "hemisphere": "EAST",
+          "minutes": 53.449999999999996
+        }
+      },
+      "uplinkFrameCounter": 32,
+      "downlinkFrameCounter": 32,
+      "batteryVoltage": 457,
+      "rssi": -82,
+      "snr": 7
+    }
+  },
+  {
+    "description": "uplink with full message in legacy mode and no presence for rssi and snr",
+    "type": "uplink",
+    "bytes": "bef44515969000553450202001c9",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "triggeredByAccelerometer": false,
+      "triggeredByPushbutton": true,
+      "temperature": -243,
+      "gps": {
+        "latitude": {
+          "degrees": 45,
+          "hemisphere": "NORTH",
+          "minutes": 15.969000000000001
+        },
+        "longitude": {
+          "degrees": 5,
+          "hemisphere": "EAST",
+          "minutes": 53.449999999999996
+        }
+      },
+      "uplinkFrameCounter": 32,
+      "downlinkFrameCounter": 32,
+      "batteryVoltage": 457
+    }
+  }
+]

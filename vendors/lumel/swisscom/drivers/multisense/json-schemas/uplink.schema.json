@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "batteryVoltage": {
+      "type": "integer"
+    },
+    "accelerometer": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        },
+        "z": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "humidity": {
+      "type": "number"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "historyHumidity": {
+      "type": "object"
+    },
+    "historyTemperature": {
+      "type": "object"
+    },
+    "modeStatus": {
+      "type": "string"
+    },
+    "motionCounter": {
+      "type": "integer"
+    },
+    "payloadVersion": {
+      "type": "integer"
+    },
+    "reedCounter": {
+      "type": "integer"
+    },
+    "temperature": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "batteryVoltage",
+    "mode",
+    "modeStatus",
+    "payloadVersion"
+  ],
+  "additionalProperties": false
+}

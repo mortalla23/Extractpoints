@@ -1,0 +1,53 @@
+[
+    {
+        "type": "uplink",
+        "description": "Example: 600-039",
+        "input": {
+            "bytes": "0000B40B0E0100000018000000280000005600040001",
+            "fPort": 1,
+            "recvTime": "2023-09-11T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alarm_status": {
+                "pulse_ch1": {
+                  "change": false
+                },
+                "pulse_ch2": {
+                  "change": false
+                },
+                "pulse_oc": {
+                  "change": true
+                }
+              },
+              "fw_version": 1,
+              "id": 180,
+              "seq_counter": 14,
+              "states": {
+                "battery": "100%",
+                "msg_type": "alarm",
+                "pulse_ch1": "open",
+                "pulse_ch2": "open",
+                "pulse_oc": "open"
+              },
+              "type": "11 - TX CONTACT",
+              "values": {
+                "pulse_ch1": {
+                  "unit": "count",
+                  "value": 24
+                },
+                "pulse_ch2": {
+                  "unit": "count",
+                  "value": 40
+                },
+                "pulse_oc": {
+                  "unit": "count",
+                  "value": 86
+                }
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]

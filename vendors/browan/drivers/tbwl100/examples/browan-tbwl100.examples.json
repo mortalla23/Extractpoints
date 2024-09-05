@@ -1,0 +1,19 @@
+[
+    {
+        "type": "uplink",
+        "description": "Water leakage detected",
+        "bytes": "110b362836",
+        "fPort": 106,
+        "data": {
+            "data": {
+                "battery": 3.6,
+                "humidity": 40,
+                "humidityChanged": 0,
+                "status": 1,
+                "temperature": 22,
+                "temperatureBoard": 22,
+                "temperatureChanged": 0
+            }
+        }
+    }
+]

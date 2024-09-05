@@ -1,0 +1,539 @@
+[
+  {
+    "type": "uplink",
+    "description": "Data uplink",
+    "input": {
+      "bytes": "452A2F00008600000A00CD",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "applicationCode": 45,
+        "absoluteMeterCounter": {
+          "value": 12074,
+          "unit": "L"
+        },
+        "reverseFlow": {
+          "value": 134,
+          "unit": "L"
+        },
+        "absoluteMeterCounterReverseFlowRatio": 0,
+        "alarms": ["Wrong Installation", "Burst"],
+        "diameter": "DN15",
+        "medium": "Water",
+        "temperature": {
+          "value": 20.5,
+          "unit": "°C"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "Data uplink (48 bytes long)",
+    "input": {
+      "bytes": "4504010000282EF42CFA000000282E432DFA00F000E600DC00D200C800BE00B400AA00A00096008C008200780001001E",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "absoluteCurrentValue": {
+          "unit": "L",
+          "value": 260
+        },
+        "absoluteLastRegisteredLogValue": {
+          "unit": "L",
+          "value": 250
+        },
+        "alarms": [
+          "Water Leakage"
+        ],
+        "applicationCode": 45,
+        "currentDateAndTime": "2020-01-15T05:33:12.000Z",
+        "dateAndTimeLastRegisteredLog": "2020-01-14T07:25:13.000Z",
+        "volumes": [
+          {
+            "label": "Delta Volume 1",
+            "unit": "L",
+            "value": 250
+          },
+          {
+            "label": "Delta Volume 2",
+            "unit": "L",
+            "value": 240
+          },
+          {
+            "label": "Delta Volume 3",
+            "unit": "L",
+            "value": 230
+          },
+          {
+            "label": "Delta Volume 4",
+            "unit": "L",
+            "value": 220
+          },
+          {
+            "label": "Delta Volume 5",
+            "unit": "L",
+            "value": 210
+          },
+          {
+            "label": "Delta Volume 6",
+            "unit": "L",
+            "value": 200
+          },
+          {
+            "label": "Delta Volume 7",
+            "unit": "L",
+            "value": 190
+          },
+          {
+            "label": "Delta Volume 8",
+            "unit": "L",
+            "value": 180
+          },
+          {
+            "label": "Delta Volume 9",
+            "unit": "L",
+            "value": 170
+          },
+          {
+            "label": "Delta Volume 10",
+            "unit": "L",
+            "value": 160
+          },
+          {
+            "label": "Delta Volume 11",
+            "unit": "L",
+            "value": 150
+          },
+          {
+            "label": "Delta Volume 12",
+            "unit": "L",
+            "value": 140
+          },
+          {
+            "label": "Delta Volume 13",
+            "unit": "L",
+            "value": 130
+          },
+          {
+            "label": "Delta Volume 14",
+            "unit": "L",
+            "value": 120
+          }
+        ]
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "GET_FW_VERSION uplink answer",
+    "input": {
+      "bytes": "07010000050500000101",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "FWMisura": 1,
+          "FWRadio": 1,
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 5,
+          "downlinkAnswer": true,
+          "payloadType": "GET_FW_VERSION"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "RESET uplink answer",
+    "input": {
+      "bytes": "0a0100000105",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 1,
+          "downlinkAnswer": true,
+          "payloadType": "RESET"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "GET_METER_SN uplink answer",
+    "input": {
+      "bytes": "13010000050503000040",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "deviceType": 5,
+          "serialNumber": 50331712
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 5,
+          "downlinkAnswer": true,
+          "payloadType": "GET_METER_SN"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "SET_TX_PAR uplink answer",
+    "input": {
+      "bytes": "240100000105",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 1,
+          "downlinkAnswer": true,
+          "payloadType": "SET_TX_PAR"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "SET_ALARM_PAR uplink answer",
+    "input": {
+      "bytes": "260100000005",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 0,
+          "downlinkAnswer": true,
+          "payloadType": "SET_ALARM_PAR"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "GET_ALARM_PAR uplink answer",
+    "input": {
+      "bytes": "2701000009050000000000000992",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "alarms": {
+            "VIFTransmission": {
+              "unit": "L",
+              "value": 0
+            },
+            "lowBatteryThreshold": {
+              "unit": "mV",
+              "value": 2450
+            },
+            "reverseFlowThreshold": {
+              "unit": "L",
+              "value": 20
+            },
+            "temperatureDataEnabled": false,
+            "waterLeakTimeThreshold": {
+              "unit": "h",
+              "value": 6
+            }
+          },
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 9,
+          "downlinkAnswer": true,
+          "payloadType": "GET_ALARM_PAR"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "GET_ALARM_DATA uplink answer",
+    "input": {
+      "bytes": "2801000013053FC020240517202405172024051720240517",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "alarmFlags1": {
+            "burst": true,
+            "lowBattery": true,
+            "overflow": true,
+            "reverseFlow": true,
+            "waterLeakage": true,
+            "wrongInstallation": true
+          },
+          "alarmFlags2": {
+            "coilError": true,
+            "eepromError": true
+          },
+          "burstAlarmDate": "2024-05-16T22:00:00.000Z",
+          "deviceType": 5,
+          "qMaxAlarmDate": "2024-05-16T22:00:00.000Z",
+          "reverseFlowAlarmDate": "2024-05-16T22:00:00.000Z",
+          "wrongInstallationAlarmDate": "2024-05-16T22:00:00.000Z"
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 19,
+          "downlinkAnswer": true,
+          "payloadType": "GET_ALARM_DATA"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "SET_ALARM_DATA uplink answer",
+    "input": {
+      "bytes": "2901000000",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "header": {
+          "chain": 0,
+          "dataLength": 0,
+          "downlinkAnswer": true,
+          "payloadType": "SET_ALARM_DATA"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "uplink",
+    "description": "SET_LORA_DATALOG uplink answer",
+    "input": {
+      "bytes": "330100000105",
+      "fPort": 1,
+      "recvTime": "2024-05-16T15:16:00.000+01:00"
+    },
+    "output": {
+      "data": {
+        "data": {
+          "deviceType": 5
+        },
+        "header": {
+          "chain": 0,
+          "dataLength": 1,
+          "downlinkAnswer": true,
+          "payloadType": "SET_LORA_DATALOG"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Get FW version downlink",
+    "input": {
+      "data": {
+        "command": "GET_FW_VERSION"
+      }
+    },
+    "output": {
+      "bytes": [7, 0, 0, 0, 1, 5],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Get Meter SN downlink",
+    "input": {
+      "data": {
+        "command": "GET_METER_SN"
+      }
+    },
+    "output": {
+      "bytes": [19, 0, 0, 0, 1, 5],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Reset downlink",
+    "input": {
+      "data": {
+        "command": "RESET"
+      }
+    },
+    "output": {
+      "bytes": [10, 0, 0, 0, 1, 5],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Set TX parameter downlink",
+    "input": {
+      "data": {
+        "command": "SET_TX_PAR",
+        "transmissionIntervals": "6h"
+      }
+    },
+    "output": {
+      "bytes": [36, 0, 0, 0, 3, 5, 84, 96],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Set Alarm parameter downlink",
+    "input": {
+      "data": {
+        "command": "SET_ALARM_PAR",
+        "alarms": {
+          "temperatureEnabled": true,
+          "lowBatteryThresholdVoltage_mV": 1000
+        }
+      }
+    },
+    "output": {
+      "bytes": [38, 0, 0, 0, 9, 5, 0, 0, 0, 1, 0, 0, 3, 232],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Get Alarm parameter downlink",
+    "input": {
+      "data": {
+        "command": "GET_ALARM_PAR"
+      }
+    },
+    "output": {
+      "bytes": [39, 0, 0, 0, 1, 5],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Get Alarm data downlink",
+    "input": {
+      "data": {
+        "command": "GET_ALARM_DATA"
+      }
+    },
+    "output": {
+      "bytes": [40, 0, 0, 0, 1, 5],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Set Alarm data downlink",
+    "input": {
+      "data": {
+        "command": "SET_ALARM_DATA",
+        "alarmFlags1": {
+          "waterLeakage": false,
+          "wrongInstallation": false,
+          "overflow": false,
+          "burst": false,
+          "reverseFlow": false,
+          "lowBattery": false
+        },
+        "alarmFlags2": {
+          "eepromError": false,
+          "coilError": false
+        }
+      }
+    },
+    "output": {
+      "bytes": [41, 0, 0, 0, 3, 5, 0, 0],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "type": "downlink-encode",
+    "description": "Set LoRa datalog downlink",
+    "input": {
+      "data": {
+        "command": "SET_LORA_DATALOG",
+        "dataloggerEnabled": true
+      }
+    },
+    "output": {
+      "bytes": [51, 0, 0, 0, 2, 5, 1],
+      "fPort": 1,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

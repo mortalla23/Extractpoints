@@ -1,0 +1,742 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "IsFirstSegment": {
+          "type": "boolean"
+        },
+        "SequenceNumber": {
+          "type": "integer"
+        },
+        "TotalLength": {
+          "type": "integer"
+        },
+        "SourceAddress": {
+          "type": ["string", "null"]
+        },
+        "TempHumi": {
+          "type": "object",
+          "properties": {
+            "Range": {
+              "type": "integer"
+            },
+            "Event": {
+              "type": "integer"
+            },
+            "SenVal": {
+              "type": "integer"
+            }
+          }
+        },
+        "Accelerometer": {
+          "type": "object",
+          "properties": {
+            "X-Axis": {
+              "type": "object",
+              "properties": {
+                "SenEvent": {
+                  "type": "integer"
+                },
+                "OAVelocity": {
+                  "type": "integer"
+                },
+                "Peakmg": {
+                  "type": "integer"
+                },
+                "RMSmg": {
+                  "type": "integer"
+                },
+                "Kurtosis": {
+                  "type": "integer"
+                },
+                "CrestFactor": {
+                  "type": "integer"
+                },
+                "Skewness": {
+                  "type": "integer"
+                },
+                "Deviation": {
+                  "type": "integer"
+                },
+                "Peak-to-Peak Displacement": {
+                  "type": "integer"
+                },
+                "PeakToPeak Displacement": {
+                  "type": "integer"
+                }
+              }
+            },
+            "Y-Axis": {
+              "type": "object",
+              "properties": {
+                "SenEvent": {
+                  "type": "integer"
+                },
+                "OAVelocity": {
+                  "type": "integer"
+                },
+                "Peakmg": {
+                  "type": "integer"
+                },
+                "RMSmg": {
+                  "type": "integer"
+                },
+                "Kurtosis": {
+                  "type": "integer"
+                },
+                "CrestFactor": {
+                  "type": "integer"
+                },
+                "Skewness": {
+                  "type": "integer"
+                },
+                "Deviation": {
+                  "type": "integer"
+                },
+                "Peak-to-Peak Displacement": {
+                  "type": "integer"
+                },
+                "PeakToPeak Displacement": {
+                  "type": "integer"
+                }
+              }
+            },
+            "Z-Axis": {
+              "type": "object",
+              "properties": {
+                "SenEvent": {
+                  "type": "integer"
+                },
+                "OAVelocity": {
+                  "type": "integer"
+                },
+                "Peakmg": {
+                  "type": "integer"
+                },
+                "RMSmg": {
+                  "type": "integer"
+                },
+                "Kurtosis": {
+                  "type": "integer"
+                },
+                "CrestFactor": {
+                  "type": "integer"
+                },
+                "Skewness": {
+                  "type": "integer"
+                },
+                "Deviation": {
+                  "type": "integer"
+                },
+                "Peak-to-Peak Displacement": {
+                  "type": "integer"
+                },
+                "PeakToPeak Displacement": {
+                  "type": "integer"
+                }
+              }
+            },
+            "LogIndex": {
+              "type": "integer"
+            }
+          }
+        },
+        "Device": {
+          "type": "object",
+          "properties": {
+            "Events": {
+              "type": "integer"
+            },
+            "PowerSrc": {
+              "type": "integer"
+            },
+            "BatteryVolt": {
+              "type": "integer"
+            },
+            "Time": {
+              "type": "integer"
+            },
+            "GNSS": {
+              "type": "object",
+              "properties": {
+                "Latitude": {
+                  "type": "string"
+                },
+                "Longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Latitude",
+                "Longitude"
+              ]
+            }
+          }
+        }
+      },
+      "additinalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "IsFirstSegment": {
+          "type": "boolean"
+        },
+        "SequenceNumber": {
+          "type": "integer"
+        },
+        "TotalLength": {
+          "type": "integer"
+        },
+        "SourceAddress": {
+          "type": "string"
+        },
+        "DI0": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "DI1": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "DI2": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "DI3": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "DI4": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "DI5": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "object",
+              "properties": {
+                "Signal Logic": {
+                  "type": "integer"
+                },
+                "Start Counter": {
+                  "type": "integer"
+                },
+                "Get/Clean Counter Overflow": {
+                  "type": "integer"
+                },
+                "Get/Clean L2H Latch": {
+                  "type": "integer"
+                },
+                "Get/Clean H2L Latch": {
+                  "type": "integer"
+                },
+                "DI Change": {
+                  "type": "integer"
+                }
+              }
+            },
+            "mode": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "RtuCoil0-2": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuCoil02": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister0-0": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister00": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuCoil1-0": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuCoil10": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuCoil1-1": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuCoil11": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-0": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister10": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-1": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister11": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-2": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister12": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-3": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister13": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-4": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister14": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister1-5": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "RtuRegister15": {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "integer"
+            },
+            "Data": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Status",
+            "Data"
+          ]
+        },
+        "Device": {
+          "type": "object",
+          "properties": {
+            "PowerSrc": {
+              "type": "integer"
+            },
+            "BatteryLevel": {
+              "type": "integer"
+            },
+            "Time": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "additinalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "IsFirstSegment": {
+          "type": "boolean"
+        },
+        "IsFragmentedSegment": {
+          "type": "boolean"
+        },
+        "SequenceNumber": {
+          "type": "integer"
+        },
+        "TotalLength": {
+          "type": "integer"
+        },
+        "SourceAddress": {
+          "type": "string"
+        },
+        "FragmentedPayload": {
+          "type": "string"
+        }
+      },
+      "additinalProperties": false
+    }
+  ]
+}

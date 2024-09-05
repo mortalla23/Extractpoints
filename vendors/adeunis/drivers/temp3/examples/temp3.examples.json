@@ -1,0 +1,311 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration",
+    "type": "uplink",
+    "bytes": "101021c000010001070800",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": true,
+      "type": "PRODUCT_CONFIGURATION_1",
+      "register": {
+        "keepAlivePeriod": 86400,
+        "transmissionPeriodOfDataSensors": 1,
+        "historyPeriod": 1,
+        "samplingPeriod": 3600,
+        "numberOfAdditionalSamplesPerFrame": 0
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20300501",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 1,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": true,
+      "type": "NETWORK_CONFIGURATION",
+      "register": {
+        "loraWanOption": {
+          "adaptiveDataRate": true,
+          "dutyCycle": true,
+          "type": "CLASS_A"
+        },
+        "mode": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame when one channel activated",
+    "type": "uplink",
+    "bytes": "30e201b3",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 7,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "KEEP_ALIVE",
+      "register": {
+        "valueReadOnTheChannel1": 43.5
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame when both channels activated",
+    "type": "uplink",
+    "bytes": "30f201b3ff9c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 7,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": true,
+      "type": "KEEP_ALIVE",
+      "register": {
+        "valueReadOnTheChannel1": 43.5,
+        "valueReadOnTheChannel2": -10
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic data frame when one channel activated",
+    "type": "uplink",
+    "bytes": "578001b3",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "PERIODIC_DATA",
+      "register": {
+        "temperatureMeasures": [
+          {
+            "offset": 0,
+            "sensor1Value": 43.5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic data frame when both channels activated",
+    "type": "uplink",
+    "bytes": "579201b3ff9c01f4ffff",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": true,
+      "type": "PERIODIC_DATA",
+      "register": {
+        "temperatureMeasures": [
+          {
+            "offset": 0,
+            "sensor1Value": 43.5,
+            "sensor2Value": -10
+          },
+          {
+            "offset": -1,
+            "sensor1Value": 50,
+            "sensor2Value": -0.1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame when one channel activated",
+    "type": "uplink",
+    "bytes": "5880010032",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "ALARM",
+      "register": {
+        "alarmStatus1": "HIGH_THRESHOLD",
+        "temperatureSensor1": 5
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame when both channels activated",
+    "type": "uplink",
+    "bytes": "5890010032000032",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": true,
+      "type": "ALARM",
+      "register": {
+        "alarmStatus1": "HIGH_THRESHOLD",
+        "alarmStatus2": "NO_ALARM",
+        "valueReadOnTheChannel1": 5,
+        "valueReadOnTheChannel2": 5
+      }
+    }
+  },
+  {
+    "description": "uplink containing the response frame of updating a register when the request status is success",
+    "type": "uplink",
+    "bytes": "33a001",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "SET_REGISTER_STATUS",
+      "register": {
+        "requestStatus": "SUCCESS"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the response frame of updating a register when an error occurred",
+    "type": "uplink",
+    "bytes": "33a0020143",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "SET_REGISTER_STATUS",
+      "register": {
+        "requestStatus": "ERROR_NO_UPDATE",
+        "registerId": 323
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alert frame",
+    "type": "uplink",
+    "bytes": "368001",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "appFlag1": false,
+      "appFlag2": false,
+      "type": "ALERT",
+      "register": {
+        "alert": "UPLINK_DOWNLINK_FORBIDDEN"
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "01",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "02",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing reading piece of data request frame",
+    "type": "downlink",
+    "bytes": "05",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "REQUEST_FRAME_FOR_READING_A_PIECE_OF_DATA"
+    }
+  },
+  {
+    "description": "downlink message containing the frame of specific register value request",
+    "type": "downlink",
+    "bytes": "400001040615",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "Temp3SpecificRegisterValueRequestFrame",
+        "message": [
+          "KEEP_ALIVE_PERIOD",
+          "TRANSMISSION_PERIOD_OF_DATA_SENSORS",
+          "PIN_CODE",
+          "PRODUCT_MODE",
+          "SAMPLING_PERIOD"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the frame of updating the value specific registers",
+    "type": "downlink",
+    "bytes": "41000090010006060116001e",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "Temp3FrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "keepAlivePeriod": 1440,
+          "transmissionPeriodOfDataSensors": 6,
+          "productMode": "RUN",
+          "alarmRepetitionPeriod": 30
+        }
+      }
+    }
+  }
+]

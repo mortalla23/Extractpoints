@@ -1,0 +1,1484 @@
+# the transformation in each unit is expressed according to the reference unit
+# In case of reference units: 1 reference unit means that transformation = 1 * described unit
+# In case of scalar-si units: 1 unit SI means that transformation = 1 * current unit
+---
+- id: GPS
+  name: GPS
+  type: object
+  symbol: GPS
+  set: Global Positioning System
+  domains:
+    - location
+    - position
+    - geoposition
+  sensors:
+    - location
+  fields:
+    - location
+- id: A
+  name: ampere
+  type: double
+  symbol: A
+  set: scalar-si
+  domains:
+    - current
+    - electricity
+  sensors:
+    - current
+  dimensions:
+    A: 1
+  fields:
+    - current
+- id: Ah
+  name: ampere-hour
+  type: double
+  symbol: Ah
+  set: scalar-si
+  domains:
+    - charge
+    - electricity
+  sensors:
+    - charge
+  dimensions:
+    A: 1
+    s: 1
+  transformations:
+    - name: multiply
+      value: 3600
+  fields:
+    - charge
+- id: bar
+  name: bar
+  type: double
+  symbol: bar
+  set: scalar-si
+  domains:
+    - pressure
+  sensors:
+    - pressure
+  dimensions:
+    m: -1
+    kg: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 100000
+  fields:
+    - pressure
+- id: Bq
+  name: becquerel
+  type: double
+  symbol: Bq
+  set: 3d-angle-luminance
+  domains:
+    - luminance
+  sensors:
+    - radioactivity
+  dimensions:
+    m: -2
+    cd: 1
+  fields:
+    - radioactivity
+- id: Bspl
+  parentId: dB
+  name: bel
+  type: double
+  symbol: bel
+  set: decibel
+  transformations:
+    - name: multiply
+      value: 10
+- id: bit
+  name: bit
+  type: double
+  symbol: bit
+  set: bit
+  domains:
+    - computer
+  sensors:
+    - data
+    - storage
+  fields:
+    - data
+    - storage
+- id: bit/s
+  name: bit per second
+  type: double
+  symbol: bit/s
+  set: bit
+  domains:
+    - computer
+  sensors:
+    - dataSpeed
+  fields:
+    - dataSpeed
+- id: cd
+  name: candela
+  type: double
+  symbol: cd
+  set: scalar-si
+  domains:
+    - luminance
+  sensors:
+    - intensity
+  dimensions:
+    cd: 1
+  fields:
+    - intensity
+- id: cd/m2
+  name: candela per square meter
+  type: double
+  symbol: cd/m&#178;
+  set: scalar-si
+  domains:
+    - luminance
+  sensors:
+    - brightness
+  dimensions:
+    m: -2
+    cd: 1
+  fields:
+    - brightness
+- id: Cel
+  name: celsius
+  type: double
+  symbol: '&#176;C'
+  set: scalar-si
+  domains:
+    - temperature
+  sensors:
+    - temperature
+  dimensions:
+    K: 1
+  transformations:
+    - name: add
+      value: 273.15
+  fields:
+    - temperature
+- id: cm
+  parentId: m
+  name: centimeter
+  type: double
+  symbol: cm
+  set: scalar-si
+  dimensions:
+    m: 1
+  transformations:
+    - name: divide
+      value: 100
+- id: C
+  name: coulomb
+  type: double
+  symbol: C
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - electricCharge
+  dimensions:
+    s: 1
+    A: 1
+  fields:
+    - electricCharge
+- id: count/s
+  name: count per second
+  type: double
+  symbol: count/s
+  set: count
+  domains:
+    - event rate
+  sensors:
+    - eventRate
+    - count
+  dimensions:
+    s: -1
+  fields:
+    - eventRate
+    - count
+- id: count/min
+  parentId: count/s
+  name: count per minute
+  type: double
+  symbol: count/min
+  set: count
+  domains:
+    - event rate
+  dimensions:
+    s: -1
+  transformations:
+    - name: divide
+      value: 60
+- id: m3
+  name: cubic meter
+  type: double
+  symbol: m&#179;
+  set: scalar-si
+  domains:
+    - volume
+  sensors:
+    - volume
+  dimensions:
+    m: 3
+  fields:
+    - volume
+- id: m3/h
+  parentId: m3/s
+  name: cubic meter per hour
+  type: double
+  symbol: m&#179;/h
+  set: scalar-si
+  dimensions:
+    m: 3
+    s: -1
+  transformations:
+    - name: divide
+      value: 3600
+- id: m3/s
+  name: cubic meter per second
+  type: double
+  symbol: m&#179;/s
+  set: scalar-si
+  domains:
+    - flow rate
+  sensors:
+    - flowRate
+  dimensions:
+    m: 3
+    s: -1
+  fields:
+    - flowRate
+- id: dB
+  name: decibel
+  type: double
+  symbol: dB
+  set: decibel
+  domains:
+    - logarithmic quantity
+    - sound
+    - intensity
+  sensors:
+    - intensity
+    - snr
+  fields:
+    - intensity
+    - snr
+- id: dBm
+  name: decibel relative to 1 mW
+  type: double
+  symbol: dBm
+  set: power-level
+  domains:
+    - power level
+    - signal
+  sensors:
+    - rssi
+  fields:
+    - rssi
+- id: dBW
+  name: decibel relative to 1 W
+  type: double
+  symbol: dBW
+  set: power-level
+  domains:
+    - power level
+    - signal
+  sensors:
+    - powerLevel
+  fields:
+    - powerLevel
+- id: deg
+  name: degree
+  type: double
+  symbol: '&#176;'
+  set: 2d-angle
+  domains:
+    - angle
+  sensors:
+    - angle
+  fields:
+    - angle
+- id: dps
+  name: degrees per second
+  type: double
+  symbol: dps
+  set: angular-velocity
+  domains:
+    - angular veloctity
+  sensors:
+    - angularVelocity
+  transformations:
+    - name: divide
+      value: 6
+  fields:
+    - angularVelocity
+- id: dop
+  name: dilution of precision
+  type: double
+  symbol: dop
+  set: navigation
+  domains:
+    - navigation
+  sensors:
+    - navigation
+  fields:
+    - navigation
+- id: euro
+  name: euro
+  type: double
+  symbol: '&#8364;'
+  set: currency
+  domains:
+    - currency
+  sensors:
+    - price
+  fields:
+    - price
+- id: euro/Wh
+  name: euro per watt-hour
+  type: double
+  symbol: '&#8364;/Wh'
+  set: energy-price
+  domains:
+    - currency
+  sensors:
+    - energyPrice
+  fields:
+    - energyPrice
+- id: Far
+  name: fahrenheit
+  type: double
+  symbol: '&#176;F'
+  set: scalar-si
+  domains:
+    - temperature
+  sensors:
+    - temperature
+  dimensions:
+    K: 1
+  transformations:
+    - name: subtract
+      value: 32
+    - name: multiply
+      value: 5
+    - name: divide
+      value: 9
+    - name: add
+      value: 273.15
+  fields:
+    - temperature
+- id: F
+  name: farad
+  type: double
+  symbol: F
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - capacitance
+  dimensions:
+    m: -2
+    kg: -1
+    s: 4
+    A: 2
+  fields:
+    - capacitance
+- id: GW
+  parentId: W
+  name: gigawatt
+  type: double
+  symbol: GW
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  transformations:
+    - name: multiply
+      value: 1000000000
+- id: g
+  parentId: kg
+  name: gram
+  type: double
+  symbol: g
+  set: scalar-si
+  dimensions:
+    kg: 1
+  transformations:
+    - name: divide
+      value: 1000
+- id: gravity
+  parentId: m/s2
+  name: acceleration compared to earth gravity
+  type: double
+  symbol: g
+  set: scalar-si
+  dimensions:
+    m: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 9.80665
+- id: Gy
+  name: gray
+  type: double
+  symbol: Gy
+  set: scalar-si
+  domains:
+    - radiation
+  sensors:
+    - radiation
+  dimensions:
+    m: 2
+    s: -2
+  fields:
+    - radiation
+- id: hPa
+  parentId: Pa
+  name: hectopascal
+  type: double
+  symbol: hPa
+  set: scalar-si
+  dimensions:
+    kg: 1
+    m: -1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 100
+- id: H
+  name: henry
+  type: double
+  symbol: H
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - inductance
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+    A: -2
+  fields:
+    - inductance
+- id: hertz
+  name: hertz
+  type: double
+  symbol: Hz
+  set: scalar-si
+  domains:
+    - frequency
+    - electricity
+    - sound
+  sensors:
+    - frequency
+    - sound
+  dimensions:
+    s: -1
+  fields:
+    - frequency
+    - sound
+- id: J
+  name: joule
+  type: double
+  symbol: J
+  set: scalar-si
+  domains:
+    - energy
+  sensors:
+    - energy
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+  fields:
+    - energy
+- id: kat
+  name: katal
+  type: double
+  symbol: kat
+  set: scalar-si
+  domains:
+    - catalytic activity
+  sensors:
+    - catalyticActivity
+  dimensions:
+    s: -1
+    mol: 1
+  fields:
+    - catalyticActivity
+- id: K
+  name: kelvin
+  type: double
+  symbol: K
+  set: scalar-si
+  domains:
+    - temperature
+  sensors:
+    - temperature
+  dimensions:
+    K: 1
+  fields:
+    - temperature
+- id: kg
+  name: kilogram
+  type: double
+  symbol: kg
+  set: scalar-si
+  domains:
+    - mass
+  sensors:
+    - mass
+    - weight
+  dimensions:
+    kg: 1
+  fields:
+    - mass
+    - weight
+- id: km
+  parentId: m
+  name: kilometer
+  type: double
+  symbol: km
+  set: scalar-si
+  dimensions:
+    m: 1
+  transformations:
+    - name: multiply
+      value: 1000
+- id: km/h
+  parentId: m/s
+  name: kilometer per hour
+  type: double
+  symbol: km/h
+  set: scalar-si
+  dimensions:
+    m: 1
+    s: -1
+  transformations:
+    - name: divide
+      value: 3.6
+- id: kPa
+  parentId: Pa
+  name: kilopascal
+  type: double
+  symbol: kPa
+  set: scalar-si
+  dimensions:
+    kg: 1
+    m: -1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 1000
+- id: kW
+  parentId: W
+  name: kilowatt
+  type: double
+  symbol: kW
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  transformations:
+    - name: multiply
+      value: 1000
+- id: kWh
+  parentId: Wh
+  name: kilowatt-hour
+  type: double
+  symbol: kWh
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 3600000
+- id: l
+  name: liter
+  type: double
+  symbol: l
+  set: scalar-si
+  domains:
+    - volume
+  sensors:
+    - volume
+    - capacity
+  dimensions:
+    m: 3
+  transformations:
+    - name: divide
+      value: 1000
+  fields:
+    - volume
+    - capacity
+- id: l/s
+  parentId: m3/s
+  name: liter per second
+  type: double
+  symbol: l/s
+  set: scalar-si
+  domains:
+    - flow rate
+  dimensions:
+    m: 3
+    s: -1
+  transformations:
+    - name: divide
+      value: 1000
+- id: lm
+  name: lumen
+  type: double
+  symbol: lm
+  set: 3d-angle-luminance
+  domains:
+    - luminance
+  sensors:
+    - flux
+    - light
+  dimensions:
+    cd: 1
+  fields:
+    - flux
+    - light
+- id: lx
+  name: lux
+  type: double
+  symbol: lx
+  set: 3d-angle-luminance
+  domains:
+    - luminance
+  sensors:
+    - flux
+    - light
+    - illuminance
+  dimensions:
+    m: -2
+    cd: 1
+  fields:
+    - flux
+    - light
+    - illuminance
+- id: MW
+  parentId: W
+  name: megawatt
+  type: double
+  symbol: MW
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  transformations:
+    - name: multiply
+      value: 1000000
+- id: MWh
+  parentId: Wh
+  name: megawatt-hour
+  type: double
+  symbol: MWh
+  set: scalar-si
+  dimensions:
+    m: 1
+    kg: 1
+    s: -3
+  transformations:
+    - name: multiply
+      value: 3600000000
+- id: MW/m
+  parentId: W/s
+  name: megawatt per minute
+  type: double
+  symbol: MW/m
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -4
+  transformations:
+    - name: multiply
+      value: 1000000
+    - name: divide
+      value: 60
+- id: m
+  name: meter
+  type: double
+  symbol: m
+  set: scalar-si
+  domains:
+    - distance
+  sensors:
+    - distance
+    - accuracy
+    - range
+    - altitude
+  dimensions:
+    m: 1
+  fields:
+    - distance
+    - accuracy
+    - range
+    - altitude
+- id: m/s
+  name: meter per second
+  type: double
+  symbol: m/s
+  set: scalar-si
+  domains:
+    - velocity
+  sensors:
+    - velocity
+    - speed
+  dimensions:
+    m: 1
+    s: -1
+  fields:
+    - velocity
+    - speed
+- id: m/s2
+  name: meter per square second
+  type: double
+  symbol: m/s&#178;
+  set: scalar-si
+  domains:
+    - acceleration
+  sensors:
+    - acceleration
+    - vibration
+  dimensions:
+    m: 1
+    s: -2
+  fields:
+    - acceleration
+    - vibration
+- id: ug
+  parentId: kg
+  name: microgram
+  type: double
+  symbol: '&#181;g'
+  set: scalar-si
+  dimensions:
+    kg: 1
+  transformations:
+    - name: divide
+      value: 1000000000
+- id: ug/m3
+  name: microgram per cubic meter
+  type: double
+  symbol: '&#181;g/m&#179;'
+  set: scalar-si
+  dimensions:
+    m: -3
+    kg: 1
+  sensors:
+    - concentration
+  transformations:
+    - name: divide
+      value: 1000000000
+  fields:
+    - concentration
+- id: um
+  parentId: m
+  name: micrometer
+  type: double
+  symbol: '&#181;m'
+  set: scalar-si
+  dimensions:
+    m: 1
+  transformations:
+    - name: divide
+      value: 1000000
+- id: umol/m2.s
+  name: micromole per second and square meter
+  type: double
+  symbol: '&#181;mol/m&#178;.s'
+  set: scalar-si
+  domains:
+    - photosynthetically active radiation
+    - light intensity
+  sensors:
+    - fluxDensity
+    - intensity
+  dimensions:
+    m: -2
+    s: -1
+    mol: 1
+  transformations:
+    - name: divide
+      value: 1000000
+  fields:
+    - fluxDensity
+    - intensity
+- id: uS/cm
+  parentId: S/m
+  name: microsiemens per centimeter
+  type: double
+  symbol: '&#181;S/cm'
+  set: scalar-si
+  dimensions:
+    m: -2
+    kg: -1
+    s: 2
+    A: 2
+  transformations:
+    - name: divide
+      value: 10000
+- id: uV
+  parentId: V
+  name: microvolt
+  type: double
+  symbol: '&#181;V'
+  set: scalar-si
+  dimensions:
+    kg: 1
+    m: 2
+    A: -1
+    s: -3
+  transformations:
+    - name: divide
+      value: 1000000
+- id: mA
+  parentId: A
+  name: milliampere
+  type: double
+  symbol: mA
+  set: scalar-si
+  dimensions:
+    A: 1
+  transformations:
+    - name: divide
+      value: 1000
+- id: mAh
+  parentId: Ah
+  name: milliampere-hour
+  type: double
+  symbol: mAh
+  set: scalar-si
+  dimensions:
+    A: 1
+    s: 1
+  transformations:
+    - name: multiply
+      value: 3600
+    - name: divide
+      value: 1000
+- id: mbar
+  parentId: bar
+  name: millibar
+  type: double
+  symbol: mbar
+  set: scalar-si
+  dimensions:
+    kg: 1
+    m: -1
+    s: -2
+  transformations:
+    - name: divide
+      value: 1000
+- id: ml
+  parentId: l
+  name: millileter
+  type: double
+  symbol: ml
+  set: scalar-si
+  dimensions:
+    m: 3
+  transformations:
+    - name: divide
+      value: 1000000
+- id: mm
+  parentId: m
+  name: millimeter
+  type: double
+  symbol: mm
+  set: scalar-si
+  dimensions:
+    m: 1
+  transformations:
+    - name: divide
+      value: 1000
+- id: mm/s
+  parentId: m/s
+  name: millimeter per second
+  type: double
+  symbol: mm/s
+  set: scalar-si
+  dimensions:
+    m: 1
+    s: -1
+  transformations:
+    - name: divide
+      value: 1000
+- id: mm/h
+  parentId: m/s
+  name: millimeter per hour
+  type: double
+  symbol: mm/h
+  set: scalar-si
+  dimensions:
+    m: 1
+    s: -1
+  transformations:
+    - name: divide
+      value: 3600000
+- id: ms
+  parentId: s
+  name: millisecond
+  type: double
+  symbol: ms
+  set: scalar-si
+  dimensions:
+    s: 1
+  transformations:
+    - name: divide
+      value: 1000
+- id: mS/cm
+  parentId: S/m
+  name: millisiemens per centimeter
+  type: double
+  symbol: mS/cm
+  set: scalar-si
+  dimensions:
+    m: -2
+    kg: -1
+    s: 2
+    A: 2
+  transformations:
+    - name: divide
+      value: 10
+- id: mV
+  parentId: V
+  name: millivolt
+  type: double
+  symbol: mV
+  set: scalar-si
+  dimensions:
+    kg: 1
+    m: 2
+    A: -1
+    s: -3
+  transformations:
+    - name: divide
+      value: 1000
+- id: minute
+  name: minute
+  parentId: s
+  type: double
+  symbol: min
+  set: scalar-si
+  dimensions:
+    s: 1
+  transformations:
+    name: multiply
+    value: 60
+- id: mol
+  name: mole
+  type: double
+  symbol: mol
+  set: scalar-si
+  domains:
+    - quantity
+  sensors:
+    - amount
+    - quantity
+  dimensions:
+    mol: 1
+  fields:
+    - amount
+    - quantity
+- id: 'N'
+  name: newton
+  type: double
+  symbol: 'N'
+  set: scalar-si
+  domains:
+    - force
+  sensors:
+    - force
+  dimensions:
+    m: 1
+    kg: 1
+    s: -2
+  fields:
+    - force
+- id: ntu
+  name: nephelometric turbidity
+  type: double
+  symbol: ntu
+  set: turbidity
+  domains:
+    - turbidity
+  sensors:
+    - nephelometricTurbidity
+    - turbidity
+  fields:
+    - nephelometricTurbidity
+    - turbidity
+- id: okta
+  name: okta
+  type: int64
+  symbol: okta
+  set: okta
+  domains:
+    - cloud cover
+  sensors:
+    - cloudCover
+    - cover
+  fields:
+    - cloudCover
+    - cover
+- id: Ohm
+  name: ohm
+  type: double
+  symbol: '&#8486;'
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - resistance
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+    A: -2
+  fields:
+    - resistance
+- id: ppb
+  parentId: ppm
+  name: parts per billion
+  type: double
+  symbol: ppb
+  set: ppm
+  transformations:
+    - name: divide
+      value: 1000
+- id: ppm
+  name: parts per million
+  type: double
+  symbol: ppm
+  set: ppm
+  domains:
+    - quantity
+    - co2
+  sensors:
+    - amount
+    - quantity
+    - concentration
+    - co2Level
+  fields:
+    - amount
+    - quantity
+    - concentration
+    - co2Level
+- id: Pa
+  name: pascal
+  type: double
+  symbol: Pa
+  set: scalar-si
+  domains:
+    - pressure
+  sensors:
+    - pressure
+  dimensions:
+    m: -1
+    kg: 1
+    s: -2
+  fields:
+    - pressure
+- id: '%'
+  name: percentage
+  type: double
+  symbol: '%'
+  set: rate
+  domains:
+    - rate
+    - battery
+    - percentage
+  sensors:
+    - batteryLevel
+    - percentage
+    - per
+    - currentUnbalance
+  transformations:
+    - name: divide
+      value: 100
+  fields:
+    - batteryLevel
+    - percentage
+    - per
+    - currentUnbalance
+- id: '%RH'
+  name: percentage relative humidity
+  type: double
+  symbol: '%RH'
+  set: humidity
+  domains:
+    - humidity
+  sensors:
+    - humidity
+  transformations:
+    - name: divide
+      value: 100
+  fields:
+    - humidity
+- id: pH
+  name: pH
+  type: double
+  symbol: pH
+  set: acidity
+  domains:
+    - acidity
+  sensors:
+    - acidity
+  fields:
+    - acidity
+- id: pulse/h
+  parentId: hertz
+  name: pulse per hour
+  type: double
+  symbol: pulse/h
+  set: scalar-si
+  dimensions:
+    s: -1
+  transformations:
+    - name: divide
+      value: 3600
+- id: h
+  name: hour
+  parentId: s
+  type: double
+  symbol: h
+  set: scalar-si
+  dimensions:
+    s: 1
+  transformations:
+    name: multiply
+    value: 3600
+- id: rad
+  name: radian
+  type: double
+  symbol: rad
+  set: 2d-angle
+  domains:
+    - angle
+    - electricity
+  sensors:
+    - angle
+  fields:
+    - angle
+- id: /
+  name: rate
+  type: double
+  symbol: rate
+  set: rate
+  domains:
+    - rate
+  sensors:
+    - rate
+    - powerFactor
+  fields:
+    - rate
+    - powerFactor
+- id: rpm
+  name: rotations per minute
+  type: double
+  symbol: rpm
+  set: angular-velocity
+  domains:
+    - angular velocity
+  sensors:
+    - angularVelocity
+  fields:
+    - angularVelocity
+- id: s
+  name: second
+  type: double
+  symbol: s
+  set: scalar-si
+  domains:
+    - time
+    - duration
+  sensors:
+    - time
+    - duration
+    - interval
+    - age
+  dimensions:
+    s: 1
+  fields:
+    - time
+    - duration
+    - interval
+    - age
+- id: S
+  name: siemens
+  type: double
+  symbol: S
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - conductance
+  dimensions:
+    m: -2
+    kg: -1
+    s: 3
+    A: 2
+  fields:
+    - conductance
+- id: S/m
+  name: siemens per meter
+  type: double
+  symbol: S/m
+  set: scalar-si
+  domains:
+    - conductivity
+    - electricity
+  sensors:
+    - conductivity
+  dimensions:
+    m: -3
+    kg: -1
+    s: 3
+    A: 2
+  fields:
+    - conductivity
+- id: Sv
+  name: sievert
+  type: double
+  symbol: Sv
+  set: radiation
+  domains:
+    - radiation
+  sensors:
+    - radiationEffect
+  dimensions:
+    m: 2
+    s: -2
+  fields:
+    - radiationEffect
+- id: m2
+  name: square meter
+  type: double
+  symbol: m&#178;
+  set: scalar-si
+  domains:
+    - area
+  sensors:
+    - area
+  dimensions:
+    m: 2
+  fields:
+    - area
+- id: sr
+  name: steradian
+  type: double
+  symbol: sr
+  set: 3d-angle
+  domains:
+    - angle
+  sensors:
+    - solidAngle
+  fields:
+    - solidAngle
+- id: T
+  name: tesla
+  type: double
+  symbol: T
+  set: scalar-si
+  domains:
+    - magnetic
+  sensors:
+    - magneticDensity
+  dimensions:
+    kg: 1
+    s: -2
+    A: -1
+  fields:
+    - magneticDensity
+- id: VA
+  name: volt-ampere
+  type: double
+  symbol: VA
+  set: apparent-power
+  domains:
+    - electricity
+  sensors:
+    - apparentPower
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  fields:
+    - apparentPower
+- id: VAh
+  name: volt-ampere hour
+  type: double
+  symbol: VAh
+  set: apparent-energy
+  domains:
+    - electricity
+  sensors:
+    - apparentEnergy
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 3600
+  fields:
+    - apparentEnergy
+- id: var
+  name: volt-ampere reactive
+  type: double
+  symbol: var
+  set: reactive-power
+  domains:
+    - electricity
+  sensors:
+    - reactivePower
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  fields:
+    - reactivePower
+- id: varh
+  name: volt-ampere reactive hour
+  type: double
+  symbol: varh
+  set: reactive-energy
+  domains:
+    - electricity
+  sensors:
+    - reactiveEnergy
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 3600
+  fields:
+    - reactiveEnergy
+- id: V
+  name: volt
+  type: double
+  symbol: V
+  set: scalar-si
+  domains:
+    - electricity
+  sensors:
+    - batteryVoltage
+    - rmsVoltage
+    - voltage
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+    A: -1
+  fields:
+    - batteryVoltage
+    - rmsVoltage
+- id: W
+  name: watt
+  type: double
+  symbol: W
+  set: scalar-si
+  domains:
+    - power
+    - electricity
+  sensors:
+    - power
+    - activePower
+  dimensions:
+    m: 2
+    kg: 1
+    s: -3
+  fields:
+    - power
+    - activePower
+- id: W/h
+  parentId: W/s
+  name: watt per hour
+  type: double
+  symbol: W/h
+  set: scalar-si
+  dimensions:
+    m: 2
+    kg: 1
+    s: -4
+  transformations:
+    - name: divide
+      value: 3600
+- id: W/s
+  name: watt per second
+  type: double
+  symbol: W/s
+  set: scalar-si
+  domains:
+    - ramp up
+  sensors:
+    - powerRate
+  dimensions:
+    m: 2
+    kg: 1
+    s: -4
+  fields:
+    - powerRate
+- id: W/m2
+  name: watt per square meter
+  type: double
+  symbol: W/m&#178;
+  set: scalar-si
+  domains:
+    - irradiance
+    - electricity
+  sensors:
+    - irradiance
+    - solarRadiation
+  dimensions:
+    kg: 1
+    s: -3
+  fields:
+    - irradiance
+    - solarRadiation
+- id: Wh
+  name: watt-hour
+  type: double
+  symbol: Wh
+  set: scalar-si
+  domains:
+    - energy
+    - electricity
+  sensors:
+    - energy
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+  transformations:
+    - name: multiply
+      value: 3600
+  fields:
+    - energy
+- id: Wb
+  name: weber
+  type: double
+  symbol: Wb
+  set: scalar-si
+  domains:
+    - magnetic
+  sensors:
+    - magneticFlux
+  dimensions:
+    m: 2
+    kg: 1
+    s: -2
+    A: -1
+  fields:
+    - magneticFlux

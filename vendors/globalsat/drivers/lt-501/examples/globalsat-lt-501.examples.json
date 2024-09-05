@@ -1,0 +1,169 @@
+[
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 12 and command ID 4098",
+    "type": "uplink",
+    "bytes": "0c1002dbc43d0763737d012264a4989659",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 12,
+      "protocolVersionTxt": "0C",
+      "commandId": 4098,
+      "commandIdTxt": "Tracking report",
+      "longitude": 121.488603,
+      "longitudeTxt": "121.488603",
+      "latitude": 24.998755,
+      "latitudeTxt": "24.998755",
+      "gpsFixStatus": 1,
+      "gpsFixStatusTxt": "2D fix",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "batteryCapacity": 100,
+      "timestamp": "Fri, 18 Aug 2017 07:35:00 GMT",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 128 and command ID 131",
+    "type": "uplink",
+    "bytes": "80838dc13d07016a7d0144",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 128,
+      "protocolVersionTxt": "80",
+      "commandId": 131,
+      "commandIdTxt": "Short tracking report",
+      "longitude": 121.48775699999999,
+      "longitudeTxt": "121.48775699999999",
+      "latitude": 24.996353,
+      "latitudeTxt": "24.996353",
+      "gpsFixStatus": 2,
+      "gpsFixStatusTxt": "3D fix",
+      "reportType": 4,
+      "reportTypeTxt": "Motion mode static report",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 12 and command ID 2816",
+    "type": "uplink",
+    "bytes": "0c0b0058c23d07a56a7d010164649a9659",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 12,
+      "protocolVersionTxt": "0C",
+      "commandId": 2816,
+      "commandIdTxt": "Help report",
+      "longitude": 121.48796,
+      "longitudeTxt": "121.48796",
+      "latitude": 24.996516999999997,
+      "latitudeTxt": "24.996516999999997",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "alarmType": 1,
+      "alarmTypeTxt": "Help report",
+      "batteryCapacity": 100,
+      "timestamp": "Fri, 18 Aug 2017 07:42:28 GMT",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 128 and command ID 1",
+    "type": "uplink",
+    "bytes": "800185c03d078d6a7d0101",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 128,
+      "protocolVersionTxt": "80",
+      "commandId": 1,
+      "commandIdTxt": "Short help report",
+      "longitude": 121.487493,
+      "longitudeTxt": "121.487493",
+      "latitude": 24.996492999999997,
+      "latitudeTxt": "24.996492999999997",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "alarmType": 1,
+      "alarmTypeTxt": "Help report",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 12 and command ID 4866 where the fix status, report, alarm, uuid should returned - 1",
+    "type": "uplink",
+    "bytes": "0c130274278bdab64445208f0c720eaf059935000000002200c564",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 12,
+      "protocolVersionTxt": "0C",
+      "commandId": 4866,
+      "commandIdTxt": "Beacon tracking report",
+      "uuid": "00000000359905af0e720c8f204544b6da8b2774",
+      "beaconType": 1,
+      "beaconTypeTxt": "iBeacon",
+      "reportType": 2,
+      "reportTypeTxt": "Periodic mode report",
+      "rssi": 0,
+      "txPower": 197,
+      "batteryCapacity": 100
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 12 and command ID 4866 where the fix status, report, alarm, uuid should returned - 2",
+    "type": "uplink",
+    "bytes": "0c070074278bdab64445208f0c720eaf0599350000000021bcc564",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 12,
+      "protocolVersionTxt": "0C",
+      "commandId": 1792,
+      "commandIdTxt": "Beacon help report",
+      "uuid": "00000000359905af0e720c8f204544b6da8b2774",
+      "beaconType": 1,
+      "beaconTypeTxt": "iBeacon",
+      "alarmType": 1,
+      "alarmTypeTxt": "Help report",
+      "rssi": 188,
+      "txPower": 197,
+      "batteryCapacity": 100
+    }
+  },
+  {
+    "description": "uplink with full message received from LT-501 device with protocol 128 and command ID 1, whne one of GPS coordinates are not applicable",
+    "type": "uplink",
+    "bytes": "800185cccccccc6a7d0101",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "protocolVersion": 128,
+      "protocolVersionTxt": "80",
+      "commandId": 1,
+      "commandIdTxt": "Short help report",
+      "longitude": -858.993531,
+      "longitudeTxt": "N/A",
+      "latitude": 24.996555999999998,
+      "latitudeTxt": "24.996555999999998",
+      "gpsFixStatus": 0,
+      "gpsFixStatusTxt": "Not fix",
+      "alarmType": 1,
+      "alarmTypeTxt": "Help report",
+      "gpsAvailable": true
+    }
+  },
+  {
+    "description": "uplink when the length of payload is wrong then decoder not available",
+    "type": "uplink",
+    "bytes": "0c09611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false,
+      "gpsAvailable": false
+    }
+  }
+]

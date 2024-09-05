@@ -1,0 +1,451 @@
+[
+  {
+    "description": "uplink containing dummy data",
+    "type": "uplink",
+    "bytes": "aabbccddc480",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "dummyData": "aabbccdd",
+      "crc": "c480"
+    }
+  },
+  {
+    "description": "uplink containing upload pic frame",
+    "type": "uplink",
+    "bytes": "5100da01023900d20160233d3500150001ffd8ffe20002ffdb004300100b0c0e0c0a100e0d0e1211101318281a181616183123251d283a333d3c3933383740485c4e404457453738506d51575f626768673e4d71797064785c656763ffdb0043011112121815182f1a1a2f634238426363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363ffc000110800f0014003012200021101031101ffc400b5100002010303020403050504040000017d01020300041105122131410613516107223dc2",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload data",
+      "messageLength": 218,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "upload pic",
+      "loadLength": 210,
+      "messageCnt": 1,
+      "picName": 1612922165,
+      "totalPacketsNumber": 21,
+      "currentPacketNumber": 1,
+      "picData": "ffd8ffe20002ffdb004300100b0c0e0c0a100e0d0e1211101318281a181616183123251d283a333d3c3933383740485c4e404457453738506d51575f626768673e4d71797064785c656763ffdb0043011112121815182f1a1a2f634238426363636363636",
+      "crc": "3636"
+    }
+  },
+  {
+    "description": "uplink containing check the completion of the picture frame",
+    "type": "uplink",
+    "bytes": "51000f01023a0007162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload data",
+      "messageLength": 15,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "check the completion of picture",
+      "loadLength": 7,
+      "messageCnt": 22,
+      "picSize": "320*240",
+      "completion": "complete",
+      "colorAttribute": "RGB",
+      "compressionQuality": 5,
+      "picName": 1612922165,
+      "crc": "d059"
+    }
+  },
+  {
+    "description": "uplink containing upload result value frame",
+    "type": "uplink",
+    "bytes": "51001701023c000f1811c60160233d35000000000f00011abd",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload data",
+      "messageLength": 23,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "upload result value",
+      "loadLength": 15,
+      "messageCnt": 24,
+      "power": 4550,
+      "uploadDataSum": 1,
+      "uploadData": [
+        {
+          "timestamp": 1612922165,
+          "isoDate": "2021-02-10T01:56:05.000Z",
+          "finalResult": 0,
+          "effectiveness": "effective",
+          "numberOfDecimalPlaces": 0,
+          "finalResultFloat": 0,
+          "numberOfDigits": 0,
+          "numberOfRecognizer": 1
+        }
+      ],
+      "crc": "1abd"
+    }
+  },
+  {
+    "description": "uplink containing upload result value frame with negative finalResult",
+    "type": "uplink",
+    "bytes": "51001701023c000f0209810160a31d00ffffff640f0300e13f",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload data",
+      "messageLength": 23,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "upload result value",
+      "loadLength": 15,
+      "messageCnt": 2,
+      "power": 2433,
+      "uploadDataSum": 1,
+      "uploadData": [
+        {
+          "timestamp": 1621302528,
+          "isoDate": "2021-05-18T01:48:48.000Z",
+          "finalResult": -156,
+          "effectiveness": "effective",
+          "numberOfDecimalPlaces": 3,
+          "finalResultFloat": -0.156,
+          "numberOfDigits": 0,
+          "numberOfRecognizer": 0
+        }
+      ],
+      "crc": "e13f"
+    }
+  },
+  {
+    "description": "uplink containing upload errlist frame when configuration file without image",
+    "type": "uplink",
+    "bytes": "540010010265000801016080d31701ecf149",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "communicationType": "LoRa",
+      "crc": "f149",
+      "crcEnabled": true,
+      "encryptionEnabled": false,
+      "errData": [
+        {
+          "errList": [
+            "configuration file without image"
+          ],
+          "errSum": 1,
+          "timestamp": 1619055383,
+          "isoDate": "2021-04-22T01:36:23.000Z"
+        }
+      ],
+      "errDataSum": 1,
+      "eventId": "dev response server command",
+      "loadLength": 8,
+      "messageCnt": 1,
+      "messageLength": 16,
+      "messageType": "upload errlist",
+      "version": 5
+    }
+  },
+  {
+    "description": "uplink containing upload errlist frame when false device type",
+    "type": "uplink",
+    "bytes": "5300100102650008020160a77b3101f6c53b",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload error",
+      "messageLength": 16,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "upload errlist",
+      "loadLength": 8,
+      "messageCnt": 2,
+      "errDataSum": 1,
+      "errData": [
+        {
+          "timestamp": 1621588785,
+          "isoDate": "2021-05-21T09:19:45.000Z",
+          "errSum": 1,
+          "errList": [
+            "false device type"
+          ]
+        }
+      ],
+      "crc": "c53b"
+    }
+  },
+  {
+    "description": "uplink containing the device registration",
+    "type": "uplink",
+    "bytes": "52000c010233000400052d00eee1",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload state",
+      "messageLength": 12,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "device registration",
+      "loadLength": 4,
+      "messageCnt": 0,
+      "firmwareVersion": "5.45.0",
+      "crc": "eee1"
+    }
+  },
+  {
+    "description": "uplink containing the request of configuration",
+    "type": "uplink",
+    "bytes": "51000901023b000101d706",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "dev upload data",
+      "messageLength": 9,
+      "encryptionEnabled": false,
+      "crcEnabled": true,
+      "communicationType": "LoRa",
+      "messageType": "configuration on the cloud",
+      "loadLength": 1,
+      "messageCnt": 1,
+      "crc": "d706"
+    }
+  },
+  {
+    "description": "downlink containing server response on the pic check frame",
+    "type": "downlink",
+    "bytes": "58000b013a000401000000f546",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response data upload",
+      "messageLength": 11,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "check the completion of picture",
+      "loadLength": 4,
+      "stateCode": "success",
+      "messageCnt": 0,
+      "lostNum": 0,
+      "crc": "f546"
+    }
+  },
+  {
+    "description": "downlink containing server response on data upload frame when no pic upload and alarm wakeup mode",
+    "type": "downlink",
+    "bytes": "580018013c0011010060234f760101020c0c0f0c0b644000b80f",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response data upload",
+      "messageLength": 24,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "upload result value",
+      "loadLength": 17,
+      "stateCode": "success",
+      "messageCnt": 0,
+      "currentTimestamp": 1612926838,
+      "isoDate": "2021-02-10T03:13:58.000Z",
+      "runMode": "default run mode",
+      "dataUpInterval": 1,
+      "wakeupMode": "alarm",
+      "alarmSum": 2,
+      "wakeupAlarm": [
+        "12:12",
+        "15:12"
+      ],
+      "picSize": "no pic upload",
+      "completion": "complete",
+      "colorAttribute": "RGB",
+      "brightness": 100,
+      "crc": "b80f"
+    }
+  },
+  {
+    "description": "downlink containing server response on data upload frame when alarm wakeup mode",
+    "type": "downlink",
+    "bytes": "580019013c00120100602352be0101020c0c0f0c2b056440006a0e",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response data upload",
+      "messageLength": 25,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "upload result value",
+      "loadLength": 18,
+      "stateCode": "success",
+      "messageCnt": 0,
+      "currentTimestamp": 1612927678,
+      "isoDate": "2021-02-10T03:27:58.000Z",
+      "runMode": "default run mode",
+      "dataUpInterval": 1,
+      "wakeupMode": "alarm",
+      "alarmSum": 2,
+      "wakeupAlarm": [
+        "12:12",
+        "15:12"
+      ],
+      "picSize": "320*240",
+      "completion": "complete",
+      "colorAttribute": "RGB",
+      "compressionQuality": 5,
+      "brightness": 100,
+      "crc": "6a0e"
+    }
+  },
+  {
+    "description": "downlink containing server response on data upload frame when interval wakeup mode",
+    "type": "downlink",
+    "bytes": "580016013c000f010060233e1c0102000a2b056440006e5a",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response data upload",
+      "messageLength": 22,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "upload result value",
+      "loadLength": 15,
+      "stateCode": "success",
+      "messageCnt": 0,
+      "currentTimestamp": 1612922396,
+      "isoDate": "2021-02-10T01:59:56.000Z",
+      "runMode": "default run mode",
+      "dataUpInterval": 1,
+      "wakeupMode": "interval",
+      "wakeupInterval": 10,
+      "picSize": "320*240",
+      "completion": "complete",
+      "colorAttribute": "RGB",
+      "compressionQuality": 5,
+      "brightness": 100,
+      "crc": "6e5a"
+    }
+  },
+  {
+    "description": "downlink containing server response when analysis failed",
+    "type": "downlink",
+    "bytes": "0b000901c90002019833fa",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 0,
+      "eventId": "server abnormal",
+      "messageLength": 9,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "server abnormal",
+      "loadLength": 2,
+      "stateCode": "success",
+      "messageCnt": 152,
+      "crc": "33fa"
+    }
+  },
+  {
+    "description": "downlink containing dummy data",
+    "type": "downlink",
+    "bytes": "aabbccddc480",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "dummyData": "aabbccdd",
+      "crc": "c480"
+    }
+  },
+  {
+    "description": "downlink containing registration response when the state is failed",
+    "type": "downlink",
+    "bytes": "59000b01330004000000006946",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response state upload",
+      "messageLength": 11,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "device registration",
+      "loadLength": 4,
+      "stateCode": "failed",
+      "crc": "6946"
+    }
+  },
+  {
+    "description": "downlink containing registration response when the state is success",
+    "type": "downlink",
+    "bytes": "5900220133001b010008604b4358010205a02e2305640000010055ff032101010000b079",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response state upload",
+      "messageLength": 34,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "device registration",
+      "loadLength": 27,
+      "stateCode": "success",
+      "messageCnt": 0,
+      "timeZone": 8,
+      "currentTimestamp": 1615545176,
+      "isoDate": "2021-03-12T10:32:56.000Z",
+      "runMode": "default run mode",
+      "dataReportInterval": 1,
+      "wakeupMode": "interval",
+      "wakeupInterval": 1440,
+      "wakeupSecondsPara": 46,
+      "picSize": "320*240",
+      "completion": "local",
+      "colorAttribute": "RGB",
+      "compressionQuality": 5,
+      "brightness": 100,
+      "TMUpdate": 0,
+      "powerSupply": "battery supply",
+      "isNewBattery": true,
+      "batteryCapacity": 0.85,
+      "channelSelection": "lora",
+      "messageRepeatNumber": 3,
+      "devType": 8449,
+      "isFirstRegistration": true,
+      "isRotated": false,
+      "isCaptureManually": false,
+      "crc": "b079"
+    }
+  },
+  {
+    "description": "downlink containing configuration response",
+    "type": "downlink",
+    "bytes": "580026013b001f01000007d00898fe7a00c8008c0052000b00010064000a000fffffffffffff8eee",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "version": 5,
+      "eventId": "server response data upload",
+      "messageLength": 38,
+      "enableEncryption": false,
+      "enableCrc": true,
+      "messageType": "configuration on the cloud",
+      "loadLength": 31,
+      "stateCode": "success",
+      "configuration": "000007d00898fe7a00c8008c0052000b00010064000a000fffffffffffff",
+      "crc": "8eee"
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "renewLearningPhase": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "renewLearningPhase"
+          ],
+          "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "changeMeasurementPeriod": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "changeMeasurementPeriod"
+            ],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "stateMessage": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "stateMessage"
+              ],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "alarmMessageThreshold": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "alarmMessageThreshold"
+              ],
+            "additionalProperties": false
+        }
+    ]
+}

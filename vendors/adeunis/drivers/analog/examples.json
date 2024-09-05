@@ -1,0 +1,305 @@
+[
+  {
+    "description": "0x10 Analog configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "102090061100224101",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Analog configuration",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "transmissionPeriodKeepAlive": {
+            "unit": "m",
+            "value": 1440
+          },
+          "transmissionPeriodData": {
+            "unit": "m",
+            "value": 60
+          },
+          "channels": [
+            {
+              "name": "channel A",
+              "id": 1,
+              "type": "0-10V",
+              "threshold": "none",
+              "externalTrigger": {
+                "type": "none",
+                "debounceDuration": {
+                  "unit": "s",
+                  "value": 0
+                }
+              }
+            },
+            {
+              "name": "channel B",
+              "id": 2,
+              "type": "4-20mA",
+              "threshold": "low",
+              "externalTrigger": {
+                "type": "none",
+                "debounceDuration": {
+                  "unit": "ms",
+                  "value": 100
+                }
+              }
+            }
+          ],
+          "productMode": "PRODUCTION"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x11 Analog configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "11600A0000000010",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x11 Analog configuration",
+          "status": {
+            "frameCounter": 3,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "threshold": {
+            "name": "channel A",
+            "unit": "µV or 10 nA",
+            "high": {
+              "value": 655360,
+              "hysteresis": 16
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x12 Analog configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "12800B0000000020",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x12 Analog configuration",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "threshold": {
+            "name": "channel A",
+            "unit": "µV or 10 nA",
+            "low": {
+              "value": 720896,
+              "hysteresis": 32
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x13 Analog configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "13A00C0000000030",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x13 Analog configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "threshold": {
+            "name": "channel B",
+            "unit": "µV or 10 nA",
+            "high": {
+              "value": 786432,
+              "hysteresis": 48
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x14 Analog configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "14C00E0000000040",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x14 Analog configuration",
+          "status": {
+            "frameCounter": 6,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "threshold": {
+            "name": "channel B",
+            "unit": "µV or 10 nA",
+            "low": {
+              "value": 917504,
+              "hysteresis": 64
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x20 Configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "20A02101",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x20 Configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "loraAdr": true,
+          "loraProvisioningMode": "OTAA"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Analog keep alive",
+    "type": "uplink",
+    "input": {
+      "bytes": "30400110000002100000",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Analog keep alive",
+          "status": {
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": false
+          },
+          "channels": [
+            {
+              "name": "channel A",
+              "unit": "V",
+              "value": 1.049
+            },
+            {
+              "name": "channel B",
+              "unit": "mA",
+              "value": 10.486
+            }
+          ]
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x42 Analog data",
+    "type": "uplink",
+    "input": {
+      "bytes": "42500110000002100000",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x42 Analog data",
+          "status": {
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "alarmChannelA": false,
+            "alarmChannelB": true
+          },
+          "channels": [
+            {
+              "name": "channel A",
+              "unit": "V",
+              "value": 1.049
+            },
+            {
+              "name": "channel B",
+              "unit": "mA",
+              "value": 10.486
+            }
+          ]
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

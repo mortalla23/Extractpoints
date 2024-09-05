@@ -1,0 +1,59 @@
+[
+    {
+        "type": "uplink",
+        "description": "Example: 600-037",
+        "input": {
+            "bytes": "0000A0090D01000000120000001A0000001800000000",
+            "fPort": 1,
+            "recvTime": "2023-09-11T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alarm_status": {
+                "pulse_ch1_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_ch1_leak": false,
+                "pulse_ch2_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_ch2_leak": false,
+                "pulse_oc_flow": {
+                  "high": false,
+                  "low": false
+                },
+                "pulse_oc_leak": false
+              },
+              "fw_version": 1,
+              "id": 160,
+              "seq_counter": 13,
+              "states": {
+                "battery": "100%",
+                "msg_type": "normal",
+                "pulse_ch1": "open",
+                "pulse_ch2": "open",
+                "pulse_oc": "open"
+              },
+              "type": "9 - TX PULSE ATEX",
+              "values": {
+                "pulse_ch1": {
+                  "unit": "count",
+                  "value": 18
+                },
+                "pulse_ch2": {
+                  "unit": "count",
+                  "value": 26
+                },
+                "pulse_oc": {
+                  "unit": "count",
+                  "value": 24
+                }
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration",
+    "type": "uplink",
+    "bytes": "10b34800b40100b4440c80",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationSuccessful": true,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationError": false,
+      "slaveReadError": true,
+      "type": "PRODUCT_CONFIGURATION_DATA_FRAMES",
+      "register": {
+        "transmissionPeriodOfTheKeepAliveFrameSeconds": 43200,
+        "transmissionPeriodOfDataSensors": 1800,
+        "dataAcquisitionPeriod": 1800,
+        "globalOperation": "PRODUCTION_MODE",
+        "modbusLinkConfiguration": {
+          "type": "RS485",
+          "stopBits": "_1_BIT",
+          "parity": "EVEN",
+          "baudrate": "_19200"
+        },
+        "supplyTimeOfTheExternalLoadBeforeTheModbusRequest": 320
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20300501",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 1,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "slaveReadError": true,
+      "type": "FRAMES_OF_INFORMATION_ON_THE_NETWORK_CONFIGURATION",
+      "register": {
+        "lorawanOptions": {
+          "adaptiveDataRate": true
+        },
+        "connectionMode": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "3022",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 1,
+      "configurationSuccessful": false,
+      "lowBattery": true,
+      "hardwareError": false,
+      "configurationError": false,
+      "slaveReadError": false,
+      "type": "KEEP_ALIVE_FRAME"
+    }
+  },
+  {
+    "description": "uplink containing the periodic data 1 frame",
+    "type": "uplink",
+    "bytes": "440001b31000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "slaveReadError": false,
+      "type": "PERIODIC_DATA_FRAME",
+      "register": {
+        "modbusRegisters": [
+          {
+            "numberOfRegister": 1,
+            "value": 435
+          },
+          {
+            "numberOfRegister": 2,
+            "value": 4096
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame",
+    "type": "uplink",
+    "bytes": "450001a000321234",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "slaveReadError": false,
+      "type": "ALARM_FRAME",
+      "register": {
+        "modbusSlaveAddress": 1,
+        "modbusRegisterAddress": 40960,
+        "valueOfModbusRegister1": 12818
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "01",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "02",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the specific register value request frame",
+    "type": "downlink",
+    "bytes": "400001042829",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "ModbusSpecificRegisterValueRequestFrame",
+        "message": [
+          "TRANSMISSION_PERIOD_OF_THE_KEEP_ALIVE_FRAME_SECONDS",
+          "TRANSMISSION_PERIOD_OF_DATA_SENSORS",
+          "PIN_CODE",
+          "ALARM_CONFIGURATION_1",
+          "HIGH_THRESHOLD_ALARM_1"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the update register request frame with periodic data 1",
+    "type": "downlink",
+    "bytes": "411400aa1e01121212",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "ModbusFrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "dataAcquisitionPeriod": 170,
+          "periodicData1": {
+            "numberOfRegisters": 2,
+            "modbusRegisterType": "INPUT_REGISTERS",
+            "associatedPeriodicFrame": 0,
+            "firstRegisterAddress": 4626,
+            "slaveAddress": 1
+          }
+        }
+      }
+    }
+  }
+]

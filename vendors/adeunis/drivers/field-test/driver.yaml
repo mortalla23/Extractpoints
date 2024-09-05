@@ -1,0 +1,16 @@
+# Formal driver name
+name: Adeunis Field-test v2 driver
+# Simple description of the driver functionalities
+description: The LoRaWAN Field Test Device from Adeunis is a ready-to-use device, which makes it possible to communicate with all network operators using the LoRaWAN V1.0 protocol.
+# Mandatory - id of the company that developed the driver
+# This id will be used to construct the id of the driver (Should be in lowercase, no special characters, maximum 8 characters)
+producerId: actility
+# Email of the developer
+developerEmail: tpx-iot-flow@actility.com
+# In case of a driver per model: `<vendorId>:<modelId>:<modelVersion>`
+# In case of a driver for multiples model: `<vendorId>:generic:<genericVersion>`
+# Needed for linking the model with a specific driver -> must be the same one used in model.yaml in the corresponding model
+protocolId: adeunis:field-test:1
+# This is to specify the type of functions signature used in this driver. Possible values: actility, lora-alliance, ttn, chirpstack.
+# Keep it empty if you followed the lora-alliance payload codec api
+signature: actility

@@ -1,0 +1,42 @@
+[
+    {
+        "description": "SmartPlug Report of the relay state of the remote SmartPlug",
+        "type": "uplink",
+        "bytes": "110a000600001001",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "OnOff",
+            "AttributeID": "State",
+            "AttributeType": "Boolean",
+            "Data": {
+                "RelayState": true
+            }
+        }
+    },
+    {
+        "description": "SmartPlug Report of simple metering of the remote SmartPlug",
+        "type": "uplink",
+        "bytes": "110a00520000410c00004d0000050003000afff0",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "SimpleMetering",
+            "AttributeID": "CurrentMetering",
+            "AttributeType": "ByteString",
+            "Data": {
+                "ActiveEnergy": 77,
+                "ReactiveEnergy": 5,
+                "NumberOfSamples": 3,
+                "ActivePower": 10,
+                "ReactivePower": -16
+            }
+        }
+    }
+]

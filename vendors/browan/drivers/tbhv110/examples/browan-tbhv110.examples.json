@@ -1,0 +1,22 @@
+[
+    {
+        "type": "uplink",
+        "description": "IAQ changed",
+        "bytes": "610b351ebf030100510036",
+        "fPort": 103,
+        "data": {
+            "data": {
+                "battery": 3.6,
+                "eco2": 959,
+                "humidity": 30,
+                "iaq": 81,
+                "iaqChanged": 1,
+                "status": 1,
+                "tempHumidChanged": 0,
+                "temperature": 22,
+                "temperatureBoard": 21,
+                "voc": 1
+            }
+        }
+    }
+]

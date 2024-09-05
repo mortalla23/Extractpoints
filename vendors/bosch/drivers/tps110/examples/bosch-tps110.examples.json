@@ -1,0 +1,45 @@
+[
+    {
+        "type": "uplink",
+        "description": "Parking Status",
+        "bytes": "01",
+        "fPort": 1,
+        "data": {
+            "data": {
+                "type": "parking status",
+                "occupied": true
+            }
+        }
+    },
+    {
+        "type": "uplink",
+        "description": "Heartbeat",
+        "bytes": "01ff",
+        "fPort": 2,
+        "data": {
+            "data": {
+                "type": "heartbeat",
+                "occupied": true,
+                "temperature": -1
+            }
+        }
+    },
+    {
+        "type": "uplink",
+        "description": "Startup with codes 804 and 885",
+        "bytes": "240300007503000000000000001d020301",
+        "fPort": 3,
+        "data": {
+            "data": {
+                "type": "startup",
+                "debugCodes": [
+                    804,
+                    885
+                ],
+                "firmwareVersion": "0.29.2",
+                "resetCause": "system request",
+                "occupied": true
+            }
+        }
+    }
+]

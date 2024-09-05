@@ -1,0 +1,38 @@
+[
+    {
+        "description": "Ventil'O Report of the differential pressure",
+        "type": "uplink",
+        "bytes": "110a80080000290190",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "DifferentialPressure",
+            "AttributeID": "MeasuredValue",
+            "AttributeType": "Int16",
+            "Data": {
+                "MeasuredValue": 400
+            }
+        }
+    },
+    {
+        "description": "Ventil'O Report of the temperature",
+        "type": "uplink",
+        "bytes": "110a040200002907d0",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "Temperature",
+            "AttributeID": "MeasuredValue",
+            "AttributeType": "Int16",
+            "Data": {
+                "MeasuredValue": 2000
+            }
+        }
+    }
+]

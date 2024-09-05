@@ -1,0 +1,58 @@
+[
+  {
+    "description": "fail decode uplink when the frame type is unknown",
+    "type": "uplink",
+    "bytes": "0001611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: unknown frame type"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on product configuration 1 with wrong payload length",
+    "type": "uplink",
+    "bytes": "10a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on product configuration 2 with wrong payload length",
+    "type": "uplink",
+    "bytes": "11a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on product configuration 3 with wrong payload length",
+    "type": "uplink",
+    "bytes": "12a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on network configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "20a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the keep alive with wrong payload length",
+    "type": "uplink",
+    "bytes": "30a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the data alive with wrong payload length",
+    "type": "uplink",
+    "bytes": "43a021c00008001201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "description": "uplink containing time",
+    "type": "uplink",
+    "bytes": "91110E6725000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "timestamp": "2019-05-07 14:17:00"
+    }
+  }
+]

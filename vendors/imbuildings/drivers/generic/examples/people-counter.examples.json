@@ -1,0 +1,257 @@
+[
+  {
+    "description": "people counter payload example 1",
+    "type": "uplink",
+    "bytes": "00012000000000001fa11fc0e0",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.88,
+      "counter_a": 0,
+      "counter_b": 0,
+      "sensor_status": 0,
+      "total_counter_a": 8097,
+      "total_counter_b": 8128,
+      "payload_counter": 224
+    }
+  },
+  {
+    "description": "people counter payload example 2",
+    "type": "uplink",
+    "bytes": "00012300000000000387037ddf",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 0,
+      "counter_b": 0,
+      "sensor_status": 0,
+      "total_counter_a": 903,
+      "total_counter_b": 893,
+      "payload_counter": 223
+    }
+  },
+  {
+    "description": "people counter payload example 3",
+    "type": "uplink",
+    "bytes": "00012300000000001afc1aca7c",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 0,
+      "counter_b": 0,
+      "sensor_status": 0,
+      "total_counter_a": 6908,
+      "total_counter_b": 6858,
+      "payload_counter": 124
+    }
+  },
+  {
+    "description": "people counter payload example 4",
+    "type": "uplink",
+    "bytes": "00012100040003005258520085",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.89,
+      "counter_a": 4,
+      "counter_b": 3,
+      "sensor_status": 0,
+      "total_counter_a": 21080,
+      "total_counter_b": 20992,
+      "payload_counter": 133
+    }
+  },
+  {
+    "description": "people counter payload example 5",
+    "type": "uplink",
+    "bytes": "00012200000000001e181df0e2",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.9,
+      "counter_a": 0,
+      "counter_b": 0,
+      "sensor_status": 0,
+      "total_counter_a": 7704,
+      "total_counter_b": 7664,
+      "payload_counter": 226
+    }
+  },
+  {
+    "description": "people counter payload example 6",
+    "type": "uplink",
+    "bytes": "0001140000000000fce0f95617",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.76,
+      "counter_a": 0,
+      "counter_b": 0,
+      "sensor_status": 0,
+      "total_counter_a": 64736,
+      "total_counter_b": 63830,
+      "payload_counter": 23
+    }
+  },
+  {
+    "description": "people counter payload example 7",
+    "type": "uplink",
+    "bytes": "0001230003000200561e55ee82",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 3,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 22046,
+      "total_counter_b": 21998,
+      "payload_counter": 130
+    }
+  },
+  {
+    "description": "people counter payload example 8",
+    "type": "uplink",
+    "bytes": "00012200020001001de71de9d9",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.9,
+      "counter_a": 2,
+      "counter_b": 1,
+      "sensor_status": 0,
+      "total_counter_a": 7655,
+      "total_counter_b": 7657,
+      "payload_counter": 217
+    }
+  },
+  {
+    "description": "people counter payload example 9",
+    "type": "uplink",
+    "bytes": "00012100010001005bf75c15e5",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.89,
+      "counter_a": 1,
+      "counter_b": 1,
+      "sensor_status": 0,
+      "total_counter_a": 23543,
+      "total_counter_b": 23573,
+      "payload_counter": 229
+    }
+  },
+  {
+    "description": "people counter payload example 10",
+    "type": "uplink",
+    "bytes": "00012000020002001fa31fc2e1",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.88,
+      "counter_a": 2,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 8099,
+      "total_counter_b": 8130,
+      "payload_counter": 225
+    }
+  },
+  {
+    "description": "people counter payload example 11",
+    "type": "uplink",
+    "bytes": "00012300010002000388037fe0",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 1,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 904,
+      "total_counter_b": 895,
+      "payload_counter": 224
+    }
+  },
+  {
+    "description": "people counter payload example 12",
+    "type": "uplink",
+    "bytes": "00012300010001001afd1acb7d",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 1,
+      "counter_b": 1,
+      "sensor_status": 0,
+      "total_counter_a": 6909,
+      "total_counter_b": 6859,
+      "payload_counter": 125
+    }
+  },
+  {
+    "description": "people counter payload example 13",
+    "type": "uplink",
+    "bytes": "0001210004000200525c520286",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.89,
+      "counter_a": 4,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 21084,
+      "total_counter_b": 20994,
+      "payload_counter": 134
+    }
+  },
+  {
+    "description": "people counter payload example 14",
+    "type": "uplink",
+    "bytes": "0001140008000200fce8f95818",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.76,
+      "counter_a": 8,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 64744,
+      "total_counter_b": 63832,
+      "payload_counter": 24
+    }
+  },
+  {
+    "description": "people counter payload example 15",
+    "type": "uplink",
+    "bytes": "0001230004000200562255f083",
+    "fPort": 26,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "device_status": 0,
+      "battery_voltage": 2.91,
+      "counter_a": 4,
+      "counter_b": 2,
+      "sensor_status": 0,
+      "total_counter_a": 22050,
+      "total_counter_b": 22000,
+      "payload_counter": 131
+    }
+  }
+]

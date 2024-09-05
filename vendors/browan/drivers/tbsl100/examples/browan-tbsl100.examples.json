@@ -1,0 +1,16 @@
+[
+    {
+        "type": "uplink",
+        "description": "Sound level keep alive",
+        "bytes": "000b3628",
+        "fPort": 105,
+        "data": {
+            "data": {
+                "status": 0,
+                "battery": 3.6,
+                "decibel": 40,
+                "temperatureBoard": 22
+            }
+        }
+    }
+]

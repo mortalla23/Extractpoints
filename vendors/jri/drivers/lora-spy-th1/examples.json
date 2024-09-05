@@ -1,0 +1,99 @@
+[
+  {
+    "description": "Example 1: Sending LoRa SPY Measurements",
+    "type": "uplink",
+    "input": {
+      "bytes": "030263a0eaf0080006c313f306c313ec06c213ea",
+      "fPort": 2,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": { 
+        "frameType": "Send Measurments LoRa Spy 2 x 16 bits",
+        "loRaSPYStatus": 2048,
+        "numberOfConfigurations": 0,
+        "redundancy": 2,
+        "timestamp": 427901513728,
+        "value1N": 17.31,
+        "value1N_1": 17.31,
+        "value1N_2": 17.30,
+        "value2N": 51.07,
+        "value2N_1": 51.00,
+        "value2N_2": 50.98
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Example 2: Presentation Frame",
+    "type": "uplink",
+    "input": {
+      "bytes": "10011905400008003979644e5e9e004f",
+      "fPort": 2,
+      "recvTime": "2023-02-28T12:00:00.000+02:00"
+    },
+    "output": {
+      "data": { 
+        "LoRa_SPY_Status": {
+          "LEDColor": "Green",
+          "LEDStatusBit0": 0,
+          "RTC_Fault": 0,
+          "batteryEmpty": false,
+          "flashSeriesDefault": 0,
+          "noGaugingTrack1": 0,
+          "noGaugingTrack2": 0,
+          "parametersFault": 0,
+          "sensorFaultTrack1": 0,
+          "sensorFaultTrack2": 0,
+          "t1_openDetectionAlarm": 0,
+          "thresholdAlarmTrack1": 0,
+          "thresholdAlarmTrack2": 0,
+          "touchButtonFault": 0,
+          "trackingMode": 0
+        },
+        "LoRa_SPY_Type": 64,
+        "RSSI_sensor_value": 121,
+        "batteryVoltage": 3.57,
+        "currentSensorTimestamp": 1682857630,
+        "firmwareHi": 1,
+        "firmwareLo": 25,
+        "frameType": "ID presentation Frame Answer",
+        "probeSerialNumberPresenceIndicator": "Absence",
+        "sensorType": 0,
+        "swVersionMinorVersion": 5,
+        "transmissionPeriod": "15min",
+        "uplinkCondition": "Periodic presentation frame"
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "Example 3: General configuration downlink",
+    "type": "downlink-encode",
+    "input": {
+      "data": {
+        "MEASUREMENT_FREQUENCY": "10m",
+        "TRANSMISSION_FREQUENCY": "20m",
+        "REDONDANCE": 3,
+        "ALARM_MODE": "MAINTAINED",
+        "LOW_ALARM_THRESHOLD_V1": "35°C",
+        "HIGH_ALARM_THRESHOLD_V1": "42°C",
+        "LOW_ALARM_THRESHOLD_V2": "40%",
+        "HIGH_ALARM_THRESHOLD_V2": "60%",
+        "LOW_THRESHOLD_DELAY": 7,
+        "HIGH_THRESHOLD_DELAY": 15,
+        "STOP_BY_PRESSING_BUTTON": "ALLOWED",
+        "DISPLAY_MEASURED_VALUE": "DISPLAYED",
+        "CHANNEL_T_MEASUREMENT_UNIT": "°C"
+      }
+    },
+    "output": {
+      "fPort": 2,
+      "bytes": "944a5400030000010002000100a00c6008a0007000000a010100010000000000",
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

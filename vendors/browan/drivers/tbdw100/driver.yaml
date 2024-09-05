@@ -1,0 +1,5 @@
+name: browan tbdw100 driver
+producerId: os1
+description: The Browan Door/Window sensor integrates a hall-effect sensor for detecting the opening and closing of doors, windows, garage doors, vaults, and entryways. It utilizes LoRaWAN® connectivity to transmit data.
+protocolId: os1-brow:tbdw100:1
+signature: actility

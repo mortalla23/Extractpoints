@@ -1,0 +1,5 @@
+name: browan tbpb100 driver
+producerId: os1
+description: The Tabs Push Button with two buttons.
+protocolId: os1-brow:tbpb100:1
+signature: actility

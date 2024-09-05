@@ -1,0 +1,28 @@
+{
+  "name": "enless-600-035",
+  "version": "1.1.0",
+  "description": "Decoder for enless 600-035 data frames.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "keywords": [
+    "Codec",
+    "LoRaWAN"
+  ],
+  "author": "Ing. Peter Stepan",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "isolated-vm": "^4.7.2",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "path": "^0.12.7",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "description": "0x10 Temp 4 configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "101021C000030002070800",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Temp 4 configuration",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": true,
+            "timestamp": false
+          },
+          "transmissionPeriodKeepAlive": { "unit": "s", "value": 86400 },
+          "numberOfHistorizationBeforeSending": 3,
+          "numberOfSamplingBeforeHistorization": 2,
+          "samplingPeriod": { "unit": "s", "value": 3600 },
+          "redundantSamples": 0,
+          "calculatedPeriodRecording": { "unit": "s", "value": 7200 },
+          "calculatedSendingPeriod": { "unit": "s", "value": 21600 }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x2f Downlink ack",
+    "type": "uplink",
+    "input": {
+      "bytes": "2f206001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x2f Downlink ack",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": false,
+            "timestamp": false
+          },
+          "downlinkFramecode": "0x60",
+          "requestStatus": "success"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Temp 4 keep alive",
+    "type": "uplink",
+    "input": {
+      "bytes": "303419310A12CA0010000014ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Temp 4 keep alive",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": true,
+            "timestamp": true
+          },
+          "timestamp": "2120-05-24T13:22:08.000",
+          "temperatures": [
+            { "name": "temperature 1", "unit": "°C", "value": 644.9 },
+            { "name": "temperature 2", "unit": "°C", "value": 257.8 }
+          ]
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x33 Set register status",
+    "type": "uplink",
+    "input": {
+      "bytes": "3380040140",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x33 Set register status",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": false,
+            "timestamp": false
+          },
+          "requestStatus": "errorInvalidRegister",
+          "registerId": 320
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x36 Alert message",
+    "type": "uplink",
+    "input": {
+      "bytes": "368001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x36 Alert message",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": false,
+            "timestamp": false
+          },
+          "alertCode": "uplinkDownlinkForbidden"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x37 Software version",
+    "type": "uplink",
+    "input": {
+      "bytes": "3720020100020001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x37 Software version",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": false,
+            "timestamp": false
+          },
+          "appVersion": "2.1.0",
+          "rtuVersion": "2.0.1"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x57 Temp 4 periodic data",
+    "type": "uplink",
+    "input": {
+      "bytes": "57148000800014ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x57 Temp 4 periodic data",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": true,
+            "timestamp": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+          "temperatures": [
+            { "name": "temperature 1", "unit": "°C", "values": [ -3276.8 ] },
+            { "name": "temperature 2", "unit": "°C", "values": [ -3276.8 ] }
+          ]
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x58 Temp 4 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "5880010032",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x58 Temp 4 alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false,
+            "configuration2ChannelsActivated": false,
+            "timestamp": false
+          },
+          "alarms": [
+            {
+              "name": "temperature 1",
+              "alarmStatus": "highThreshold",
+              "temperature": { "unit": "°C", "value": 5 }
+            }
+          ]
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

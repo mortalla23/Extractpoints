@@ -1,0 +1,15 @@
+[
+    {
+        "type": "uplink",
+        "description": "Button I pressed",
+        "bytes": "01fe370000040000",
+        "fPort": 147,
+        "data": {
+            "data": {
+                "status": 1,
+                "battery": 3.9,
+                "temperatureBoard": 23
+            }
+        }
+    }
+]

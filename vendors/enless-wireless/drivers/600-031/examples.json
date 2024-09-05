@@ -1,0 +1,41 @@
+[
+    {
+        "type": "uplink",
+        "description": "Example: 600-031",
+        "input": {
+            "bytes": "00008A07070100CD000000020000",
+            "fPort": 1,
+            "recvTime": "2023-09-11T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+              "alarm_status": {
+                "temperature_1": {
+                  "high": false,
+                  "low": true
+                }
+              },
+              "fw_version": 1,
+              "id": 138,
+              "seq_counter": 7,
+              "states": {
+                "battery": "100%",
+                "msg_type": "normal"
+              },
+              "type": "7 - TX TEMP INS",
+              "values": {
+                "temperature_1": {
+                  "unit": "°C",
+                  "value": 20.5
+                },
+                "temperature_2": {
+                  "unit": "°C",
+                  "value": 0
+                }
+              }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    }
+]

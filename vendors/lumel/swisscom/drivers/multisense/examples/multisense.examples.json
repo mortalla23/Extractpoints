@@ -1,0 +1,177 @@
+[
+  {
+    "description": "uplink containing five measurements",
+    "type": "uplink",
+    "bytes": "020040a701090b0300050401030755555555555555a6",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3002,
+      "humidity": 42.5,
+      "mode": "NORMAL",
+      "historyHumidity": {
+        "0": 42.5,
+        "1": 42.5,
+        "2": 42.5,
+        "3": 42.5,
+        "4": 42.5,
+        "5": 42.5,
+        "6": 42.5,
+        "7": 83
+      },
+      "modeStatus": "BUTTON",
+      "motionCounter": 259,
+      "payloadVersion": 2,
+      "reedCounter": 5,
+      "temperature": 23.15
+    }
+  },
+  {
+    "description": "uplink containing ten measurements",
+    "type": "uplink",
+    "bytes": "020080a70250030005040103050000fffafc1706090b090b090b090b090b090b090b090b",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "accelerometer": {
+        "x": 0,
+        "y": -6,
+        "z": -1001
+      },
+      "batteryVoltage": 3002,
+      "historyTemperature": {
+        "0": 23.15,
+        "1": 23.15,
+        "2": 23.15,
+        "3": 23.15,
+        "4": 23.15,
+        "5": 23.15,
+        "6": 23.15,
+        "7": 23.15
+      },
+      "humidity": 40,
+      "mode": "NORMAL",
+      "modeStatus": "TIMED",
+      "motionCounter": 259,
+      "payloadVersion": 2,
+      "reedCounter": 5,
+      "temperature": 23.15
+    }
+  },
+  {
+    "description": "uplink containing a motion event",
+    "type": "uplink",
+    "bytes": "020004a70250040103050000fffafc17",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "accelerometer": {
+        "x": 0,
+        "y": -6,
+        "z": -1001
+      },
+      "batteryVoltage": 3002,
+      "humidity": 40,
+      "mode": "NORMAL",
+      "modeStatus": "MOTION",
+      "motionCounter": 259,
+      "payloadVersion": 2
+    }
+  },
+  {
+    "description": "uplink containing temperature alarm and negative temperature",
+    "type": "uplink",
+    "bytes": "020010b301fc16",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3074,
+      "mode": "NORMAL",
+      "modeStatus": "TEMP",
+      "payloadVersion": 2,
+      "temperature": -10.02
+    }
+  },
+  {
+    "description": "uplink containing humidity alarm",
+    "type": "uplink",
+    "bytes": "0200089202a1",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 2876,
+      "mode": "NORMAL",
+      "modeStatus": "HUM",
+      "payloadVersion": 2,
+      "humidity": 80.5
+    }
+  },
+  {
+    "description": "uplink containing a life sign",
+    "type": "uplink",
+    "bytes": "0200028a",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 2828,
+      "mode": "NORMAL",
+      "modeStatus": "LIFE",
+      "payloadVersion": 2
+    }
+  },
+  {
+    "description": "uplink for usage start in workplace mode",
+    "type": "uplink",
+    "bytes": "020180a704a410",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3002,
+      "mode": "WORKPLACE",
+      "modeStatus": "START",
+      "motionCounter": 42000,
+      "payloadVersion": 2
+    }
+  },
+  {
+    "description": "uplink for usage check in workplace mode",
+    "type": "uplink",
+    "bytes": "020140a704a410",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3002,
+      "mode": "WORKPLACE",
+      "modeStatus": "CHECK",
+      "motionCounter": 42000,
+      "payloadVersion": 2
+    }
+  },
+  {
+    "description": "uplink for button in workplace mode",
+    "type": "uplink",
+    "bytes": "020120a704a410",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3002,
+      "mode": "WORKPLACE",
+      "modeStatus": "BUTTON",
+      "motionCounter": 42000,
+      "payloadVersion": 2
+    }
+  },
+  {
+    "description": "uplink for lifesign in workplace mode",
+    "type": "uplink",
+    "bytes": "020110a7",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "batteryVoltage": 3002,
+      "mode": "WORKPLACE",
+      "modeStatus": "LIFE",
+      "payloadVersion": 2
+    }
+  }
+]

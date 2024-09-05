@@ -1,0 +1,82 @@
+[
+  {
+    "description": "fail decode uplink when the frame type is unknown",
+    "type": "uplink",
+    "bytes": "0001611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: unknown frame type"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on device configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "10a021c000080012012c00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on digital inputs configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "1fa051000343000100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on network configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "20a0010100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the keep alive frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "3000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the response frame of updating a register with wrong payload length",
+    "type": "uplink",
+    "bytes": "33a00100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the presence alarm frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "5da0010000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the luminosity alarm frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "50a0010000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the digital input 1 alarm frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "51a0010000017e00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the digital input 2 alarm frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "52a0010000017e00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "description": "fail decode uplink with wrong message type",
+    "type": "uplink",
+    "bytes": "51000f0102ff0007162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid payload: unknown message type"
+  },
+  {
+    "description": "fail decode uplink with wrong event id",
+    "type": "uplink",
+    "bytes": "5f000f01023a0007162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid payload: unknown event id"
+  },
+  {
+    "description": "fail decode uplink with wrong communication type",
+    "type": "uplink",
+    "bytes": "51000f010f3a0007162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid payload: unknown communication type"
+  },
+  {
+    "description": "fail decode uplink with wrong pic size",
+    "type": "uplink",
+    "bytes": "51000f01023a000716eb0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid payload: unknown pic size"
+  },
+  {
+    "description": "fail decode uplink with wrong completion",
+    "type": "uplink",
+    "bytes": "51000f01023a000716270560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid payload: unknown color attribute"
+  },
+  {
+    "description": "fail decode uplink with wrong length",
+    "type": "uplink",
+    "bytes": "51000d01023a0007162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink with wrong load length",
+    "type": "uplink",
+    "bytes": "51000f01023a0008162b0560233d35d059",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong load length"
+  }
+]

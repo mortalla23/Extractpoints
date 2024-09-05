@@ -1,0 +1,74 @@
+[
+  {
+    "description": "fail decode uplink when the frame type is unknown",
+    "type": "uplink",
+    "bytes": "0001611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: unknown frame type"
+  },
+  {
+    "description": "fail decode uplink when the frame size is less than two bytes",
+    "type": "uplink",
+    "bytes": "00",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on product configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "10a301003c3902",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the information frame on network configuration with wrong payload length",
+    "type": "uplink",
+    "bytes": "2030050100",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the keep alive frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "30e201b300",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the periodic frame with wrong payload length",
+    "type": "uplink",
+    "bytes": "44e201b30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the response frame of read modbus register with wrong payload length",
+    "type": "uplink",
+    "bytes": "44e201b30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the Acknowledgment on write register with wrong payload length",
+    "type": "uplink",
+    "bytes": "2fe201b300",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  },
+  {
+    "description": "fail decode uplink containing the response frame of updating a register with wrong payload length",
+    "type": "uplink",
+    "bytes": "33a00201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "invalid uplink payload: wrong length"
+  }
+]

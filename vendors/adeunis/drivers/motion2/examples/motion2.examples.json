@@ -1,0 +1,365 @@
+[
+  {
+    "description": "uplink containing the information frame on device configuration",
+    "type": "uplink",
+    "bytes": "100021c0000100010708001e",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "DEVICE_CONFIGURATION",
+      "register": {
+        "transmissionPeriodOfTheKeepAliveFrame": 86400,
+        "numberOfBackups": 1,
+        "numberOfReadingsBeforeSavingInTheHistoryLogs": 1,
+        "periodOfAcquisition": 3600,
+        "inhibitionTimeOfThePresenceDetector": 300
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on digital inputs configuration when an input is deactivated",
+    "type": "uplink",
+    "bytes": "1f00410001000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "DIGITAL_INPUT_CONFIGURATION",
+      "register": {
+        "configurationOfTheButtonInput1": {
+          "type": "EVENT_ON",
+          "debounceTime": "ONE_HUNDRED_MS"
+        },
+        "buttonAlarmThresholdInput1": 1,
+        "configurationOfTheTerminalBlockInput2": {
+          "type": "OFF"
+        }
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on digital inputs configuration",
+    "type": "uplink",
+    "bytes": "1f00410001110002",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 0,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "DIGITAL_INPUT_CONFIGURATION",
+      "register": {
+        "buttonAlarmThresholdInput1": 1,
+        "configurationOfTheButtonInput1": {
+          "debounceTime": "ONE_HUNDRED_MS",
+          "type": "EVENT_ON"
+        },
+        "configurationOfTheTerminalBlockInput2": {
+          "debounceTime": "TEN_MS",
+          "type": "EVENT_ON"
+        },
+        "terminalAlarmThresholdInput2": 2
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20200501",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 1,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "NETWORK_CONFIGURATION",
+      "register": {
+        "loraWanOptions": {
+          "adaptiveDataRate": true,
+          "dutyCycle": false
+        },
+        "modeOfActivation": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "30",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "KEEP_ALIVE"
+    }
+  },
+  {
+    "description": "uplink containing the response frame of updating a register when the request status is success",
+    "type": "uplink",
+    "bytes": "33a001",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationInconsistency": false,
+      "hardwareError": false,
+      "lowBattery": false,
+      "configurationSuccessful": false,
+      "type": "UPDATE_REGISTER_RESPONSE",
+      "register": {
+        "requestStatus": "SUCCESS"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the response frame of updating a register when an error occurred",
+    "type": "uplink",
+    "bytes": "33a0020143",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationInconsistency": false,
+      "hardwareError": false,
+      "lowBattery": false,
+      "configurationSuccessful": false,
+      "type": "UPDATE_REGISTER_RESPONSE",
+      "register": {
+        "requestStatus": "ERROR_NO_UPDATE",
+        "registerId": 323
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic data frame when having two values of presence and luminosity",
+    "type": "uplink",
+    "bytes": "5c80011e320020",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PRESENCE_AND_LUMINOSITY_READINGS",
+      "register": {
+        "presenceState": true,
+        "brightnessAndPresenceReadings": [
+          {
+            "luminosity": 50,
+            "offset": 0,
+            "presence": 30
+          },
+          {
+            "luminosity": 32,
+            "offset": -1,
+            "presence": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the periodic data frame when having six values of temperature and humidity",
+    "type": "uplink",
+    "bytes": "5c20011e321e341f331d331d351f36",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 1,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PRESENCE_AND_LUMINOSITY_READINGS",
+      "register": {
+        "presenceState": true,
+        "brightnessAndPresenceReadings": [
+          {
+            "luminosity": 50,
+            "offset": 0,
+            "presence": 30
+          },
+          {
+            "luminosity": 52,
+            "offset": -1,
+            "presence": 30
+          },
+          {
+            "luminosity": 51,
+            "offset": -2,
+            "presence": 31
+          },
+          {
+            "luminosity": 51,
+            "offset": -3,
+            "presence": 29
+          },
+          {
+            "luminosity": 53,
+            "offset": -4,
+            "presence": 29
+          },
+          {
+            "luminosity": 54,
+            "offset": -5,
+            "presence": 31
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "uplink containing the presence alarm frame",
+    "type": "uplink",
+    "bytes": "5d800132",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "PRESENCE_ALARM",
+      "register": {
+        "presenceAlarmStatus": true,
+        "luminosity": 50
+      }
+    }
+  },
+  {
+    "description": "uplink containing the luminosity alarm frame",
+    "type": "uplink",
+    "bytes": "50800132",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationSuccessful": false,
+      "lowBattery": false,
+      "hardwareError": false,
+      "configurationInconsistency": false,
+      "type": "LUMINOSITY_ALARM",
+      "register": {
+        "luminosityAlarmStatus": true,
+        "luminosity": 50
+      }
+    }
+  },
+  {
+    "description": "uplink containing the digital input 1 alarm frame",
+    "type": "uplink",
+    "bytes": "51a0010000017e0001",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationInconsistency": false,
+      "hardwareError": false,
+      "lowBattery": false,
+      "configurationSuccessful": false,
+      "type": "BUTTON_ALARM_INPUT",
+      "register": {
+        "digitalInputStatePreviousFrame": false,
+        "digitalInputCurrentState": true,
+        "globalDigitalCounter": 382,
+        "instantaneousDigitalCounter": 1
+      }
+    }
+  },
+  {
+    "description": "uplink containing the digital input 2 alarm frame",
+    "type": "uplink",
+    "bytes": "52a0000000017e0001",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationInconsistency": false,
+      "hardwareError": false,
+      "lowBattery": false,
+      "configurationSuccessful": false,
+      "type": "BUTTON_ALARM_INPUT_2",
+      "register": {
+        "digitalInputStatePreviousFrame": false,
+        "digitalInputCurrentState": false,
+        "globalDigitalCounter": 382,
+        "instantaneousDigitalCounter": 1
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "0100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "0200000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing specific register value request frame",
+    "type": "downlink",
+    "bytes": "40142a2c",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "MotionSpecificRegisterValueRequestFrame",
+        "message": [
+          "NUMBER_OF_READINGS_BEFORE_SAVING_IN_THE_HISTORY_LOGS",
+          "HIGH_HYSTERESIS_BRIGHTNESS",
+          "LOW_HYSTERESIS_BRIGHTNESS"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the frame for updating the value of a specific register",
+    "type": "downlink",
+    "bytes": "4114003f2a5a2c0a5262",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "MotionFrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "numberOfReadingsBeforeSavingInTheHistoryLogs": 63,
+          "highHysteresisBrightness": 90,
+          "lowHysteresisBrightness": 10,
+          "configurationOfTheTerminalBlockInput2": {
+            "debounceTime": "FIVE_HUNDREDS_MS",
+            "type": "EVENT_OFF"
+          }
+        }
+      }
+    }
+  }
+]

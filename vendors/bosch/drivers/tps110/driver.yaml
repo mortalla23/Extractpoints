@@ -1,0 +1,5 @@
+name: bosch tps110 driver
+producerId: os1
+description: The BOSCH wireless smart parking sensor is a LoRaWAN® end device that uses a magnetometer and radar which are two independent sensors for parking space occupancy. It enables active parking lot management features, such as search, navigation, and reservation. In addition to that, the BOSCH parking lot sensor has a GPS receiver and a temperature sensor.
+protocolId: os1-bosc:tps110:0
+signature: actility

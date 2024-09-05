@@ -1,0 +1,409 @@
+[
+  {
+    "description": "0x10 Motion configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "100021C000030002012C0001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Motion configuration",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "transmissionPeriodKeepAlive": {
+            "unit": "s",
+            "value": 86400
+          },
+          "numberOfHistorizationBeforeSending": 3,
+          "numberOfSamplingBeforeHistorization": 2,
+          "samplingPeriod": {
+            "unit": "s",
+            "value": 600
+          },
+          "presenceDetectorInhibition": {
+            "unit": "s",
+            "value": 10
+          },
+          "calculatedPeriodRecording": {
+            "unit": "s",
+            "value": 1200
+          },
+          "calculatedSendingPeriod": {
+            "unit": "s",
+            "value": 3600
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x1f digital input configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "1F20410001520002",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x1f digital input configuration",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "digitalInput1": {
+            "type": "highEdge",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 100
+            },
+            "threshold": 1
+          },
+          "digitalInput2": {
+            "type": "lowEdge",
+            "debouncingPeriod": {
+              "unit": "ms",
+              "value": 200
+            },
+            "threshold": 2
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x20 Configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "20A00100",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x20 Configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "loraAdr": true,
+          "loraProvisioningMode": "ABP",
+          "loraDutycyle": "deactivated",
+          "loraClassMode": "CLASS A"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Keep alive",
+    "type": "uplink",
+    "input": {
+      "bytes": "303419310A12CA0010000014ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Keep alive",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x33 Set register status",
+    "type": "uplink",
+    "input": {
+      "bytes": "3380010000",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x33 Set register status",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "requestStatus": "success",
+          "registerId": 0
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x4e Motion data",
+    "type": "uplink",
+    "input": {
+      "bytes": "4E284A9A001542000148",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x4e Motion data",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": true
+          },
+          "globalCounterValue": 19098,
+          "decodingInfo": "counterValues/values: [t=0, t-1, t-2, ...]",
+          "counterValues": [
+            21,
+            1
+          ],
+          "luminosity": {
+            "unit": "%",
+            "values": [
+              66,
+              72
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x4f Motion presence alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "4F0009014532",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x4f Motion presence alarm",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "alarmPresence": {
+            "globalCounterValue": 2305,
+            "counterValue": 17714
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x50 Motion luminosity alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "50000121",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x50 Motion luminosity alarm",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "alarmLuminosity": {
+            "alarmStatus": "active",
+            "luminosity": {
+              "unit": "%",
+              "value": 33
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x51 digital input 1 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "51A0010000017E0001",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x51 digital input 1 alarm",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "state": {
+            "previousFrame": false,
+            "current": true
+          },
+          "counter": {
+            "global": 382,
+            "instantaneous": 1
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x52 digital input 2 alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "52A202000001000003",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x52 digital input 2 alarm",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "state": {
+            "previousFrame": true,
+            "current": false
+          },
+          "counter": {
+            "global": 256,
+            "instantaneous": 3
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x5c Motion data",
+    "type": "uplink",
+    "input": {
+      "bytes": "5C800000320020",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x5c Motion data",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "presenceDetectedWhenSending": false,
+          "decodingInfo": "values: [t=0, t-1, t-2, ...]",
+          "presence": {
+            "unit": "%",
+            "values": [
+              0,
+              0
+            ]
+          },
+          "luminosity": {
+            "unit": "%",
+            "values": [
+              50,
+              32
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x5d Motion presence alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "5D800032",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x5d Motion presence alarm",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "configurationInconsistency": false
+          },
+          "alarmPresence": {
+            "alarmStatus": "inactive",
+            "luminosity": {
+              "unit": "%",
+              "value": 50
+            }
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

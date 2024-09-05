@@ -1,0 +1,9 @@
+[
+    {
+        "type": "uplink",
+        "description": "Unknown FPort",
+        "bytes": "01",
+        "fPort": 42,
+        "error": "unknown FPort"
+    }
+]

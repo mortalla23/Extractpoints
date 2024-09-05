@@ -1,0 +1,67 @@
+[
+    {
+        "description": "THr Report of the estimated illuminance",
+        "type": "uplink",
+        "bytes": "110a000c00553941a00000",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "AnalogInput",
+            "AttributeID": "PresentValue",
+            "AttributeType": "SinglePrecision",
+            "Data": {
+                "SinglePrecisionValue": 20
+            }
+        },
+        "model": {
+            "producerId": "nke",
+            "moduleId": "th",
+            "version": 3
+        },
+        "points": {
+            "illuminance": {
+                "record": 20,
+                "unitId": "lx"
+            }
+        }
+    },
+    {
+        "description": "THr Report of the temperature of the remote sensor",
+        "type": "uplink",
+        "bytes": "110a04020000290064",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "Temperature",
+            "AttributeID": "MeasuredValue",
+            "AttributeType": "Int16",
+            "Data": {
+                "MeasuredValue": 100
+            }
+        }
+    },
+    {
+        "description": "THr Report of the relative humidity of the remote sensor",
+        "type": "uplink",
+        "bytes": "110a04050000210320",
+        "fPort": 125,
+        "time": "2020-08-02T20:00:00.000+05:00",
+        "data": {
+            "Report": "Standard",
+            "EndPoint": 0,
+            "CommandID": "ReportAttributes",
+            "ClusterID": "RelativeHumidity",
+            "AttributeID": "MeasuredValue",
+            "AttributeType": "UInt16",
+            "Data": {
+                "MeasuredValue": 800
+            }
+        }
+    }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "enless-600-024",
+  "version": "1.0.1",
+  "description": "Decoder for enless 600-024 data frames.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "keywords": [
+    "Codec",
+    "LoRaWAN"
+  ],
+  "author": "Ing. Peter Stepan",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

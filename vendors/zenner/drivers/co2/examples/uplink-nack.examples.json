@@ -1,0 +1,35 @@
+[
+  {
+    "description": "uplink nak setAlarmThresholdNack",
+    "type": "uplink",
+    "bytes": "FF360203",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "setAlarmThresholdNack",
+      "error": "parameter error"
+    }
+  },
+  {
+    "description": "uplink nak unknown EFC function of a knwon FC",
+    "type": "uplink",
+    "bytes": "FF360200",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "unknownCommand",
+      "error": "unknown EFC function of a knwon FC"
+    }
+  },
+  {
+    "description": "uplink nak unknown function FC command",
+    "type": "uplink",
+    "bytes": "FF3600",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "response": "unknownCommand",
+      "error": "unknown function FC command"
+    }
+  }
+]

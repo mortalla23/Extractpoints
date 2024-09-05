@@ -1,0 +1,17 @@
+[
+    {
+        "type": "uplink",
+        "description": "Occupied",
+        "bytes": "01bb340400dc7801",
+        "fPort": 102,
+        "data": {
+            "data": {
+                "battery": 3.6,
+                "count": 96476,
+                "status": 1,
+                "temperatureBoard": 20,
+                "time": 4
+            }
+        }
+    }
+]

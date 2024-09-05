@@ -1,0 +1,87 @@
+[
+  {
+    "description": "uplink with full message contains positive temperature, humidity, and CO2 density from LS-111P device",
+    "type": "uplink",
+    "bytes": "01096113950292",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 1,
+      "deviceTypeTxt": "CO2",
+      "temperature": 24.01,
+      "humidity": 50.13,
+      "gazDensity": 658
+    }
+  },
+  {
+    "description": "uplink with full message contains negative temperature, humidity, and CO2 density from LS-111P device",
+    "type": "uplink",
+    "bytes": "01f69f13950292",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 1,
+      "deviceTypeTxt": "CO2",
+      "temperature": -24.01,
+      "humidity": 50.13,
+      "gazDensity": 658
+    }
+  },
+  {
+    "description": "uplink with full message contains temperature, humidity, and CO density from LS-112P device",
+    "type": "uplink",
+    "bytes": "02096113950292",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 2,
+      "deviceTypeTxt": "CO",
+      "temperature": 24.01,
+      "humidity": 50.13,
+      "gazDensity": 658
+    }
+  },
+  {
+    "description": "uplink with full message contains temperature, humidity, and PM2.5 density from LS-113G device",
+    "type": "uplink",
+    "bytes": "03096113950292",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 3,
+      "deviceTypeTxt": "PM2.5",
+      "temperature": 24.01,
+      "humidity": 50.13,
+      "gazDensity": 658
+    }
+  },
+  {
+    "description": "uplink with full message contains temperature, humidity, and gaz density from unknown device",
+    "type": "uplink",
+    "bytes": "04096113950292",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": true,
+      "deviceType": 4,
+      "deviceTypeTxt": "unknown device type",
+      "temperature": 24.01,
+      "humidity": 50.13,
+      "gazDensity": 658
+    }
+  },
+  {
+    "description": "uplink when the length of payload is wrong then decoder is not available",
+    "type": "uplink",
+    "bytes": "0409611395029201",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "decoderAvailable": false
+    }
+  }
+]

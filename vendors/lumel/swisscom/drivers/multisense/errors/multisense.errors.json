@@ -1,0 +1,58 @@
+[
+  {
+    "description": "fail decode uplink with invalid temperature value",
+    "type": "uplink",
+    "bytes": "020020a7017fff",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Invalid temperature value: 7FFF"
+  },
+  {
+    "description": "fail decode uplink with invalid temperature history value",
+    "type": "uplink",
+    "bytes": "020020a7067fff7fff7fff7fff7fff7fff7fff7fff",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Invalid temperature history value: 7FFF"
+  },
+  {
+    "description": "fail decode uplink with invalid humidity history value",
+    "type": "uplink",
+    "bytes": "020020a707ffffffffffffffff",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Invalid humidity history value: 255"
+  },
+  {
+    "description": "fail decode uplink with invalid humidity value",
+    "type": "uplink",
+    "bytes": "020020a702ff",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Invalid humidity value: 255"
+  },
+  {
+    "description": "fail decode uplink with unknown event ID",
+    "type": "uplink",
+    "bytes": "020340a7",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Unknown mode id: '3', message cannot be decoded"
+  },
+  {
+    "description": "fail decode uplink with unknown event in normal mode",
+    "type": "uplink",
+    "bytes": "020000a7",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Unknown event type in NORMAL mode"
+  },
+  {
+    "description": "fail decode uplink with unknown event in workplace mode",
+    "type": "uplink",
+    "bytes": "020100a7",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "error": "Unknown event type in WORKPLACE mode"
+  }
+]

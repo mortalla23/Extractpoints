@@ -1,0 +1,302 @@
+[
+  {
+    "description": "0x10 Dry Contacts 2 configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "100121C0016843110400",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x10 Dry Contacts 2 configuration",
+          "status": {
+            "frameCounter": 0,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": true,
+            "timestamp": false
+          },
+          "keepAlivePeriod": {
+            "unit": "s",
+            "value": 86400
+          },
+          "transmitPeriod": {
+            "unit": "s",
+            "value": 3600
+          },
+          "channelA": {
+            "type": "input",
+            "edge": "both",
+            "debounceDuration": {
+              "unit": "ms",
+              "value": 100
+            }
+          },
+          "channelB": {
+            "type": "input",
+            "edge": "high",
+            "debounceDuration": {
+              "unit": "ms",
+              "value": 10
+            }
+          },
+          "channelC": {
+            "type": "output"
+          },
+          "channelD": {
+            "type": "disabled"
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x20 Configuration",
+    "type": "uplink",
+    "input": {
+      "bytes": "20A02101",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x20 Configuration",
+          "status": {
+            "frameCounter": 5,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "timestamp": false
+          },
+          "loraAdr": true,
+          "loraProvisioningMode": "OTAA",
+          "loraDutycyle": "deactivated",
+          "loraClassMode": "CLASS C"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x2f Downlink ack",
+    "type": "uplink",
+    "input": {
+      "bytes": "2F206004",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x2f Downlink ack",
+          "status": {
+            "frameCounter": 1,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "timestamp": false
+          },
+          "downlinkFramecode": "0x60",
+          "requestStatus": "errorInvalidRequest"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x30 Dry Contacts 2 keep alive",
+    "type": "uplink",
+    "input": {
+      "bytes": "30C600010100000500020A14ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x30 Dry Contacts 2 keep alive",
+          "status": {
+            "frameCounter": 6,
+            "hardwareError": false,
+            "lowBattery": true,
+            "configurationDone": false,
+            "timestamp": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "channelA": {
+            "value": 1,
+            "state": false
+          },
+          "channelB": {
+            "value": 256,
+            "state": true
+          },
+          "channelC": {
+            "value": 5,
+            "state": false
+          },
+          "channelD": {
+            "value": 2,
+            "state": true
+          }
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x33 Set register status",
+    "type": "uplink",
+    "input": {
+      "bytes": "3380040140",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "type": "0x33 Set register status",
+          "status": {
+            "frameCounter": 4,
+            "hardwareError": false,
+            "lowBattery": false,
+            "configurationDone": false,
+            "timestamp": false
+          },
+          "requestStatus": "errorInvalidRegister",
+          "registerId": 320
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x40 Dry Contacts 2 data",
+    "type": "uplink",
+    "input": {
+      "bytes": "404400010000000500020114ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "channelA": {
+            "currentState": true,
+            "previousFrameState": false,
+            "value": 1
+          },
+          "channelB": {
+            "currentState": false,
+            "previousFrameState": false,
+            "value": 0
+          },
+          "channelC": {
+            "currentState": false,
+            "previousFrameState": false,
+            "value": 5
+          },
+          "channelD": {
+            "currentState": false,
+            "previousFrameState": false,
+            "value": 2
+          },
+          "decodingInfo": "true: ON/CLOSED, false: OFF/OPEN",
+          "status": {
+            "configurationDone": false,
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "timestamp": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "type": "0x40 Dry Contacts 2 data"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x41 Dry Contacts 2 duration alarm",
+    "type": "uplink",
+    "input": {
+      "bytes": "414403001414ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "channel": 3,
+          "durationThreshold": {
+            "unit": "min",
+            "value": 20
+          },
+          "status": {
+            "configurationDone": false,
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "timestamp": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "type": "0x41 Dry Contacts 2 duration alarm"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "description": "0x59 Dry Contacts 2 time counting data",
+    "type": "uplink",
+    "input": {
+      "bytes": "59440F0000000100000002000000030000000414ABA3E9",
+      "fPort": 1,
+      "recvTime": "2020-08-02T20:00:00.000+05:00"
+    },
+    "output": {
+      "data": {
+        "bytes": {
+          "channelATimeCounter": {
+            "unit": "s",
+            "value": 1
+          },
+          "channelBTimeCounter": {
+            "unit": "s",
+            "value": 2
+          },
+          "channelCTimeCounter": {
+            "unit": "s",
+            "value": 3
+          },
+          "channelDTimeCounter": {
+            "unit": "s",
+            "value": 4
+          },
+          "status": {
+            "configurationDone": false,
+            "frameCounter": 2,
+            "hardwareError": false,
+            "lowBattery": false,
+            "timestamp": true
+          },
+          "timestamp": "2023-12-28T19:22:17.000",
+          "type": "0x59 Dry Contacts 2 time counting data"
+        }
+      },
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

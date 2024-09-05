@@ -1,0 +1,228 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "oneOf": [
+        {
+            "type": "object",
+            "properties": {
+                "sensor": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "percentage": {
+                    "type": "integer"
+                },
+                "vibrationLevel": {
+                    "type": "number"
+                },
+                "peakFrequencyIndex": {
+                    "type": "integer"
+                },
+                "peakFrequency": {
+                    "type": "number"
+                },
+                "temperature": {
+                    "type": "integer"
+                },
+                "learningFromScratch": {
+                    "type": "string"
+                },
+                "fft": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "sensor",
+                "type",
+                "percentage",
+                "vibrationLevel",
+                "peakFrequencyIndex",
+                "peakFrequency",
+                "temperature",
+                "learningFromScratch",
+                "fft"
+            ],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "sensor": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "anomalyLevel": {
+                    "type": "number"
+                },
+                "operatingRate": {
+                    "type": "integer"
+                },
+                "operatingTime": {
+                    "type": "number"
+                },
+                "numberOfAlarms": {
+                    "type": "integer"
+                },
+                "temperature": {
+                    "type": "integer"
+                },
+                "reportPeriod": {
+                    "type": "integer"
+                },
+                "reportId": {
+                    "type": "integer"
+                },
+                "vibrationLevel": {
+                    "type": "number"
+                },
+                "peakFrequencyIndex": {
+                    "type": "integer"
+                },
+                "peakFrequency": {
+                    "type": "number"
+                },
+                "operatingTime1020": {
+                    "type": "integer"
+                },
+                "operatingTime2040": {
+                    "type": "integer"
+                },
+                "operatingTime4060": {
+                    "type": "integer"
+                },
+                "operatingTime6080": {
+                    "type": "integer"
+                },
+                "operatingTime80100": {
+                    "type": "integer"
+                },
+                "batteryPercentage": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo20last24h": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo50last24h": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo80last24h": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo20last30d": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo50last30d": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo80last30d": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo20last6mo": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo50last6mo": {
+                    "type": "integer"
+                },
+                "anomalyLevelTo80last6mo": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "sensor",
+                "type",
+                "anomalyLevel",
+                "operatingRate",
+                "operatingTime",
+                "numberOfAlarms",
+                "temperature",
+                "reportPeriod",
+                "reportId",
+                "vibrationLevel",
+                "peakFrequencyIndex",
+                "peakFrequency",
+                "operatingTime1020",
+                "operatingTime2040",
+                "operatingTime4060",
+                "operatingTime6080",
+                "operatingTime80100",
+                "batteryPercentage",
+                "anomalyLevelTo20last24h",
+                "anomalyLevelTo50last24h",
+                "anomalyLevelTo80last24h",
+                "anomalyLevelTo20last30d",
+                "anomalyLevelTo50last30d",
+                "anomalyLevelTo80last30d",
+                "anomalyLevelTo20last6mo",
+                "anomalyLevelTo50last6mo",
+                "anomalyLevelTo80last6mo"
+            ],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "sensor": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "anomalyLevel": {
+                    "type": "integer"
+                },
+                "temperature": {
+                    "type": "integer"
+                },
+                "vibrationLevel": {
+                    "type": "number"
+                },
+                "fft": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "sensor",
+                "type",
+                "anomalyLevel",
+                "temperature",
+                "vibrationLevel",
+                "fft"
+            ],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "sensor": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "sensorState": {
+                    "type": "string"
+                },
+                "batteryPercentage": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "sensor",
+                "type",
+                "sensorState",
+                "batteryPercentage"
+            ],
+            "additionalProperties": false
+        }
+    ]
+}

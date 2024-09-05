@@ -1,0 +1,295 @@
+[
+    {
+        "description": "0x10 Pulse 4 configuration",
+        "type": "uplink",
+        "input": {
+          "bytes": "10200100021B070822003c0001000200030004000500060203020301",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "bytes": {
+                  "calculatedSendingPeriod": {
+                    "unit": "s",
+                    "value": 7200
+                  },
+                  "channels": [
+                    {
+                      "debouncingPeriod": {
+                        "unit": "ms",
+                        "value": 10
+                      },
+                      "leakageDetection": {
+                        "dailyPeriodsBelowWhichLeakageAlarmTriggered": 5,
+                        "overflowAlarmTriggerThreshold": 1,
+                        "threshold": 3
+                      },
+                      "name": "channel A",
+                      "state": "enabled",
+                      "tamper": {
+                        "activated": true,
+                        "samplePeriodForDetection": {
+                          "unit": "s",
+                          "value": 20
+                        },
+                        "threshold": 3
+                      },
+                      "type": "gasPullUpOn"
+                    },
+                    {
+                      "debouncingPeriod": {
+                        "unit": "ms",
+                        "value": 10
+                      },
+                      "leakageDetection": {
+                        "dailyPeriodsBelowWhichLeakageAlarmTriggered": 6,
+                        "overflowAlarmTriggerThreshold": 2,
+                        "threshold": 4
+                      },
+                      "name": "channel B",
+                      "state": "enabled",
+                      "tamper": {
+                        "activated": false,
+                        "samplePeriodForDetection": {
+                          "unit": "s",
+                          "value": 20
+                        },
+                        "threshold": 3
+                      },
+                      "type": "otherPullUpOff"
+                    }
+                  ],
+                  "flowCalculationPeriod": {
+                    "unit": "m",
+                    "value": 60
+                  },
+                  "numberOfHistorizationBeforeSending": 2,
+                  "productMode": "PRODUCTION",
+                  "redundantSamples": 1,
+                  "samplingPeriod": {
+                    "unit": "s",
+                    "value": 3600
+                  },
+                  "status": {
+                    "configurationDone": false,
+                    "frameCounter": 1,
+                    "hardwareError": false,
+                    "lowBattery": false,
+                    "timestamp": false
+                  },
+                  "type": "0x10 Pulse 4 configuration"
+                }
+            },
+          "errors": [],
+          "warnings": []
+        }
+    },
+    {
+        "description": "0x30 Pulse 4 keep alive",
+        "type": "uplink",
+        "input": {
+          "bytes": "308419310A12CA0010000014ABA3E9",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+          "data": {
+            "bytes": {
+                "channels": [
+                    {
+                        "flow": {
+                            "alarm": true,
+                            "last24hMax": 12554,
+                            "last24hMin": 16
+                        },
+                        "leakageAlarm": true,
+                        "name": "channel A",
+                        "tamperAlarm": false
+                    },
+                    {
+                        "flow": {
+                            "alarm": false,
+                            "last24hMax": 4810,
+                            "last24hMin": 0
+                        },
+                        "leakageAlarm": false,
+                        "name": "channel B",
+                        "tamperAlarm": true
+                    }
+                ],
+                "status": {
+                    "configurationDone": false,
+                    "frameCounter": 4,
+                    "hardwareError": false,
+                    "lowBattery": false,
+                    "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "type": "0x30 Pulse 4 keep alive"
+                }
+          },
+          "errors": [],
+          "warnings": []
+        }
+    },
+    {
+        "description": "0x33 Set register status",
+        "type": "uplink",
+        "input": {
+          "bytes": "3380040140",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "bytes": {
+                    "registerId": 320,
+                    "requestStatus": "errorInvalidRegister",
+                    "status": {
+                    "configurationDone": false,
+                    "frameCounter": 4,
+                    "hardwareError": false,
+                    "lowBattery": false,
+                    "timestamp": false
+                    },
+                    "type": "0x33 Set register status"
+                }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "0x46 Pulse 4 data",
+        "type": "uplink",
+        "input": {
+          "bytes": "46800000009f00000002",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+          "data": {
+            "bytes": {
+                "counterValues": [
+                  159,
+                  2
+                ],
+                "decodingInfo": "counterValues: [Channel A, Channel B]",
+                "status": {
+                    "configurationDone": false,
+                    "frameCounter": 4,
+                    "hardwareError": false,
+                    "lowBattery": false,
+                    "timestamp": false
+                },
+                "type": "0x46 Pulse 4 data"
+            }
+          },
+          "errors": [],
+          "warnings": []
+        }
+    },
+    {
+        "description": "0x47 Pulse 4 alarm",
+        "type": "uplink",
+        "input": {
+          "bytes": "5a20000001270001000200030004",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+            "data": {
+                "bytes": {
+                    "counterValues": [
+                        295,
+                        294,
+                        292,
+                        289,
+                        285
+                    ],
+                    "decodingInfo": "counterValues: [t=0, t-1, t-2, ...]",
+                    "status": {
+                        "configurationDone": false,
+                        "frameCounter": 1,
+                        "hardwareError": false,
+                        "lowBattery": false,
+                        "timestamp": false
+                    },
+                    "type": "0x5a Pulse 4 data - channel A"
+                }
+            },
+            "errors": [],
+            "warnings": []
+        }
+    },
+    {
+        "description": "0x5a Pulse 4 data - channel A",
+        "type": "uplink",
+        "input": {
+          "bytes": "5a6700000127000100020003000414ABA3E9",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+          "data": {
+                "bytes": {
+                "counterValues": [
+                    295,
+                    294,
+                    292,
+                    289,
+                    285
+                ],
+                "decodingInfo": "counterValues: [t=0, t-1, t-2, ...]",
+                "status": {
+                    "configurationDone": true,
+                    "frameCounter": 3,
+                    "hardwareError": false,
+                    "lowBattery": true,
+                    "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "type": "0x5a Pulse 4 data - channel A"
+                }
+          },
+          "errors": [],
+          "warnings": []
+        }
+    },
+    {
+        "description": "0x5b Pulse 4 data - channel B",
+        "type": "uplink",
+        "input": {
+          "bytes": "5b6700000127000100020003000414ABA3E9",
+          "fPort": 1,
+          "recvTime": "2020-08-02T20:00:00.000+05:00"
+        },
+        "output": {
+          "data": {
+            "bytes": {
+                "counterValues": [
+                  295,
+                  294,
+                  292,
+                  289,
+                  285
+                ],
+                "decodingInfo": "counterValues: [t=0, t-1, t-2, ...]",
+                "status": {
+                  "configurationDone": true,
+                  "frameCounter": 3,
+                  "hardwareError": false,
+                  "lowBattery": true,
+                  "timestamp": true
+                },
+                "timestamp": "2023-12-28T19:22:17.000",
+                "type": "0x5b Pulse 4 data - channel B"
+             }
+          },
+          "errors": [],
+          "warnings": []
+        }
+    }
+  ]
+  

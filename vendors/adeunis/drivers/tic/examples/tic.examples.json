@@ -1,0 +1,185 @@
+[
+  {
+    "description": "uplink containing the information frame on product configuration",
+    "type": "uplink",
+    "bytes": "10a0480002011205",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "ticReadingError": false,
+      "type": "PRODUCT_CONFIGURATION_DATA_FRAMES",
+      "register": {
+        "globalOperation": "PRODUCTION_MODE",
+        "transmissionPeriodOfTheKeepAliveFrame": 43200,
+        "acquisitionPeriod": 18,
+        "periodOfIssue": 2160
+      }
+    }
+  },
+  {
+    "description": "uplink containing the information frame on network configuration",
+    "type": "uplink",
+    "bytes": "20a00101",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "ticReadingError": false,
+      "type": "FRAMES_OF_INFORMATION_ON_THE_NETWORK_CONFIGURATION",
+      "register": {
+        "adaptiveDataRate": true,
+        "connectionMode": "OTAA"
+      }
+    }
+  },
+  {
+    "description": "uplink containing the keep alive frame",
+    "type": "uplink",
+    "bytes": "30a0",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "ticReadingError": false,
+      "type": "KEEP_ALIVE_FRAME"
+    }
+  },
+  {
+    "description": "uplink containing the periodic data frame",
+    "type": "uplink",
+    "bytes": "498830323130323838313138353680000000000006960000004a48432e2e0000000000001784000000088000000080000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 4,
+      "configurationDone": false,
+      "hardwareError": false,
+      "configurationError": true,
+      "ticReadingError": false,
+      "type": "PERIODIC_DATA_FRAME",
+      "register": {
+        "ADCO": "021028811856",
+        "BASE": 0,
+        "HCHC": 1686,
+        "HCHP": 74,
+        "OPTARIF": "HC..",
+        "DEMAIN": "LABEL_NOT_RECOGNIZED",
+        "IINST": 6020,
+        "IMAX": 8,
+        "BBRHCJB": 0
+      }
+    }
+  },
+  {
+    "description": "uplink containing the alarm frame",
+    "type": "uplink",
+    "bytes": "4aa049494e535400000000000131300000000000000000000000000000000000000000000000000000000000000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "frameCounter": 5,
+      "configurationDone": false,
+      "hardwareError": false,
+      "configurationError": false,
+      "ticReadingError": false,
+      "type": "ALARM_FRAME",
+      "register": {
+        "label": "IINST",
+        "causeOfSending": "ACTIVATION_OF_THE_ALARM",
+        "valueOfLabel": "10"
+      }
+    }
+  },
+  {
+    "description": "downlink message containing the product configuration request frame",
+    "type": "downlink",
+    "bytes": "0100000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "PRODUCT_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message containing the network configuration request frame",
+    "type": "downlink",
+    "bytes": "0200000000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "NETWORK_CONFIGURATION_REQUEST_FRAME"
+    }
+  },
+  {
+    "description": "downlink message of reading a piece of data request frame",
+    "type": "downlink",
+    "bytes": "050a49494e53540000000000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "REQUEST_FRAME_FOR_READING_A_PIECE_OF_DATA",
+      "payload": {
+        "type": "TicRequestFrameForReadingAPieceOfData",
+        "maximumNumberOfAcquisitions": 10,
+        "labelOfTheDataToRead": "IINST"
+      }
+    }
+  },
+  {
+    "description": "downlink message of specific register value request frame",
+    "type": "downlink",
+    "bytes": "400001041e1f",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "SPECIFIC_REGISTER_VALUE_REQUEST_FRAME",
+      "payload": {
+        "type": "TicSpecificRegisterValueRequestFrame",
+        "message": [
+          "TRANSMISSION_PERIOD_OF_THE_KEEP_ALIVE_FRAME",
+          "PERIODIC_OF_ISSUE",
+          "PIN_CODE",
+          "LABEL_OF_THE_PERIODIC_DATA_1",
+          "LENGTH_OF_THE_PERIODIC_DATA_1"
+        ]
+      }
+    }
+  },
+  {
+    "description": "downlink message of the frame of updating the value specific registers",
+    "type": "downlink",
+    "bytes": "410090010002030106021e646174613100000000001f053c616c61726d31000000003d053e000000643f00644000000000410000",
+    "fPort": 1,
+    "time": "2020-08-02T20:00:00.000+05:00",
+    "data": {
+      "type": "FRAME_FOR_UPDATING_THE_VALUE_OF_SPECIFIC_REGISTERS",
+      "payload": {
+        "type": "TicFrameForUpdatingTheValueOfSpecificRegisters",
+        "register": {
+          "transmissionPeriodOfTheKeepAliveFrame": 144,
+          "periodOfIssue": 120,
+          "activationOfTheAcknowledgeMode": true,
+          "globalOperation": "TEST_MODE",
+          "labelOfThePeriodicData1": "data1",
+          "lengthOfThePeriodicData1": 5,
+          "labelOfTheAlarm1": "alarm1",
+          "typeAlarm1": "ALARM_IF_THE_VALUE_CHANGE_POSITIVELY",
+          "thresholdValueHighAlarm1": 100,
+          "highThresholdHysteresisValueAlarm1": 100,
+          "thresholdValueLowAlarm1": 0,
+          "lowThresholdHysteresisValueAlarm1": 0
+        }
+      }
+    }
+  }
+]
